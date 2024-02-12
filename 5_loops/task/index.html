@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+    <h1 style="color:green;">
+        Number is pelidrom or not program
+    </h1>
+    <h2>
+        Window prompt() Method
+    </h2>
+
+    <button onclick="geek()">
+        Click me!
+    </button>
+    <p id="o"></p>
+    <p id="u"></p>
+    <p id="g"></p>
+
+
+    <script src="javascript.js"></script>
+<!-- -----------------6--------------------------------- -->
+    <!-- <script>
+        function geek() {
+            let doc = prompt("enter n");
+            var n = parseInt(doc), i, fectorial = 1;
+
+            if (!isNaN(n) && n >= 0) {
+                for (i = 1; i <= n; i++) {
+                    fectorial *= i;
+                }
+                document.getElementById("g").innerHTML = "Factorial of " + n + " is: " + fectorial;
+            } else {
+                alert("Please enter a non-negative integer.");
+            }
+        }
+    </script> -->
+
+<!-- ---------------------------7------------------------- -->
+ 
+<!--    <script>
+        function geek()
+        {
+            let doc = prompt("enter number:");
+            var n = parseInt(doc) , reminder ,j = n, reverse = 0 , peli , main = n;
+            while(n > 0)
+            {
+                reminder = n % 10;
+                reverse = reverse * 10 + reminder ;
+                n = parseInt(n / 10); 
+            }
+
+            document.getElementById("o").innerHTML = "Main number is: " + main;
+            document.getElementById("u").innerHTML = "Nmber of reverse is: " + reverse;
+            if(j == reverse)
+            {
+                document.getElementById("g").innerHTML = "So This above result is pelidrom number:";
+            }
+            else
+            {
+                document.getElementById("g").innerHTML = "So This above result is not pelidrom number";
+            }
+        }
+    </script> -->
+
+    <!-- ----------------------------------8-------------------------------------- -->
+
+    <!-- <script> 
+        let doc = prompt("enter 1st value:");
+        let doc2 = prompt("enter second value:");
+        var n = parseInt(doc), a = parseInt(doc2) , value = 1;
+        // while(a != 0)
+        // {
+            value = n ** a;
+            // --a;
+        // }
+        document.getElementById("g").innerHTML = value ;
+    </script> -->
+
+    <!-- ----------------------------------9------------------------------------>
+    <script>
+        var n = 5 , i=1;
+        var string = "";
+        while(i <= n)
+        {
+            let j = 1;
+            while(j<=i)
+            {
+                string += j;
+                j++;
+            }
+            string += "\n";
+            i++;
+        }
+        console.log(string);
+    </script>
+</body>
+</html> 
+
+
