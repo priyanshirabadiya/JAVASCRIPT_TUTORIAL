@@ -8,12 +8,12 @@
 // }
 // ----------------------------------------------------------count number of digits
 
-var i , n = 7854
-var count = 1
-while(n != 0)
-{
-n /= 10;
-count++;
-}
-console.log(count);
+// var i , n = 7854
+// var count = 0
+// do
+// {
+// n = n / 10;
+// count++;
+// }while(n != 0);
+// console.log(count);
 

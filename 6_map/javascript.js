@@ -60,10 +60,13 @@ size 	Returns the number of elements in a Map
 
     // const Data = new Map([
     //     ["option-1" , 20],
-    //     ["option-2" , 40],
+    //     ["option-2" , 10],
     //     ["option-3" , 60],
     //     ["option-4" , 80]
     // ])
+
+    // console.log(Data.get("option-3"));
+    // console.log(Data.get("option-2"));
 
     // document.getElementById("new").innerHTML = Data.get("option-2");
 }
@@ -79,8 +82,8 @@ size 	Returns the number of elements in a Map
     // newmap.set("item-3" , "truck");
     // newmap.set("item-4" , 50 )
 
-    // document.getElementById("set1").innerHTML =newmap.get("item-4");
     // console.log(newmap);
+    // document.getElementById("set1").innerHTML =newmap.get("item-4");
 }
 
 {
@@ -91,9 +94,8 @@ size 	Returns the number of elements in a Map
     //     ["item-2" , "bus"],
     //     ["item-3" , "truck"]
     // ]);
-
-    // newmap.set("item-1" , "truck");
-
+    // console.log(newmap.get("item-1"));
+    
     // document.getElementById("set2").innerHTML = newmap.get("item-1");
 
 }
@@ -108,18 +110,24 @@ size 	Returns the number of elements in a Map
     //     ["option-4" , 80],
     //     ["option-4" , 80]
     // ])
+    // console.log(Data);
     // const sizes = Data.size;
+    // console.log(Data.size);
     // document.getElementById("size").innerHTML =sizes;
 
 }  
 
 {
     /* The delete() method removes a Map element */
+
     // const newmap = new Map([
     //     ["item-1" , "car"],
     //     ["item-2" , "bus"],
     //     ["item-3" , "truck"]
     // ]);
+    // console.log(newmap.delete("item-2"));
+    // console.log(newmap);
+
 
     // const deletes = newmap.delete("item-2");
     // document.getElementById("deletes").innerHTML =deletes;
@@ -135,9 +143,11 @@ size 	Returns the number of elements in a Map
     //     ["option-3" , 60],
     //     ["option-4" , 80]
     // ])
+    // console.log(Data.has("option-4"));
+    // console.log(Data);
+
     // const hass = Data.has("option-1");
     // document.getElementById("size1").innerHTML =hass;
-
     // const hasss = Data.has("option-5");
     // document.getElementById("size2").innerHTML =hasss;
 }
@@ -150,7 +160,7 @@ size 	Returns the number of elements in a Map
     //     ["option-4" , 80]
     // ])
     
-    // Data.delete("option-4");
+    // console.log( Data.delete("option-4"));
 
     // const hasss = Data.has("option-4");
     // document.getElementById("has1").innerHTML =hasss;
@@ -170,8 +180,93 @@ size 	Returns the number of elements in a Map
     // let mapitem = "";
 
     // for(const x of newmap.entries()){
-    //     mapitem += x + "<br>" ;
+    //     mapitem += x + "<br>";
     // }
+
+    // console.log(mapitem);
 
     // document.getElementById("element").innerHTML = mapitem;
 }
+
+
+
+
+
+// -------------------------------- get()
+
+    // const newmap = new Map([
+    //     ["item-1" , "car"],
+    //     ["item-2" , "bus"],
+    //     ["item-3" , "truck"]
+    // ]);
+    // console.log(newmap.get("item-1"));
+
+
+// ----------------------------clear
+
+//  const Data = new Map([
+//         ["option-1" , 20],
+//         ["option-2" , 40],
+//         ["option-3" , 60],
+//         ["option-4" , 80]
+//     ])
+//     console.log(Data.clear(Data));
+//     console.log(Data);
+//     console.log(Data.size);
+
+// ----------------------------values
+
+//  const Data = new Map([
+//         ["option-1" , 20],
+//         ["option-2" , 40],
+//         ["option-3" , 60],
+//         ["option-4" , 80]
+//     ])
+//     console.log(Data.keys(Data));
+//     console.log(Data.values(Data));
+//     console.log(Data);
+
+// ----------------------------entries -- > MapIterator
+
+//  const Data = new Map([
+//         ["option-1" , 20],
+//         ["option-2" , 40],
+//         ["option-3" , 60],
+//         ["option-4" , 80]
+//     ])
+//     console.log(Data.entries(Data));
+//     console.log(Data);
+
+// ------------------------------add
+// Adding entries to the map using set
+
+// const Data = new Map();
+
+// Data.set('key1', 'value1');
+// Data.set('key2', 'value2');
+
+// console.log(Data);
+
+
+// ------------------------------set
+// const Data = new Map();
+
+// Data.set('key1', 'value1');
+// Data.set('key2', 'value2');
+// Data.set('key3', 'value3');
+
+// console.log(Data); 
+// // Update value of key1
+// Data.set('key1', 'updatedValue1');
+// console.log(Data); 
+
+
+// ---------------------------------------------get
+
+// const fruits = new Map();
+// fruits.set("apples", 500);
+// fruits.set("bananas", 300);
+
+
+// // Get Map Values
+// fruits.get("apples");
