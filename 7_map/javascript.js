@@ -43,18 +43,18 @@
 /*
 
 new Map()	Creates a new Map
-set()	Sets the value for a key in a Map
-get()	Gets the value for a key in a Map
+set()	    Sets the value for a key in a Map
+get()	    Gets the value for a key in a Map
 delete()	Removes a Map element specified by the key
-has()	Returns true if a key exists in a Map
+has()	    Returns true if a key exists in a Map
 entries()	Returns an iterator with the [key, value] pairs in a Map
 Property	Description
-size 	Returns the number of elements in a Map
+size 	    Returns the number of elements in a Map
 
 */
 
 /* Methods */
-
+// --------------------------------- map / set -------------------------------
 {
     /* You can create a Map by passing an Array to the new Map() constructor */
 
@@ -64,15 +64,26 @@ size 	Returns the number of elements in a Map
     //     ["option-3" , 60],
     //     ["option-4" , 80]
     // ])
-
     // console.log(Data.get("option-3"));
     // console.log(Data.get("option-2"));
-
-    // document.getElementById("new").innerHTML = Data.get("option-2");
 }
 
 {
+    /* The get() method gets the value of a key in a Map */
 
+    //    const newmap = new Map([
+    //     ["item-1" , "car"],
+    //     ["item-2" , "bus"],
+    //     ["item-3" , "truck"]
+    // ]);
+    // console.log(newmap.get("item-1"));
+}
+
+
+
+// ----------------------------------set mothod -------------------------------
+
+{
     /* The set() method can also be used to change existing Map values */
 
     // const newmap = new Map();
@@ -83,22 +94,24 @@ size 	Returns the number of elements in a Map
     // newmap.set("item-4" , 50 )
 
     // console.log(newmap);
-    // document.getElementById("set1").innerHTML =newmap.get("item-4");
+    // newmap.set("item-1","riya")
+    // console.log(newmap);
 }
-
 {
-    /* The get() method gets the value of a key in a Map */
+// const Data = new Map();
 
-    // const newmap = new Map([
-    //     ["item-1" , "car"],
-    //     ["item-2" , "bus"],
-    //     ["item-3" , "truck"]
-    // ]);
-    // console.log(newmap.get("item-1"));
-    
-    // document.getElementById("set2").innerHTML = newmap.get("item-1");
+// Data.set('key1', 'value1');
+// Data.set('key2', 'value2');
+// Data.set('key3', 'value3');
+
+// console.log(Data); 
+// // Update value of key1
+// Data.set('key1', 'updatedValue1');
+// console.log(Data); 
 
 }
+// ----------------------------------size mothod -------------------------------
+
 
 {
     /* The size property returns the number of elements in a Map */
@@ -113,9 +126,10 @@ size 	Returns the number of elements in a Map
     // console.log(Data);
     // const sizes = Data.size;
     // console.log(Data.size);
-    // document.getElementById("size").innerHTML =sizes;
 
 }  
+
+// ----------------------------------delete mothod -------------------------------
 
 {
     /* The delete() method removes a Map element */
@@ -134,6 +148,8 @@ size 	Returns the number of elements in a Map
     // document.getElementById("deletes1").innerHTML =newmap.size;
 } 
 
+// ----------------------------------has mothod -------------------------------
+
 {
     /* The has() method returns true if a key exists in a Map */
     
@@ -146,10 +162,6 @@ size 	Returns the number of elements in a Map
     // console.log(Data.has("option-4"));
     // console.log(Data);
 
-    // const hass = Data.has("option-1");
-    // document.getElementById("size1").innerHTML =hass;
-    // const hasss = Data.has("option-5");
-    // document.getElementById("size2").innerHTML =hasss;
 }
 
 {
@@ -160,46 +172,34 @@ size 	Returns the number of elements in a Map
     //     ["option-4" , 80]
     // ])
     
-    // console.log( Data.delete("option-4"));
+    // console.log(Data.delete("option-4"));
+    // console.log(Data);
+    // console.log(Data.has("option-4"));
 
-    // const hasss = Data.has("option-4");
-    // document.getElementById("has1").innerHTML =hasss;
-
-    // document.getElementById("size3").innerHTML =Data.size;
 }
+
+
+// ----------------------------------for each mothod -------------------------------
 
 /* Note : forEach() after function lecture */
 
 {
-    // const newmap = new Map([
-    //     ["item-1" , "car"],
-    //     ["item-2" , "bus"],
-    //     ["item-3" , "truck"]
-    // ]);
+//     const newmap = new Map([
+//         ["item-1" , "car"],
+//         ["item-2" , "bus"],
+//         ["item-3" , "truck"]
+//     ]);
 
-    // let mapitem = "";
+//     let mapitem = "";
 
-    // for(const x of newmap.entries()){
-    //     mapitem += x + "<br>";
-    // }
+//     for(const x of newmap.entries()){
+//         mapitem += x + "<br>";
+//     }
 
-    // console.log(mapitem);
+//     console.log(mapitem);
 
-    // document.getElementById("element").innerHTML = mapitem;
 }
 
-
-
-
-
-// -------------------------------- get()
-
-    // const newmap = new Map([
-    //     ["item-1" , "car"],
-    //     ["item-2" , "bus"],
-    //     ["item-3" , "truck"]
-    // ]);
-    // console.log(newmap.get("item-1"));
 
 
 // ----------------------------clear
@@ -248,25 +248,41 @@ size 	Returns the number of elements in a Map
 // console.log(Data);
 
 
-// ------------------------------set
-// const Data = new Map();
+// ----------------------------------------------------------only map-----------------------------------------------
 
-// Data.set('key1', 'value1');
-// Data.set('key2', 'value2');
-// Data.set('key3', 'value3');
-
-// console.log(Data); 
-// // Update value of key1
-// Data.set('key1', 'updatedValue1');
-// console.log(Data); 
-
-
-// ---------------------------------------------get
-
-// const fruits = new Map();
-// fruits.set("apples", 500);
-// fruits.set("bananas", 300);
+// -------------------------map
+// create map
+// let fruits = new Map([
+//     ["apple",500],
+//     ["banana",400],
+//     ["orange",200],
+//     ["stoberry",100]
+// ]);
+// console.log(fruits);
 
 
-// // Get Map Values
-// fruits.get("apples");
+// set map value
+// let fruits = new Map();
+// fruits.Map = ("apple",500);
+// fruits.Map = ("orange",400);
+
+// console.log(fruits);
+
+
+// get map value
+// console.log(fruits.get("apple"));
+
+
+// map size is not function but it is 
+// console.log(fruits.size);
+
+// map has 
+// console.log(fruits.has("apple"));
+// console.log(fruits.has("applel"));
+
+// map delete
+// console.log(fruits.delete("apple"));
+// console.log(fruits);
+
+
+
