@@ -51,23 +51,97 @@
 // }
 // console.log(greeting());
 
-// IIFE --> immediately invoked function expressin  
+// IIFE --> immediately invoked function expression  / self-involking
 // function that is called imediatley after declaring
-
 
 // console.log((function (a, b) {
 //     return a + b;
 //    })(2, 3));
         
-
 // let x = (function hello(a , b , c ,d){
 //      return{ 
 //      sum: a + b,
 //      sub: c - d
 //     };
 //   }
-// )("5" , 2 , 8 , 9);
+// )("5" , 2 , 9 , 8);
+// console.log(x);
+
+// function add(a,b)
+// {
+//     return a+b
+// }
+// arrow function
+// var x = add(a,b) => {
+//     return a+b;
+// }
+
+// let add = (a,b) => a+b;
+// console.log(add(4,5));
+
+// --------------------------------------------------------------table
+
+// function hello() {
+//     let i, j;
+//     var n = 5;
+//     let m = '';
+//     for (i = 0; i < 10; i++) {
+//         j = n * i;
+//         m = m + n + " * " + i + " = " + j + "\n"; 
+//     }
+//     return m;
+// }
+// console.log(hello());
+
+
+// --------------------------------------------------------------function constroctor
+
+// const myFunction = new Function("a", "b", "return a * b");
+// let x = myFunction(4, 3); // 12
 // console.log(x);
 
 
+// const myFunction = new Function("a" , "b", "return a + b");
+// let x = myFunction(2 , 8);
+// console.log(x);
 
+//-----------------arrow
+
+// var x = (x , y) => x * y;
+// console.log(x(5,10));
+
+
+
+// ---------------------------function are object
+
+// function myFunction(a, b, c, k){
+//     return arguments.length; 
+// }
+// let text = myFunction(4,3,5,2);
+// console.log(text);
+
+// ------------------------------------------------------------------
+
+// function myfun(a,f,d,s)
+// {
+//     return arguments.length;
+// }
+// let len = myfun(1,2,4,5,8,8,7).toString();
+// console.log(len);
+
+// x = func1(1,2,3,4,5,8)
+// function func1(a, b, c) {
+//     console.log(arguments.length);
+//   }
+
+
+function add(...args)
+{
+    let sum = 1;
+    for(let i = 1 ; i <= args.length ; i++)
+        sum = sum + args[i];
+        return sum;
+    }
+    console.log(add(1,9,10,5,8));
+// console.log(args[i]);
+// add(1,2,5,8)

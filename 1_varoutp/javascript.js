@@ -11,10 +11,13 @@
 /* Method to run javascript */
 /*Using innerHTML
 Using document.write()
-Using window.alert():
+Using window.alert()
 Using console.log()
-Using window.prompt() *
-Using appendChild() * */
+Using dom()*/
+
+// taking input mthods
+// Using window.prompt()
+// Using appendChild() 
 
 
 /****   JavaScript Values   ****/
