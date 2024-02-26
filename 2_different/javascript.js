@@ -75,10 +75,27 @@
     // let a = 10;
     // let b = 10;
     // var c = a + b;
+    // var a = 10;
+    // let a = 10
+    // const a = 10;
 }
 // console.log(c); 
 // console.log(a); //error
 // console.log(b); //error
+// var a = 10;
+
+{
+    // let a = 10;
+    // const a = 10;
+    // var a = 10;
+}
+// console.log(a);
+
+{
+//   let y = 2;
+}
+// console.log(y);
+
 
 // -------------------const----------------------------
 

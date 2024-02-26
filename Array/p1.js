@@ -70,3 +70,32 @@
 // console.log(txt);
 
 
+// shift
+// let he = [xc,gf];
+// console.log(he);
+
+// let arr1 = [10,520,60,89];
+// console.log(arr1.shift(50));
+// console.log(arr1.shift());
+// console.log(arr1.shift());
+// console.log(arr1.shift());
+
+// let arr1 = [10,520,60,89];
+// arr1.unshift(9)
+// arr1.unshift(56)
+// arr1.unshift(23)
+// console.log(arr1);
+// console.log(arr1.unshift());
+
+
+// revese data
+// let data = [10 , 20 , 50 , 60];
+// console.log(data.reverse());
+
+// map method
+// let data = [10 , 20 , 50 , 60];
+
+// function myfun(1 , 2 , 3){
+//     return 1 * 2;
+// }
+
