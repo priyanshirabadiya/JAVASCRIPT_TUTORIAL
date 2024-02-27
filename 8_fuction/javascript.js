@@ -135,13 +135,13 @@
 //   }
 
 
-function add(...args)
-{
-    let sum = 1;
-    for(let i = 1 ; i <= args.length ; i++)
-        sum = sum + args[i];
-        return sum;
-    }
-    console.log(add(1,9,10,5,8));
+// function add(...args)
+// {
+//     let sum = 1;
+//     for(let i = 1 ; i <= args.length ; i++)
+//         sum = sum + args[i];
+//         return sum;
+//     }
+//     console.log(add(1,9,10,5,8));
 // console.log(args[i]);
 // add(1,2,5,8)
