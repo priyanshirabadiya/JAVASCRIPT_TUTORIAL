@@ -54,7 +54,7 @@
 
 function myfun(a)
 {
-    a.splice(2,4);
+    a.slice(2);
     return a;
 }
-console.log(myfun(["w","f","j","w","a"]));
+console.log(myfun(["w","f","j","l","a"]));
