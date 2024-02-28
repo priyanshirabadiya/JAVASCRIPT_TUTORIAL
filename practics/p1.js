@@ -52,9 +52,45 @@
     // console.log(b);
 // })(["4sdc"],["myfy5"]);
 
-function myfun(a)
+// function myfun(a)
+// {
+//     a.slice(2);
+//     return a;
+// }
+// console.log(myfun(["w","f","j","l","a"]));
+
+
+
+let x = function(a)
 {
-    a.slice(2);
-    return a;
+    // console.log(a.slice(2,5,"manju","hina"));
+    // slice method don't add any elemet 
+    // z = a.slice(2,5);
+    // console.log(z);
+    // console.log(a);
+    // console.log(a.slice(1,3));
+    // console.log(a);
+    // a.splice(2,3,"huna");
+    // console.log(a);
+    // console.log(a.splice(2,2,"hj"));
+    
+    // console.log(a);
+    // console.log(a.splice(1,3));
+    // console.log(a.slice(2));
 }
-console.log(myfun(["w","f","j","l","a"]));
+x(["hello","world","say","hi","lemmon","jini"]);
+
+// var a = ["hello","main","hi","lemmon","jini"];
+// console.log();
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(2, 0, "Lemon", "Kiwi");
+// Banana,Orange,Lemon,Kiwi,Apple,Mango
+// console.log(fruits);
+
+
+
+// let p = ["hello","main","hi","lemmon","jini"];
+// console.log(p.slice(3));
+// console.log(p.splice(3));
