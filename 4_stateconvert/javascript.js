@@ -166,6 +166,8 @@ parseInt() Parse its argument and returns a whole number
 
 */
 
+
+// Number() accepts only "digit strings". For example: "34", "-56", "3.14", "6.022e23", etc. are all valid for Number() While, parseInt() accepts those strings which may or may not have non-digit character(s) at the end of string. For example: "34", "34foo" and "34bar34" will all return the number 34.
 {
     // let n1 =  Number(true);
     // let n2 =  Number(false);
@@ -179,9 +181,11 @@ parseInt() Parse its argument and returns a whole number
     // console.log(typeof(n7));
     // let n8 =  Number("10,33");	
     // let n9 =  Number("10 33");	
-    // let n10 =  Number("John");	
+   //  let n10 =  Number("10John");	
     // console.log(n1);
-    // console.log(typeof(n1));
+    //  console.log(typeof(n1));
+   //  console.log(n10);
+   //  console.log(typeof(n10));
  }
  {
     // let pi1 =  parseInt("-10");		
@@ -230,8 +234,10 @@ parseInt() Parse its argument and returns a whole number
    //  let method4 = Number.parseFloat("10");		
    //  let method5 = Number.parseFloat("10.33");	
    //  let method6 = Number.parseFloat("10 20 30");	
-   //  let method7 = Number.parseFloat("10 years");	
+   //  let method7 = parseFloat("10 years");	
    //  let method8 = Number.parseFloat("years 10");	
+   //  let method9 = parseInt("5years 10");	
+
     
    //  let method9 = Number.parseInt("-10");		
    //  let method10 = Number.parseInt("-10.33");		
@@ -243,6 +249,12 @@ parseInt() Parse its argument and returns a whole number
     
     // console.log(method);
     // console.log(method1);
+   //  console.log(method4);
+   //  console.log(method5);
+   //  console.log(method6);
+   //  console.log(method7);
+   //  console.log(method8);
+   //  console.log(method9);
    //  console.log(method7);
    //  console.log(method8);
    //  console.log(method2);

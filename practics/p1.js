@@ -61,24 +61,29 @@
 
 
 
-let x = function(a)
-{
+// let x = function(a)
+// {
     // console.log(a.slice(2,5,"manju","hina"));
     // slice method don't add any elemet 
     // z = a.slice(2,5);
     // console.log(z);
     // console.log(a);
     // console.log(a.slice(1,3));
+
+    // a.splice(2,1,"main");
+    // console.log(a.splice(2,1,"main"));
+    // console.log(a.splice(1));
     // console.log(a);
-    // a.splice(2,3,"huna");
+    // console.log(a.splice(2,1,"main"));
+
     // console.log(a);
     // console.log(a.splice(2,2,"hj"));
-    
+
     // console.log(a);
     // console.log(a.splice(1,3));
     // console.log(a.slice(2));
-}
-x(["hello","world","say","hi","lemmon","jini"]);
+// }
+// x(["hello","world","say","hi","lemmon","jini"]);
 
 // var a = ["hello","main","hi","lemmon","jini"];
 // console.log();
@@ -94,3 +99,75 @@ x(["hello","world","say","hi","lemmon","jini"]);
 // let p = ["hello","main","hi","lemmon","jini"];
 // console.log(p.slice(3));
 // console.log(p.splice(3));
+
+
+
+// let z = (a) => a.sort();
+// console.log(z(["ji","apple","mahi","target"])); 
+
+
+// let x = (a) => a.reverse();
+// console.log(x(["hjvd","sds","pink"]));
+
+
+// function myfun(a)
+// {
+//     return Math.min.apply(null,a);
+// }
+// console.log(myfun(["5","6","2","4","3"]));
+
+
+// let a = (b) => Math.max.apply(null,b);
+// console.log(a([2,4,7,68,3]));
+
+
+// function myfun(a)
+// {
+    
+// }
+
+// function myfun(arr){
+//     return arr.sort();
+// }
+// z = myfun([4,6,5,7,3]);
+// console.log(z);
+
+
+
+
+
+// const arr = [1,4,1,5,8];
+// const map1 = arr.map((x) => x > 2);
+// console.log(map1);
+
+
+// function myfun(val)
+// {
+//    return val > 1;
+// }
+// z = [1,4,3,5,7].filter(myfun);
+// console.log(z);
+
+
+// let a = (x) => x > 1;
+// let z = [1,3,5,3,7,0].filter(a);
+// console.log(z);
+
+// Input array
+// let arr = [175, 50];
+// function subofArray(total, num) {
+// 	return total - num;
+// }
+// function myGeeks() {
+// 	console.log(arr.reduce(subofArray));
+// }
+// myGeeks()
+
+
+
+let arr = ["string","main","banana","jain"]
+z = arr.toString();
+console.log(arr);
+console.log(z);
+console.log(typeof(arr));
+console.log(typeof(z));

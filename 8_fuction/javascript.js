@@ -122,12 +122,12 @@
 
 // ------------------------------------------------------------------
 
-// function myfun(a,f,d,s)
-// {
-//     return arguments.length;
-// }
-// let len = myfun(1,2,4,5,8,8,7).toString();
-// console.log(len);
+function myfun(a,f,d,s)
+{
+    return arguments.length;
+}
+let len = myfun(1,2,4,5,8,8,7).toString();
+console.log(len);
 
 // x = func1(1,2,3,4,5,8)
 // function func1(a, b, c) {
