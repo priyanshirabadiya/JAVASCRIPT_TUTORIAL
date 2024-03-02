@@ -44,18 +44,16 @@ let person = {
 
 
 
-
-
 // object create methods
-function hicle(name,maker,engine)
-{
-    this.name = name;
-    this.maker = maker;
-    this.engine = engine;
-}
-let car  = new hicle('GT','BMW','1998cc');
-console.log(car.name);
-console.log(car.maker);
+// function hicle(name,maker,engine)
+// {
+//     this.name = name;
+//     this.maker = maker;
+//     this.engine = engine;
+// }
+// let car  = new hicle('GT','BMW','1998cc');
+// console.log(car.name);
+// console.log(car.maker);
 // Property accessors
 // console.log(car.name);
 // console.log(car.maker);
