@@ -17,15 +17,47 @@
 
 // call method
 
-let person = {
-    print : function(city){
-        return this.name + " " + this.surname + "\n" + city;
-    }
-}
+// let person = {
+//     print : function(city){
+//         return this.name + " " + this.surname + "\n" + city;
+//     }
+// }
 
-let viru = {
-    name : "virat",
-    surname : "kohli"
-}
+// let viru = {
+//     name : "virat",
+//     surname : "kohli"
+// }
 
-console.log(person.print.call(viru ,"surat"));
+// console.log(person.print.call(viru ,"surat"));
+
+
+
+
+
+// shallow copy and deep copy
+
+// const first_person = {
+//     name: "Jack",
+//     age: 24,
+// };
+
+// const second_person = first_person;
+// first_person.age = 25;
+
+// console.log(first_person.age); // output: 25
+// console.log(second_person.age); // output: 25
+
+
+// deep  copy
+
+const first_person = {
+    name: "Jack",
+    age: 24,
+};
+
+const second_person = { ...first_person };
+second_person.age = 25;
+
+console.log(first_person.age); // output: 24
+console.log(second_person.age); // output: 25
+
