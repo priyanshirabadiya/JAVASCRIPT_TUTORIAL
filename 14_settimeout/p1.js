@@ -27,10 +27,10 @@
 // {
 //     console.log("hello world");
 // }
-// let intervalid = setTimeout(greet , 1000);
+// let intervalid = setTimeout(greet , 3000);
 
 // console.log('Id:' + intervalid);
-// clearTimeout(intervalid);
+// // clearTimeout(intervalid);
 // console.log("stop time out ");
 
 
@@ -216,17 +216,17 @@
 
 // javascript finally method
 
-let countvalue = new Promise(function(resolve , reject){
-    // resolve("program resolved")
-    reject("rejected")
-})
-// add other blocks of code
+// let countvalue = new Promise(function(resolve , reject){
+//     // resolve("program resolved")
+//     reject("rejected")
+// })
+// // add other blocks of code
 
-countvalue
-    .then(result => console.log(result))
-    .catch((err) => console.log(err))
-    .finally(
-        function(){
-            console.log('this code is executed');
-        }
-)
+// countvalue
+//     .then(result => console.log(result))
+//     .catch((err) => console.log(err))
+//     .finally(
+//         function(){
+//             console.log('this code is executed');
+//         }
+// )
