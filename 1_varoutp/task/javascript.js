@@ -1,17 +1,20 @@
 //--------------------------1,2-----------------------
 // let x = 1 + 2 * 3;
 // let x1 = 1 + "2" + 3;
-// let x2 = "1" + "2" * 3;
+let x2 = 8 / "2" - 3 * 1 + "2" + 5;
 // let x3 = 1 + 2 ** 3 / 2 - 1;
 // let x4 = 9 / 2 * 3;
 // let x5 = 9 / (2 * 3);
+// let x6 =(2 * 3) + 9 ;
+
 // console.log(x);
 // console.log(typeof(x));
 // console.log(x1);
 // console.log(typeof(x1));
 // console.log(x2);
 // console.log(typeof(x2));
-// console.log(x3);
+// console.log(x6);
+// console.log(typeof(x6));
 // console.log(x4);
 // console.log(x5);
 

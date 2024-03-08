@@ -5,14 +5,9 @@
 //     lastname :"rabadiya",
 //     email : "priyanshi@.gmail.com"
 // }
-
 // let {lastname} = person;
 // console.log(lastname);
 // console.log(person);
-
-
-
-
 
 // let text = ""; 
 // for(let i = 0 ; i < 5 ; i++)
@@ -27,10 +22,9 @@
 // let arr = [11 , 22 , 33 , 44 , 55 , 66];
 // for (let p in arr)
 // {
-    // console.log(p + "=>" + arr[p]);
-    // console.log(arr);
+//     console.log(p + "=>" + arr[p]);
+//     // console.log(arr);
 // }
-
 
 // let person = {
 //     firstname :"priyashi",
@@ -42,22 +36,28 @@
 //     console.log(person[k]);
 // }
 
-
 // for of loop
 
-// let arr = ['hello' , 'worls' , 'i' , 'say' , 'this' , 'at' , 'last'];
+// let arr1 = ['hello' , 'worls' , 'i' , 'say' , 'this' , 'at' , 'last'];
 
-// for(let ele of arr)
+// for(let ele of arr1)
 // {
-//     console.log(ele + "=>" + ele[arr]);
+//     console.log(ele + "=>" + ele[arr1]);
 // }
-
 
 // const nums = ['hello' , 'worls' , 'i' , 'say' , 'this' , 'at' , 'last'];
-
 // for (const [index, num] of nums.entries()) {
-//   console.log(`Index: ${index}, Value: ${num}`);
+//   console.log(`Index: ${index} Value: ${num}`);
 // }
+
+
+// -----------------------------------------
+// const object1 = ['hello','skillqode'];
+
+//   for (const [key, value] of Object.entries(object1)) {
+//     console.log(`${key}: ${value}`);
+// }
+  
 
 // let person = {
 //     fname : "priyanshi" , 
@@ -65,17 +65,17 @@
 //     age : 45 
 // }
 
-const nums = ['hello' , 'worls' , 'i' , 'say' , 'this' , 'at' , 'last'];
+// const nums = ['hello' , 'world' , 'i' , 'say' , 'this' , 'at' , 'last'];
 
 // for(let x in nums){
 //     console.log(nums[x]);
 // }
-let p = "#";
-for(let key of nums)
-{
-    key = p + "   " + nums;
-    console.log(key);
-}
+// let p = "#";
+// for(let key of nums)
+// {
+//     key = p + "   " + nums;
+//     console.log(key);
+// }
 
 
 // let language = "JavaScript";
