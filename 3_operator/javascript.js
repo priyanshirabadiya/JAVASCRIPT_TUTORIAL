@@ -29,11 +29,11 @@
 
 /* Arithmetic Operators */
 
-// {
-//     let x  = 1;
-//     let y = 5;
-//     console.log(x**y);
-// }
+{
+    // let x  = 1;
+    // let y = 5;
+    // console.log(2**3*1**3);
+}
 
 
 
@@ -86,7 +86,7 @@ Ex: C**=A IS equivalent to C=C**A
 }
 
 {
-    // a =  3
+    // a = 3
     // b = 3
 
     // a  = a + b

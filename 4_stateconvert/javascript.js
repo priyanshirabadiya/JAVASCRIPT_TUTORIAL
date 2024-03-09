@@ -126,7 +126,7 @@ if...else if...else statement
  /*  === comparison */
  
  {
-   //  let input = 0;
+   //  let input = prompt("enter input:");
  
    //  switch(input){
    //     case 1:
