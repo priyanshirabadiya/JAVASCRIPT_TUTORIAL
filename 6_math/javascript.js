@@ -116,7 +116,7 @@ The syntax for Math any methods is : Math.method(number)
 // let number  = -(0-0)-0
             // = -0-0
             // =-0
-console.log(number);
+// console.log(number);
 
 
 
@@ -220,9 +220,9 @@ console.log(number);
 // console.log(string5);
 
 		
+// console.log(Math.round(-4.6));
+// console.log(Math.ceil(-4.6));
+// console.log(Math.floor(-4.6));
 
 
-
-
-
-
+// console.log(parseInt(Math.random()*100));

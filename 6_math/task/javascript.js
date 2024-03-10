@@ -56,3 +56,68 @@
 // }
 
 
+
+
+
+// ------------------------------gfg tasks-----------------------------------
+
+// ------------------------------pow of number three mothods-----------------------------------
+// let x = (x,y) => Math.pow(x,y);
+// let x = (x,y) => x**y;
+// function my_fun(x,y){
+//     let i , n = 1;
+//     for(i = 0 ; i < y ; i++)
+//     {
+//         n = n * x;
+//     }
+//     console.log(n);
+// }
+// console.log(x(2,3));
+// my_fun(2,3);
+
+// ------------------------------sqrt root of number three mothods-----------------------------------
+
+// console.log(Math.sqrt(125));
+// console.log(Math.pow(25,1/2));
+// one is binary search you can see this in gfg web
+
+
+// ------------------------------JavaScript Program to Solve Quadratic Equation------------------------------
+
+
+// formula = -b -+ sqtr(b*b - 4ac)
+//            -----------------
+//                  2a
+
+// function sqrt_get(a,b,c){
+//     return  b * b - 4 * a * c;
+// }
+// function my_fun(a,b,c)
+// {
+//     let ecvation , ecvation2 ;
+//     let d = sqrt_get(a,b,c);
+
+//     if(d > 0){
+//         ecvation = (-b + Math.sqrt(d)) / (2 * a) + " and " + (-b - Math.sqrt(d)) / (2 * a);
+//         // return ecvation;
+//         console.log(ecvation);
+//     }
+//     else if(d == 0)
+//     {
+//         let ecvation1 = -b / (2 * a) + "and" + -b /(2 * a);
+//         console.log(ecvation);
+//         // return ecvation1;
+
+//     }
+//     else
+//     {
+//         console.log("nan");
+//         // return [];
+//         // console.log("NAN");
+//     }
+// }
+// my_fun(1 , -3 , 2);
+// sqrt_get(1 , -3 , 2);
+
+
+

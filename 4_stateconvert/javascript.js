@@ -266,6 +266,3 @@ parseInt() Parse its argument and returns a whole number
  
  
  
- 
- 
- 
