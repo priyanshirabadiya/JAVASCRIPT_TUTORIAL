@@ -1,4 +1,4 @@
-// let fruits = new Set(["apple","banana","kiwi",]);
+let fruits = new Set(["apple","banana","kiwi",]);
 // console.log(fruits);
 
 // has value
@@ -19,11 +19,14 @@
 // entries method
 // console.log(fruits.entries());
 
+
+
+
 // keys methos
 // console.log(fruits.keys()); 
 
 // values methos
 // console.log(fruits.values());
 
-// console.log(fruits.clear());
-// console.log(fruits);
+console.log(fruits.clear());
+console.log(fruits);

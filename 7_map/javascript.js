@@ -87,27 +87,32 @@ size 	    Returns the number of elements in a Map
     /* The set() method can also be used to change existing Map values */
 
     // const newmap = new Map();
-
-    // newmap.set("item-1" , "car");
-    // newmap.set("item-2" , "bus");
-    // newmap.set("item-3" , "truck");
-    // newmap.set("item-4" , 50 )
-
+    // const newmap = new Map([
+    //         ["item-1" , "car"],
+    //         ["item-2" , "bus"],
+    //         ["item-3" , "truck"]
+    //     ]);
+    // newmap.set("item-1" , "jkcar");
+    // newmap.set("item-2" , "mpbus");
+    // newmap.set("item-3" , "bgtruck");
+    // newmap.set("item-4" ,"sdf 50" )
+    // newmap.set("item-4" , 50)
+    //     console.log(newmap);
     // console.log(newmap);
     // newmap.set("item-1","riya")
     // console.log(newmap);
 }
 {
-// const Data = new Map();
+// const Data1 = new Map();
 
-// Data.set('key1', 'value1');
-// Data.set('key2', 'value2');
-// Data.set('key3', 'value3');
+// Data1.set('key1', 'value1');
+// Data1.set('key2', 'value2');
+// Data1.set('key3', 'value3');
 
-// console.log(Data); 
+// console.log(Data1); 
 // // Update value of key1
-// Data.set('key1', 'updatedValue1');
-// console.log(Data); 
+// Data1.set('key1', 'updatedValue1');
+// console.log(Data1); 
 
 }
 // ----------------------------------size mothod -------------------------------
@@ -126,6 +131,7 @@ size 	    Returns the number of elements in a Map
     // console.log(Data);
     // const sizes = Data.size;
     // console.log(Data.size);
+    // console.log(sizes);
 
 }  
 
@@ -237,6 +243,34 @@ size 	    Returns the number of elements in a Map
 //     console.log(Data.entries(Data));
 //     console.log(Data);
 
+// const array1 = ['a', 'b', 'c'];
+
+// const iterator1 = array1.entries();
+
+// console.log(iterator1.next().value);
+// // Expected output: Array [0, "a"]
+
+// console.log(iterator1.next().value);
+// // Expected output: Array [1, "b"]
+
+
+// creating a map object
+// let myMap = new Map();
+
+//Adding [key, value] pair to the map
+// myMap.set(0, 'geeksforgeeks');
+// myMap.set(1, 'is an online portal');
+// myMap.set(2, 'for geeks');
+
+// creating an iterator object using Map.entries() method
+// let iterator_obj = myMap.entries();
+
+// displaying the [key, value] pairs of all the elements of the map
+// console.log(iterator_obj.next().value);
+// console.log(iterator_obj.next().value);
+// console.log(iterator_obj.next().value);
+// console.log(myMap.entries());
+
 // ------------------------------add
 // Adding entries to the map using set
 
@@ -258,14 +292,6 @@ size 	    Returns the number of elements in a Map
 //     ["orange",200],
 //     ["stoberry",100]
 // ]);
-// console.log(fruits);
-
-
-// set map value
-// let fruits = new Map();
-// fruits.Map = ("apple",500);
-// fruits.Map = ("orange",400);
-
 // console.log(fruits);
 
 
