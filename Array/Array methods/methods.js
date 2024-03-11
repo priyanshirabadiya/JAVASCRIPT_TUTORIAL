@@ -198,6 +198,10 @@
 //   console.log(`Index: ${index} Value: ${num}`);
 // }
 
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.includes("kiwi"));
+
+
 
 // const array1 = ['a', 'b', 'c'];
 // const iterator1 = array1.entries();
@@ -216,3 +220,30 @@
 // const points = [40, 100, 1, 5, 25, 10];
 // myArrayMax(points);
 // // The highest number is 100.
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits);
+// console.log(fruits.copyWithin(2, 1)); // Banana, Orange, Banana, Orange
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+// console.log(fruits);
+// console.log(fruits.copyWithin(2, 0, 2));
+// Banana, Orange, Banana, Orange, Kiwi, Papaya
+
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+// const first = numbers.find(function(numbers){
+// 			return numbers > 18;
+// });
+// console.log(first);
+// 25
+
+// let num = [1,2,3,4,5,6];
+// let fnum = num.find(num => num > 5);
+// console.log(fnum);
+
+
