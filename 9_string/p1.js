@@ -113,7 +113,7 @@
 // console.log(txt1.concat(" ",txt2));
 
 
-// charat
+// charAt
 
 // let txt = "hello pc";
 // console.log(char);

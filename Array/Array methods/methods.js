@@ -13,7 +13,6 @@
 // let arr2 = [6,5,7,8,7];
 // console.log(arr.concat(arr2));
 
-
 // array push 
 
 // let pt = ["ty","fy","sy"];
@@ -30,12 +29,56 @@
 // console.log(strArr);
 
 
-
 // array slice
 
 // let arr = [1,2,3,8,5,12,6,89];
 // let m = arr.slice(3);
 // console.log(m);
+
+
+// // Array map()
+// const numbers1 = [45, 4, 9, 16, 25];
+// const numbers2 = numbers1.map(myFunction);
+
+// function myFunction(value, index, array) {
+// 	return value * 2;
+// }
+// console.log(numbers2);
+// 90,8,18,32,50.
+
+// Array map()
+// const numbers1 = [45, 4, 9, 16, 25];
+// const numbers2 = numbers1.map(myFunction);
+
+// function myFunction(value, index, array) {
+//     // value: current element being processed in the array
+//     // index: index of the current element being processed in the array
+//     // array: the array map was called upon
+//     return value * 2 + index + array.length;
+// }
+
+// console.log(numbers2);
+
+
+// Original array
+// const numbers = [1, 2, 3, 4, 5];
+
+// // Mapping function: square each number
+// const squaredNumbers = numbers.map(num => num * num);
+
+// console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
+
+
+// Array filter
+// const numbers = [45, 4, 9, 16, 25];
+// const over18 = numbers.filter(myFunction);
+
+// function myFunction(value) {
+// 	return value > 18;
+// }
+// console.log(over18);
+// 45,25. 
+
 
 // array some
 // function myfun(ele)
@@ -43,25 +86,33 @@
 //     return ele > 5;
 // }
 // let arr = [4,3,7,6,5,9,23];
-// let val = arr.filter(myfun)
+// let val = arr.filter(myfun);
 // console.log(val);
 
-// let a = (x) => x > 5;
+
+// let a = x => x > 5;
 // let arr2 = [2,5,6,8,6,3];
 // z = arr2.filter(a);
 // console.log(z); 
-
 
 // (function(a){
 //     let array = a.filter(a => a > 5);
 //     console.log(array);
 // })([2,4,5,3,6,8,56,2,78]);
 
+// reduce
+// const numbers = [45, 4, 9, 16, 25];
+// const sum = numbers.reduce(function(total , val){
+// 			return total + val ;
+// });
+// console.log(sum);
+// // 99
+
 
 // const numbers = [45, 100];
-// const sum = numbers.reduceRight(function (total, val){
-// 			return total + val;
-// }, 3);
+// const sum = numbers.reduceRight(function ( tatol){
+// 			return tatol;
+// });
 // console.log(sum);
 // 99
 
@@ -70,6 +121,13 @@
 //     return total + v;
 // })
 // console.log(fun);
+
+// const numbers = [45, 4, 9, 16, 25];
+// const allOver18 = numbers.every(function (val){
+// 			return val > 18;
+// });
+// console.log(allOver18);
+// false
 
 
 // let sm = function(a)
@@ -81,18 +139,64 @@
 
 
 // find method --> returns only first element of array
+// const numbers = [78, 45, 4, 9, 16, 25 , 56];
+// const first = numbers.find(function (val){
+// 			return val > 18;
+// });
+// console.log(first);
+// // 25
 
-// let x = [2,6,5,9,8];
+// const numbers = [78, 45, 4, 9, 16, 25 , 56];
+// const fun = numbers.find(function(val){
+//     return val > 10;
+// })
+// console.log(fun);
+
+
+// let num = [2,4,,7,6,54,8,0];
+// console.log(num.find(num => num > 5));
+// function findn(num)
+// {
+//     let z = num.find(num => num > 5);
+//     console.log(z);
+// }
+// findn(num);
+
+
+// let x = [25,6,5,9,8];
 // let z = x.findIndex(function(val){
 //     return val > 5;
 // })
 // console.log(z);
+
+// let x = [25,6,5,9,8];
+// console.log(x.findIndex(x => x > 10));
+
+// let val = [25,6,5,99,8];
+// function x(val)
+// {
+//     let z = val.findIndex(val => val > 55);
+//     console.log(z);
+// }
+// x(val);
 
 // array entries
 
 // let array = ['w','drow','main'];
 // let array2 = array.entries();
 // console.log(array2.next().val);
+
+
+// const array1 = ['a', 'b', 'c'];
+// const iterator1 = array1.entries();
+// console.log(iterator1.next().value); // [0, "a"]
+// console.log(iterator1.next().value); // [1, "b"]
+
+
+// const nums = ['hello' , 'worls' , 'i' , 'say' , 'this' , 'at' , 'last'];
+// for (const [index, num] of nums.entries()) {
+//   console.log(`Index: ${index} Value: ${num}`);
+// }
 
 
 // const array1 = ['a', 'b', 'c'];
