@@ -23,7 +23,7 @@
 // for (let p in arr)
 // {
 //     console.log(p + "=>" + arr[p]);
-//     // console.log(arr);
+    // console.log(arr);
 // }
 
 // let person = {
@@ -33,7 +33,7 @@
 // }
 // for(let k in person)
 // {
-//     console.log(person[k]);
+//     console.log(k + " " + person[k]);
 // }
 
 // for of loop

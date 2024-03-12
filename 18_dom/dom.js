@@ -17,13 +17,13 @@
 
 {
     // function findElement()
-    // {
+    {
     // const element = document.getElementById("id1");
     // element.innerHTML = "Textes...";
     // element.style.color = "red";
 
     // document.getElementById("id2").innerHTML = "hello world...".style.color = "red";
-    // }
+    }
 }
 
 //This can be possible only threw Variable declaration

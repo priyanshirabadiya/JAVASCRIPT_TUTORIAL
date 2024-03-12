@@ -1,6 +1,6 @@
 {
     // setTimeout(function , milliseconds);
-    // setTimeout(hello , 5000)
+    // setTimeout(hello , 1000)
 }
 // settimeout --> to run program only one time
 // setInterval --> to run program Repeatedly.
@@ -15,7 +15,7 @@
 
 // let id = setTimeout(hello , 1000);
 // let x = setInterval(hello , 1000);
-// clearInterval(x)
+// // clearInterval(x)
 // console.log(setTimeout(hello1 , 1000));
 // console.log(setInterval(hello , 1000));
 // console.log("this line show first");
@@ -30,23 +30,23 @@
 // let intervalid = setTimeout(greet , 3000);
 
 // console.log('Id:' + intervalid);
-// // clearTimeout(intervalid);
+// clearTimeout(intervalid);
 // console.log("stop time out ");
 
 
 // program to display time every 3 seconds
 
 // function showtime(){
-    // return new date and time 
-    // let datetime = new Date();
+//     // return new date and time 
+//     let datetime = new Date();
     
-    // return current local time
-    // let time = datetime.toLocaleTimeString();
-    // time = "hello pc";
-    // console.log(time);
+//     // return current local time
+//     let time = datetime.toLocaleTimeString();
+//     time = "hello pc";
+//     console.log(time);
 
-    // display time after 3 seconds
-    // setTimeout(showtime,1000);
+//     // display time after 3 seconds
+//     setTimeout(showtime,1000);
 // }
 // showtime();
 
@@ -99,7 +99,7 @@
 // program with settimeout()
 
 {
-    // program show the dalay in execuction
+    // // // program show the dalay in execuction
     // function greet(){
     //     console.log('Hello World');
     // }

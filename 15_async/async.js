@@ -28,7 +28,7 @@
 
 
 
-// Await is used in waiting untile first promise can't run
+// Await is used in waiting untile first promise is not run
 // in only simple settimeout method we see that if any promise is in waiting session than it's next line it's next line is run before promises line
 {
     // let promise = new Promise(function(resolve,reject){
@@ -39,7 +39,7 @@
     // async function asyncFunc(){
     //     // wait untill the promise resolve
     //     let result = await promise;
-    //     // console.log(result);
+    //     console.log(result);
     //     console.log('hello');
     // }
     // asyncFunc();
@@ -84,3 +84,5 @@ async function anyscfun(){
 }
 anyscfun();
 }
+
+

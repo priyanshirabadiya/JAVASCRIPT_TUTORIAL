@@ -18,13 +18,13 @@
     // const numerator = 100 , denomitor = 20;
 
     // try{
-        // console.log(numerator / denomitor);
- 
-    // forgot to define variable a 
+    //     console.log(numerator / denomitor);
+        
+    // // forgot to define variable a 
 
     // let a;
     // try{
-    //     // let a = 5;
+    //     let a = 5;
     // console.log(a);
     // console.log('Hello');
     // }
@@ -67,23 +67,23 @@
 // try...catch...throw
 
 {
-    // const number = 20;
-    // try{
-    //     if(number > 50)
-    //     {
-    //         console.log('success');
-    //     }
-    //     else
-    //     {
-    //         throw new Error('Number is low'); 
-    //     }
-    //     // if throw executes, the below code does not execute
-    //     console.log('hello');
-    // }
-    // catch(error)
-    // {
-    //     console.log('Catch An error');
-    //     console.log('Error message'+ error);
-    // }
+    const number = 20;
+    try{
+        if(number > 50)
+        {
+            console.log('success');
+        }
+        else
+        {
+            throw new Error('Number is low'); 
+        }
+        // if throw executes, the below code does not execute
+        console.log('hello');
+    }
+    catch(error)
+    {
+        console.log('Catch An error');
+        console.log('Error message'+ error);
+    }
 }
 

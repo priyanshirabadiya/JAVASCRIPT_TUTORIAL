@@ -1,15 +1,19 @@
-let person = {
-    firstname : "priyanshi",
-    lastname: "rabadiya",
-    email: "priyanshi.in"
-}
+// let person = {
+//     firstname : "priyanshi",
+//     lastname: "rabadiya",
+//     email: "priyanshi.in",
+//     address : { 
+//         line :" klpla"
+//     },
+//     gender : "male"
+// }
 
 // console.log(person);
 
-// dot notation
+// // dot notation
 // console.log(person.email);
 
-// ["key"]
+// // ["key"]
 // console.log(person["lastname"],person["firstname"],person["email"]);
 
 // log thorugh convert in array
@@ -20,13 +24,14 @@ let person = {
 // person.gender = "female";
 // person.address = {
 //     line : "208,varaccha",
-    // city = { 
-    //     area : "varaccha",
-    //     chowk : "yogi chowk"
-    // },
+//     // address = { 
+//     //     area : "varaccha",
+//     //     chowk : "yogi chowk"
+//     // },
 //     state : "gujrat"
-// }
+// // }
 // person.hobby = ['reading','music','dancing','playing'];
+// console.log(person);
 // console.log(person.email,person.address);
 // console.log(person.gender);
 // console.log(person["hobby"]);
@@ -51,10 +56,14 @@ let person = {
 //     this.maker = maker;
 //     this.engine = engine;
 // }
-// let car  = new hicle('GT','BMW','1998cc');
-// console.log(car.name);
-// console.log(car.maker);
-// Property accessors
-// console.log(car.name);
-// console.log(car.maker);
-// console.log(car['engine']);
+// console.log(hicle);
+let hicle = {
+    Fname : "dsd"
+}
+let car  = new hicle('GT','BMW','1998cc');
+console.log(car.name);
+console.log(car.maker);
+// // Property accessors
+console.log(car.name);
+console.log(car.maker);
+console.log(car['engine']);
