@@ -6,9 +6,7 @@
 //         return "hello" + " " + this.name;
 //     }
 // };
-
 // let obj = new person('john');
-
 // console.log(obj);
 // console.log(obj.name);
 // // console.log(obj.display);
@@ -45,19 +43,27 @@
 // first_person.age = 25;
 
 // console.log(first_person.age); // output: 25
-// console.log(second_person.age); // output: 25
+// // console.log(second_person.age); // output: 25
 
+// const obj = {
+//     anme : "cjsdi",
+//     rno : 2
+// }
+// const obj2 = obj;
+// obj2.anme = "mital";
+// console.log(obj.anme);
+// console.log(obj2.anme);
 
 // deep  copy
 
-// const first_person = {
-//     name: "Jack",
-//     age: 24,
-// };
+const first_person = {
+    name: "Jack",
+    age: 24,
+};
 
-// const second_person = { ...first_person };
-// second_person.age = 25;
+const second_person = { ...first_person };
+second_person.age = 25;
 
-// console.log(first_person.age); // output: 24
-// console.log(second_person.age); // output: 25
+console.log(first_person.age); // output: 24
+console.log(second_person.age); // output: 25
 

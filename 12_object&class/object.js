@@ -1,14 +1,14 @@
-// let person = {
-//     firstname : "priyanshi",
-//     lastname: "rabadiya",
-//     email: "priyanshi.in",
-//     address : { 
-//         line :" klpla"
-//     },
-//     gender : "male"
-// }
+let person = {
+    firstname : "priyanshi",
+    lastname: "rabadiya",
+    email: "priyanshi.in",
+    address : { 
+        line :" klpla"
+    },
+    gender : "male"
+}
 
-// console.log(person);
+console.log(person);
 
 // // dot notation
 // console.log(person.email);
@@ -57,13 +57,13 @@
 //     this.engine = engine;
 // }
 // console.log(hicle);
-let hicle = {
-    Fname : "dsd"
-}
-let car  = new hicle('GT','BMW','1998cc');
-console.log(car.name);
-console.log(car.maker);
+// let hicle = {
+//     Fname : "dsd"
+// }
+// let car  = new hicle('GT','BMW','1998cc');
+// console.log(car.name);
+// console.log(car.maker);
 // // Property accessors
-console.log(car.name);
-console.log(car.maker);
-console.log(car['engine']);
+// console.log(car.name);
+// console.log(car.maker);
+// console.log(car['engine']);
