@@ -13,13 +13,14 @@
 //     console.log("this is setimeout");
 // }
 
-// let id = setTimeout(hello , 1000);
+// let id = setTimeout(hello1 , 1000);
 // let x = setInterval(hello , 1000);
 // // clearInterval(x)
-// console.log(setTimeout(hello1 , 1000));
-// console.log(setInterval(hello , 1000));
 // console.log("this line show first");
 // console.log(id);
+// console.log(x);
+// console.log(setTimeout(hello1 , 1000));
+// console.log(setInterval(hello , 1000));
 
 // set timeout method returns the intervak id.
 
@@ -28,25 +29,30 @@
 //     console.log("hello world");
 // }
 // let intervalid = setTimeout(greet , 3000);
+// console.log(intervalid);
 
-// console.log('Id:' + intervalid);
+// console.log(setTimeout("hello",1000));
+
+
 // clearTimeout(intervalid);
+// console.log( intervalid);
 // console.log("stop time out ");
 
 
 // program to display time every 3 seconds
 
 // function showtime(){
-//     // return new date and time 
-//     let datetime = new Date();
+    // return new date and time 
+    // let datetime = new Date();
     
-//     // return current local time
-//     let time = datetime.toLocaleTimeString();
-//     time = "hello pc";
-//     console.log(time);
+    // return current local time
+    // let time = datetime.toLocaleTimeString();
+    // time = "hello pc";
+    // console.log(datetime);
+    // console.log(time);
 
-//     // display time after 3 seconds
-//     setTimeout(showtime,1000);
+    // display time after 1 seconds
+    // setTimeout(showtime,1000);
 // }
 // showtime();
 
@@ -58,7 +64,7 @@
 
 // Use set timeout method
 
-    // program to set the settimeout() method
+    //// program to set the settimeout() method
     // let count = 0;
     // function incresecount(){
     //     // incresing count by 1
@@ -66,7 +72,7 @@
     //     console.log(count);
     // }
     // let id = setTimeout(incresecount, 1000);
-    // let id = setInterval(incresecount, 1000);
+    // // let id = setInterval(incresecount, 1000);
     // clearTimeout(id);
     // console.log(id);
     // incresecount();
@@ -91,8 +97,7 @@
     //     console.log('hello' + ' ' + name + ' ' + lastname + ' ' + c);
     // }
     // // passing argument to settimeout
-
-    // setTimeout(greet , 1000 , 'john' , 'Doe','hero','singer' , 'From newyourk');
+    // setTimeout(greet,1000,'john','Doe','hero','singer','From newyourk');
 }
 
 // javascript call back function
@@ -150,7 +155,7 @@
     //     }
     // });
 
-    // // console.log(countvalue);
+    // //  console.log(countvalue);
 
     // countvalue.then((result)=>console.log(result))
     // .catch((err)=>console.log(err))
