@@ -18,24 +18,25 @@
 }
 
 
-{
+// {
 
-    // function hello()
-    // {
-        // 'use strict';
+//     function hello()
+//     {
+//         'use strict';
 
-        // String = 'hello';
-        // console.log(String);
+//         String = 'hello';
+//         console.log(String);
 
-        // this string give code will not cause an error if there is not 'use strict';
-        // string = 'hello';
-        // console.log(string);
+//        //// this string give code will not cause an error if there is not 'use strict';
+//          string = 'hello';
+//         console.log(string);
 
-        // string = 'hello';
-        // console.log(string);
-    // }
-    // hello();
-}
+//         string = 'hello';
+//         console.log(string);
+//     }
+//     hello();
+// }
+
 
 // things not allowed in strict mode
 // 1. Undeclare variable is not allowed
@@ -73,7 +74,7 @@
 
     // console.log(Object.defineProperty(obj1 , 'x' , {value :42 , writable : false}))
 
-    // Assign to non- writable property
+    // // Assign to non- writable property
     // console.log(Object.x = 9) //throw an error 
 }
 
@@ -81,12 +82,10 @@
 
 {
     // 'use strict';
-
-    // let obj2 = { get x() { return 17;}};
-
+    // let obj2 = { get x() 
+    //     { return 17;}
+    // };
     //  obj2.x = 20;
-
-    // console.log(obj2);
-
+    // console.log(obj2.x);
 }
 

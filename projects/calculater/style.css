@@ -1,0 +1,45 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.text-center{
+    text-align: center;
+}
+
+.row{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    padding: 23px;
+    margin: 0 3px 0 3px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: larger;
+}
+.button{
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.row{
+    margin: 5px;
+    
+}
+.row input{
+    height: 45px;
+    width: 255px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: larger;
+    padding: 2px;
+    margin-bottom: 2px;
+}
