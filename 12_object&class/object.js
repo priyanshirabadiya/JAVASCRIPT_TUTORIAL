@@ -1,14 +1,14 @@
-let person = {
-    firstname : "priyanshi",
-    lastname: "rabadiya",
-    email: "priyanshi.in",
-    address : { 
-        line :" klpla"
-    },
-    gender : "male"
-}
+// let person = {
+//     firstname : "priyanshi",
+//     lastname: "rabadiya",
+//     email: "priyanshi.in",
+//     address : { 
+//         line :" klpla"
+//     },
+//     gender : "male"
+// }
 
-console.log(person);
+// console.log(person);
 
 // // dot notation
 // console.log(person.email);
@@ -24,24 +24,26 @@ console.log(person);
 // person.gender = "female";
 // person.address = {
 //     line : "208,varaccha",
-//     // address = { 
-//     //     area : "varaccha",
-//     //     chowk : "yogi chowk"
-//     // },
+    
+    // address = { 
+    //     area : "varaccha",
+    //     chowk : "yogi chowk"
+    // },
 //     state : "gujrat"
-// // }
+// }
 // person.hobby = ['reading','music','dancing','playing'];
 // console.log(person);
 // console.log(person.email,person.address);
 // console.log(person.gender);
 // console.log(person["hobby"]);
+// console.log(person.hobby);
 // console.log(person.hobby[2]);
 // console.log(person["hobby"]["2"]);
 
 // console.log(person["address"]);
 // console.log(person["address"]["line"]);
 // console.log(person.address.line);
-// console.log(person.address.city.state);
+// console.log(person.address.city.state); //error
 
 // delete person.gender;
 // console.log(person);
@@ -50,20 +52,20 @@ console.log(person);
 
 
 // object create methods
-// function hicle(name,maker,engine)
-// {
-//     this.name = name;
-//     this.maker = maker;
-//     this.engine = engine;
-// }
-// console.log(hicle);
+function hicle(name,maker,engine)
+{
+    this.name = name;
+    this.maker = maker;
+    this.engine = engine;
+}
 // let hicle = {
 //     Fname : "dsd"
 // }
-// let car  = new hicle('GT','BMW','1998cc');
+// console.log(hicle);
+let car = new hicle('GT','BMW','1998cc');
+console.log(car.name);
+console.log(car.maker);
+//// Property accessors
 // console.log(car.name);
 // console.log(car.maker);
-// // Property accessors
-// console.log(car.name);
-// console.log(car.maker);
-// console.log(car['engine']);
+console.log(car['engine']);
