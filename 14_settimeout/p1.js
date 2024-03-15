@@ -42,16 +42,16 @@
 // program to display time every 3 seconds
 
 // function showtime(){
-    // return new date and time 
+    //return new date and time 
     // let datetime = new Date();
     
-    // return current local time
+  //  return current local time
     // let time = datetime.toLocaleTimeString();
     // time = "hello pc";
     // console.log(datetime);
     // console.log(time);
 
-    // display time after 1 seconds
+// // display time after 1 seconds
     // setTimeout(showtime,1000);
 // }
 // showtime();
@@ -158,7 +158,10 @@
     // //  console.log(countvalue);
 
     // countvalue.then((result)=>console.log(result))
-    // .catch((err)=>console.log(err))
+    // .catch((err)=>console.log(err + "xfjiojdios"))
+
+    // console.log("adfhsiod");
+
 }
 
 // then method()
