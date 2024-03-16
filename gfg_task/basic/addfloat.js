@@ -127,18 +127,38 @@
 
 
 
-function Language() {
-	let first = 'HTML',
-		second = 'CSS',
-		Third = 'Javascript'
-	return {
-		first,
-		second,
-		Third
-	};
-}
+// function Language() {
+// 	let first = 'HTML',
+// 		second = 'CSS',
+// 		Third = 'Javascript'
+// 	return {
+// 		first,
+// 		second,
+// 		Third
+// 	};
+// }
 // console.log(Language());
-let { first, second, Third } = Language();
+// let { first, second, Third } = Language();
 // console.log(first);
 // console.log(second);
 // console.log(Third);
+
+
+// let x = 150;
+// 	if(x > 100)
+// 		let x = 1;
+// 	console.log(x);
+
+// const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     fullName: function () {
+//             return this.firstName + " " + this.lastName;
+//     }
+// }
+// const member = {
+//     firstName: "Hege",
+//     lastName: "Nilsen",
+// }
+// let fullName = person.fullName.bind(member); // Hege Nilsen
+
