@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="word-counter.css" />
+    <title>Text Counter</title>
+  </head>
+  <body>
+    <div class="app-container">
+        <div>
+          <div class="container">
+            <div>
+              <textarea name="text-field" id="text-field" cols="30" rows="10" maxlength="99999" placeholder="Type Something..."
+              ></textarea>
+            </div>
+  
+            <div class="counter-container">
+              <div class="counters">
+                <h2>Words</h2>
+                <h4 id="words-counter">0</h4>
+              </div>
+              <div class="counters">
+                <h2>Space</h2>
+                <h4 id="space-counter">0</h4>
+              </div>
+              <div class="counters">
+                <h2 id="chars-txt">Chars</h2>
+                <h4 id="chars-counter">0</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="animation-gif">
+            <lottie-player
+              src="https://assets10.lottiefiles.com/private_files/lf30_5bsxhzst.json" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></lottie-player>
+          </div>
+        </div>
+      </div>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="word-counter.js"></script>
+  </body>
+</html>

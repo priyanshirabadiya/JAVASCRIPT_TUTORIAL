@@ -1,0 +1,27 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.watch{
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 100px;
+}
+.time{
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.controls button{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(76, 90, 216);
+    color: white;
+    font-size: large;
+}
