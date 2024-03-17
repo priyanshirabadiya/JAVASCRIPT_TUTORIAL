@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Counter</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            padding: 50px 100px;
+        }
+        h1{
+            background-color: rgb(128, 41, 241);
+            text-align: center;
+            color: white;
+        }
+        #textbox{
+            width: 100%;
+        }
+        p{
+            text-align: center;
+            background-color:rgb(128, 41, 241) ;
+            /* height: 25px; */
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Word Counter</h1>
-        <input type="text" id="text">
-        <!-- <textarea id="text" placeholder="Type or paste your text here..."></textarea> -->
-        <button id="countBtn">Count Words</button>
-        <div id="result"></div>
-    </div>
-    <script src="javascript.js"></script>
+    <h1>word and character counter</h1>
+
+    <textarea  id="textbox" cols="30" rows="10"></textarea>
+    <p>
+        <span id="word">0</span> Words and 
+        <span id = "char">0</span> characters
+    </p>
+
+<script src="javascript.js"></script>
 </body>
 </html>

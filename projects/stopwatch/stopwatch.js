@@ -1,5 +1,4 @@
 let x = null; // Define x globally
-
 function showtime() {
     let data = new Date();
     let hours = data.getHours() > 12 ? data.getHours() - 12 : data.getHours();
@@ -15,7 +14,7 @@ function playwatch() {
 }
 
 function stopwatch() {
-    if (x) {
+    if (x){
         clearInterval(x); 
         x = null; 
     }
@@ -24,5 +23,7 @@ function stopwatch() {
 function resetwatch(){
     if(!x){
     x = setInterval(showtime, 1000);
-    }
+    }   
 }
+
+
