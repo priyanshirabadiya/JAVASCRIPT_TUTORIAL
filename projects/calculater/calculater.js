@@ -29,39 +29,33 @@
 
 
 
-let txt = "";
+
+
+var string = ""
 let buttons = document.querySelectorAll(".button");
-
 let arr = Array.from(buttons);
-
 arr.forEach(x => {
-    x.addEventListener('click',element =>{
-        if(element.target.innerHTML == "="){
-            txt = eval(txt);
-            document.querySelector('input').value = txt;
+    x.addEventListener('click',event =>{
+        if(event.target.innerHTML == "=")
+        {
+            string = eval(string);
+            document.querySelector('input').value = string;
         }
-        else if(element.target.innerHTML == "AC"){
-            txt = "";
-            document.querySelector('input').value = txt;
+        else if(event.target.innerHTML == "AC"){
+            string = "";
+            document.querySelector('input').value = string;
         }
-        else if(element.target.innerHTML == 'C'){
-            txt = txt.substring(0 , txt.length - 1);
-            document.querySelector('input').value = txt;
+        else if(event .target. innerHTML == "C"){
+            string = string.substring(0,string.length - 1);
+            document.querySelector('input').value = string;
         }
         else{
-            console.log(element.target);
-            txt = txt + element.target.innerHTML;
-            document.querySelector('input').value = txt;
+            console.log(event.target);
+            string = string + event.target.innerHTML;
+            document.querySelector('input').value = string;
         }
     })
 })
-
-
-
-
-
-
-
 
 
 
