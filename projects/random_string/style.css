@@ -1,33 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container {
-    text-align: center;
-  }
-  
-  #randomStringDisplay {
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-  
-  #generateButton {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  #generateButton:hover {
-    background-color: #0056b3;
-  }
-  
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+h1{
+  margin-top: 250px;
+
+}
+#randomString {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+button {
+  font-size: 16px;
+  padding: 20px;
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+  font-size: larger;
+  border: 0;
+  cursor: pointer;
+}
+
+
+.container{
+
+  height: 120px;
+  width: auto;
+  background-color: gainsboro;
+
+}

@@ -31,31 +31,31 @@
 
 
 
-var string = ""
-let buttons = document.querySelectorAll(".button");
-let arr = Array.from(buttons);
-arr.forEach(x => {
-    x.addEventListener('click',event =>{
-        if(event.target.innerHTML == "=")
-        {
-            string = eval(string);
-            document.querySelector('input').value = string;
-        }
-        else if(event.target.innerHTML == "AC"){
-            string = "";
-            document.querySelector('input').value = string;
-        }
-        else if(event .target. innerHTML == "C"){
-            string = string.substring(0,string.length - 1);
-            document.querySelector('input').value = string;
-        }
-        else{
-            console.log(event.target);
-            string = string + event.target.innerHTML;
-            document.querySelector('input').value = string;
-        }
-    })
-})
+// var string = ""
+// let buttons = document.querySelectorAll(".button");
+// let arr = Array.from(buttons);
+// arr.forEach(x => {
+//     x.addEventListener('click',event =>{
+//         if(event.target.innerHTML == "=")
+//         {
+//             string = eval(string);
+//             document.querySelector('input').value = string;
+//         }
+//         else if(event.target.innerHTML == "AC"){
+//             string = "";
+//             document.querySelector('input').value = string;
+//         }
+//         else if(event .target. innerHTML == "C"){
+//             string = string.substring(0,string.length - 1);
+//             document.querySelector('input').value = string;
+//         }
+//         else{
+//             console.log(event.target);
+//             string = string + event.target.innerHTML;
+//             document.querySelector('input').value = string;
+//         }
+//     })
+// })
 
 
 
@@ -126,6 +126,14 @@ arr.forEach(x => {
 // console.log(txt);
 
 // for of loop make this easy way
+// let txt =""
+// let  arr = [10 ,20 , 30 ,40];
+
+// for(let x of arr) {
+//     return x + 10; //error
+// }
+// console.log(txt);
+
 // for(let x of arr) {
 //     txt += x + 10;
 // }
@@ -150,30 +158,58 @@ arr.forEach(x => {
 
 // for of || foreach || for in methods can't return value
 // map method can return value
-
-// // let  arr = [10 ,20 , 30 , 40];
-// let e = [];
-//  arr.forEach(x => {
-//     // return x * 2; 
-//     //  console.log(x * 2);
-//     // txt += x * 10;
-//     // console.log(x * 2);
-//     e.push(x*2)
+// let txt =""
+// let  arr = [10 ,20];
+// let foreach =  arr.forEach(x => {
+//     return txt += x; //Undefined -> We can't return as direct value
+//     // txt = x * 2;    //[20,40]    -> Need to store in another variable  
+//     // console.log(txt);
 // })
+// console.log(txt);
+
+
+
+// let txt = "";
+// const arr2 = [10, 20, 30];
+// arr.forEach(x => {
+//     return txt += x;
+// });
+// console.log(txt);
+
+
+
+
+// let e = "";
+// let foreach =  arr.forEach(x => {
+    // return x * 2; 
+    //  console.log(x * 2);
+    // txt = x * 10;
+// //     // console.log(x * 2);
+// //     e.push(x*2)
+// console.log(txt);
+// })
+// console.log(foreach);
 // console.log(e);
 
 
 
+
+
+// const arr = [10,20,30];
 // arr.forEach(x => {
-//     txt += x;
+// //  txt += x ;
+//  return txt += x;
 // })
+// console.log (txt);
+
 // document.getElementById("demo").innerHTML = txt;
 
 // console.log(e);
 
-// let map = arr.map(m => {
-//         return m * 2;
-// })
+// let demomap = arr.map(x => {
+//         return x * 2;
+//         // txt = x;
+//     })
+// console.log(demomap);
+// document.getElementById("demo").innerHTML =txt;
 // console.log(map);
-
-
