@@ -8,8 +8,10 @@
 //     // when someone click then arrow - element function work
 //     x.addEventListener('click',event => {
 //         if(event.target.innerHTML == '='){
+//             { 
 //             string = eval(string);
-//             document.querySelector('input').value = string;
+//             document.querySelector('input').value = "= " + string;
+//             }
 //         }
 //         else if(event.target.innerHTML == 'AC'){
 //             string = "";
@@ -29,6 +31,80 @@
 
 
 
+// let string = "";
+
+// let buttons = document.querySelectorAll('.button');
+
+// let arr = Array.from(buttons);
+
+// arr.forEach(x => {
+//     // when someone click then arrow - element function work
+//     x.addEventListener('click', event => {
+//         if (event.target.innerHTML === '=') {
+//             if (string === "") {
+//                 document.querySelector('input').value = "0";
+//             } else {
+//                 try {
+//                     string = eval(string);
+//                     document.querySelector('input').value = "= " + string;
+//                 } catch(error){
+//                     // error = eval(string);
+//                     document.querySelector('input').value = "= " + string;
+//                 }
+//             }
+//         } else if (event.target.innerHTML === 'AC') {
+//             string = "";
+//             document.querySelector('input').value = string;
+//         } else if (event.target.innerHTML === 'C') {
+//             string = string.substring(0, string.length - 1);
+//             document.querySelector('input').value = string;
+//         } else {
+//             string = string + event.target.innerHTML;
+//             document.querySelector('input').value = string;
+//         }
+//     })
+// })
+
+
+let string = "";
+
+let buttons = document.querySelectorAll('.button');
+
+let arr = Array.from(buttons);
+
+arr.forEach(x => {
+    // when someone click then arrow - element function work
+    x.addEventListener('click', event => {
+        if (event.target.innerHTML === '=') {
+            if (string === "") {
+                document.querySelector('input').value = "0";
+            } else {
+                // Check if the last character of the expression is an operator
+                // let lastChar = string[string.length - 1];
+                let last = string[string.length-1] = "+"||"-"||"-"||"%";
+                if (last) {
+                    string = string.slice(0, -1); 
+                }
+                try {
+                    let result = eval(string);
+                    string = result.toString(); // Update string with the result
+                    document.querySelector('input').value = "= " + result;
+                } catch(error){
+                    document.querySelector('input').value = "= " + string;
+                }
+            }
+        } else if (event.target.innerHTML === 'AC') {
+            string = "";
+            document.querySelector('input').value = string;
+        } else if (event.target.innerHTML === 'C') {
+            string = string.substring(0, string.length - 1);
+            document.querySelector('input').value = string;
+        } else {
+            string = string + event.target.innerHTML;
+            document.querySelector('input').value = string;
+        }
+    })
+})
 
 
 // var string = ""

@@ -2,7 +2,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-  }
+}
 
 .text-center{
     text-align: center;
@@ -34,6 +34,9 @@ body {
     margin: 5px;
     
 }
+::placeholder{
+    color: black !important;
+}
 .row input{
     height: 45px;
     width: 255px;
@@ -43,3 +46,4 @@ body {
     padding: 2px;
     margin-bottom: 2px;
 }
+
