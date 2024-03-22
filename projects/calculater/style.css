@@ -7,43 +7,63 @@ body {
 .text-center{
     text-align: center;
 }
+.main-container{
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 190, 190);
+    margin-left: 550px;
+    margin-top: 20px;
+    padding: 5px 0 5px 5px;
+    border-radius: 5px;
+}
 
 .row{
-    margin: auto;
+    padding: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.main{
+    border-radius: 10px !important;
+}
+
 .button{
-    padding: 23px;
-    margin: 0 3px 0 3px;
-    border: 2px solid black;
-    border-radius: 10px;
     cursor: pointer;
     font-size: larger;
-}
-.button{
-    height: 60px;
-    width: 60px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    height: 80px;
+    width: 100px;
     align-items: center;
     display: flex;
     justify-content: center;
+    border-radius: 5px;
+    padding: 10px !important;
+    margin-right: 5px;
 }
-.row{
-    margin: 5px;
-    
-}
+
 ::placeholder{
-    color: black !important;
+    color: white !important;
 }
+
 .row input{
-    height: 45px;
-    width: 255px;
-    border: 2px solid black;
+    height: 55px;
+    width: 410px;
+    border: 0px solid white;
     border-radius: 5px;
     font-size: larger;
-    padding: 2px;
-    margin-bottom: 2px;
-}
+    margin-left: -4px;
+    margin-bottom: 0.5px;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    outline: 0 !important;
+    padding: 5px;
+    padding-top: 0px !important;
+}   
 

@@ -132,7 +132,6 @@ size 	    Returns the number of elements in a Map
     // const sizes = Data.size;
     // console.log(Data.size);
     // console.log(sizes);
-
 }  
 
 // ----------------------------------delete mothod -------------------------------
