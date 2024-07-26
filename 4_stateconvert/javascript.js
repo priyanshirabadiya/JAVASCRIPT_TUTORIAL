@@ -154,7 +154,7 @@ if...else if...else statement
 
 
 // ----------------------new-lecture---------------------------
-
+      
 
 // Converting Variable to Numbers
 
@@ -219,6 +219,7 @@ parseInt() Parse its argument and returns a whole number
  
  Number.isInteger() Returns true if the argument is an integer
  Number.isSafeInteger() Returns true if the argument is a safe integer
+ 
  Number.parseFlaot() Convert a string to a number
  Number.parseInt() Convert a string to a whole number
  
@@ -239,16 +240,16 @@ parseInt() Parse its argument and returns a whole number
    //  let method9 = parseInt("5years 10");	
 
     
-   //  let method9 = Number.parseInt("-10");		
+   //  let method9  =  Number.parseInt("-10");		
    //  let method10 = Number.parseInt("-10.33");		
    //  let method11 = Number.parseInt("10");			
-    // let method12 = Number.parseInt("10.33");		
+   //  let method12 = Number.parseInt("10.33");		
    //  let method13 = Number.parseInt("10 6");		
    //  let method14 = Number.parseInt("10 years");		
    //  let method15 = Number.parseInt("years 10");		
-    
-    // console.log(method);
-    // console.log(method1);
+   
+   // console.log(method);
+   // console.log(method1);
    //  console.log(method4);
    //  console.log(method5);
    //  console.log(method6);
@@ -260,7 +261,8 @@ parseInt() Parse its argument and returns a whole number
    //  console.log(method2);
    //  console.log(method3);
    //  console.log(method11);
-    // console.log(method12);
+   //  console.log(method12);
+   //  console.log(method13);
  }
  
  

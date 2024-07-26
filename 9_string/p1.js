@@ -21,6 +21,11 @@
 // console.log(length);
 // console.log(length2);
 
+// const fruits = ["Banana", "Orange", "Apple", "Mango" ];
+
+// // At position 2, add "Lemon" and "Kiwi":
+// let ee = fruits.slice(1,4)
+// console.log(ee);
 
 
 

@@ -77,7 +77,7 @@ The syntax for Math any methods is : Math.method(number)
 //Example:-
 
 
-// let math9  = Math.trunc(10.99999)
+// let math9  = Math.trunc(-10.99999)
 // console.log(math9);
 
 		
@@ -89,9 +89,11 @@ The syntax for Math any methods is : Math.method(number)
 // let math10 = Math.sign(-0)
 // let math11 = Math.sign(-10)
 // let math12 = Math.sign(0) 
+// let math13 = Math.sign(5) 
 // console.log(math10);
 // console.log(math11);
 // console.log(math12);
+// console.log(math13);
 
 
 	

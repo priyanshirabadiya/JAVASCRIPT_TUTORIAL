@@ -6,33 +6,34 @@
 
 // asyns function example
 
-// async function f()
-// {
+// async function f() {
 //     console.log('Async function');
-//     return Promise.reject('rejected');
+//     return Promise.reject('resolved');
 // }
 
 // f().then((data) => console.log(data));
-// f().catch((data)=> console.log(data)); //error
+// f().catch((data) => console.log(data)); //error
+
 
 // this function returns a promise , you can use the chaining method then()
 
-// {   
-//     async function f(name){
-//         console.log('Async function');
-//         return Promise.resolve('resolve');
-//     }
-//     async function r(name){
-//         console.log('rejected');
-//         return Promise.reject('rejected');
-//     }
-//     f().then(function(result) { 
-//         console.log(result)
-//     }.catch(function(err){
-//         console.log(err);
-//     })
-//     )
-// }
+{   
+    async function f(name){
+        console.log('Async function');
+        return Promise.resolve('resolve');
+    }
+    async function r(name){
+        console.log('rejected');
+        return Promise.reject('rejected');
+    }
+    f().then(function(result) { 
+        console.log(result)
+    }.catch(function(err){
+        console.log(err);
+    })
+    )
+}
+
 
 // function resolveAfter2Seconds() {
 //     return new Promise((resolve) => {
@@ -48,7 +49,7 @@
 //     // Expected output: "resolved"
 //   }
 //   asyncCall();
-  
+
 // -----------------------------------------------------------------
 // let val = false;
 // function afterseconds2(){
@@ -155,27 +156,27 @@
 
 // ----in asyncronize function is also allow that resolve and reject any one condition at one time---------------------------------------
 {
-// let count = false;
-// let value = new Promise(function(resolve,reject){
-//     if(count){
-//     setTimeout(function(){
-//         resolve("resolved")},1000);
-//     }
-//     else{
-//         setTimeout(() => {
-//             reject("rejected")}, 1000);
-//     }
-// });
-// async function set(){ 
+    // let count = false;
+    // let value = new Promise(function(resolve,reject){
+    //     if(count){
+    //     setTimeout(function(){
+    //         resolve("resolved")},1000);
+    //     }
+    //     else{
+    //         setTimeout(() => {
+    //             reject("rejected")}, 1000);
+    //     }
+    // });
+    // async function set(){ 
 
-//     let x = value.then((result)=>console.log(result))
-//     .catch((err)=>console.log(err))
+    //     let x = value.then((result)=>console.log(result))
+    //     .catch((err)=>console.log(err))
     // let y = await value;
     // let y = await x;
     // console.log(y);
-// ------------------soluction---------
-//    await value.then((result)=>console.log(result))
-//     .catch((err)=>console.log(err))
+    // ------------------soluction---------
+    //    await value.then((result)=>console.log(result))
+    //     .catch((err)=>console.log(err))
 
     // console.log("hello");
     // console.log("this is wait untill value function is not execute");
@@ -228,46 +229,46 @@
 
 // program can be useful if multiple promises in this program 
 {
-// let val = false;
-// let promise = new Promise(function(resolve,reject){
-//     if(val){
-//         setTimeout(() => {
-//             resolve('resolved')}, 1000);}
-//     else{
-//         setTimeout(() => {
-//             reject('promise rejected')}, 1000);
-//     }
-// });
+    // let val = false;
+    // let promise = new Promise(function(resolve,reject){
+    //     if(val){
+    //         setTimeout(() => {
+    //             resolve('resolved')}, 1000);}
+    //     else{
+    //         setTimeout(() => {
+    //             reject('promise rejected')}, 1000);
+    //     }
+    // });
 
-// let promise1 = new Promise(function(resolve,reject){
-//     setTimeout(function (){
-//         resolve('promise one resolved')},3000); 
-// });
+    // let promise1 = new Promise(function(resolve,reject){
+    //     setTimeout(function (){
+    //         resolve('promise one resolved')},3000); 
+    // });
 
-// let promise2 = new Promise(function(resolve,reject){
-//     setTimeout(function (){
-//         resolve('promise two resolved')},1000); 
-// });
+    // let promise2 = new Promise(function(resolve,reject){
+    //     setTimeout(function (){
+    //         resolve('promise two resolved')},1000); 
+    // });
 
-// let promise3 = new Promise(function(resolve,reject){
-//     setTimeout(function (){
-//         resolve('promise three resolved')},5000); 
-// });
+    // let promise3 = new Promise(function(resolve,reject){
+    //     setTimeout(function (){
+    //         resolve('promise three resolved')},5000); 
+    // });
 
-// async function anyscfun(){
-//     await promise.then((result)=>console.log(result))
-//         .catch((err)=>console.log(err))
+    // async function anyscfun(){
+    //     await promise.then((result)=>console.log(result))
+    //         .catch((err)=>console.log(err))
 
-//     let result1 = await promise1;
-//     console.log(result1);
+    //     let result1 = await promise1;
+    //     console.log(result1);
 
-//     let result2 = await promise2;
-//     console.log(result2);
+    //     let result2 = await promise2;
+    //     console.log(result2);
 
-//     let result4 = await promise3;
-//     console.log(result4);
-// }
-// anyscfun();
+    //     let result4 = await promise3;
+    //     console.log(result4);
+    // }
+    // anyscfun();
 }
 
 

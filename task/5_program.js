@@ -14,3 +14,4 @@ let perfect = (a) =>{
      }
     }
 perfect(6);
+
