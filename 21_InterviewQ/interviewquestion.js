@@ -5,14 +5,10 @@
 // 4.Differences between var , let and const.
 
 
-
-
-
 // -------------------------------------------- copy --------------------------------------------
 
 // 1. what is perform when we do shallow copy or deep copy ?
 // => ans : There is copy value instaed of memory location
-
 
 // 2. Difference between shallow copy and deep copy.
 // =>  shallow copy is just copy only main object whereas in deep copy we can copy nested object also
@@ -21,7 +17,6 @@
 // => shallow copy => 1. Object.assign()
 //  2. Object destructuring
 // Deep copy => JSON.parse with JSON.STRINGIFY  => in this data and functions are not work to resolve this problem we can use lodash library or manualy you can do using for loop by copying every element to another file
-
 
 
 // -------------------------------------------- Map/set --------------------------------------------
@@ -90,6 +85,88 @@
 // nameF(10 , 10 , function(){
 //     console.log("Bye...");
 // });
+
+
+
+// ---------------------------------------------------------------------------------------------------------
+
+// 1. callback hell
+// 2. Promisis hell
+// 3. what is exception handling
+// 4. what syncronys and asyncronys
+// 5. tryu catch block
+// 6. call , apply , bind method in javascript
+// 7. javascript is single therated ot multi therated
+// 8. promises return function
+// 9. copywithin
+// 10. shallow / deep
+// summutenesly
+
+
+
+// A function can access all variables defined inside the function, like this
+
+// function myFunction() {
+//     let a = 4;
+//     return a * a;
+// }
+// console.log(myFunction());
+
+
+// let a = 4;
+// function myFunction() {
+//     return a * a;
+// }
+
+// console.log(myFunction());
+
+
+// function myFunction(){
+//     return 4 * 5;
+// }
+
+// console.log(myFunction());
+
+
+
+
+// let counter = 0;
+// // Function to increment counter
+// function add() {
+//   counter += 1;
+// }
+
+// // Call add() 3 times
+// console.log(add());
+// console.log(add());
+// console.log(add());
+
+
+
+
+// function add() {
+//     let counter = 0;
+//     counter += 1;
+//     return counter;
+// }
+
+// // Call add() 3 times
+// add();
+// add();
+// add();
+
+// windows + .
+
+
+
+
+
+
+
+
+
+
+
 
 
 
