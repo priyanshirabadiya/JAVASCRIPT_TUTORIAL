@@ -104,70 +104,129 @@
 
 
 
-// A function can access all variables defined inside the function, like this
+// -----------------------------------------------Callback hell----------------------------------------------------------
 
-// function myFunction() {
-//     let a = 4;
-//     return a * a;
-// }
-// console.log(myFunction());
+// Windows + . => for emojies
 
-
-// let a = 4;
-// function myFunction() {
-//     return a * a;
+// function cheessF(callback) {
+//     setTimeout(() => {
+//         const cheese = "🧀";
+//         console.log("Here is your chees", cheese);
+//         callback(cheese);
+//     }, 500)
 // }
 
-// console.log(myFunction());
-
-
-// function myFunction(){
-//     return 4 * 5;
+// function makeDough(cheese , callback) {
+//     setTimeout(() => {
+//         const dough = cheese + '🧇';
+//         console.log('Here is a dough', dough);
+//         callback(dough);
+//     }, 1000);
 // }
 
-// console.log(myFunction());
+// cheessF((cheese) => {
+//     makeDough(cheese, (dough) => {
+//         console.log("Got my dough", dough);
+//     })
+// });
 
 
 
-
-// let counter = 0;
-// // Function to increment counter
-// function add() {
-//   counter += 1;
+// function getRecipe(callback) {
+//     setTimeout(() => {
+//         const recipe = "Pasta Carbonara";
+//         callback(recipe);
+//     }, 1000);
 // }
 
-// // Call add() 3 times
-// console.log(add());
-// console.log(add());
-// console.log(add());
-
-
-
-
-// function add() {
-//     let counter = 0;
-//     counter += 1;
-//     return counter;
+// function getIngredients(recipe, callback) {
+//     setTimeout(() => {
+//         const ingredients = ["pasta", "eggs", "pancetta", "cheese"];
+//         callback(ingredients);
+//     }, 1000);
 // }
 
-// // Call add() 3 times
-// add();
-// add();
-// add();
+// function cookDish(ingredients, callback) {
+//     setTimeout(() => {
+//         const dish = "Delicious Pasta Carbonara";
+//         callback(dish);
+//     }, 1000);
+// }
 
-// windows + .
+// getRecipe(recipe => {
+//     console.log(recipe);
+//     // After 1 second it will call getingredients function
+//     // --------------------------------------------------------
+//     getIngredients(recipe, ingredients => {
+//         console.log(ingredients);
+//         // --------------------------------------------------------
+//         cookDish(ingredients, dish => {
+//             // console.log(ingredients);
+//             console.log(dish); // "Delicious Pasta Carbonara"
+//         });
+//         // --------------------------------------------------------
+//     });
+//     // --------------------------------------------------------
+// });
+
+// callback first to direct last function 
+
+// getRecipe(recipe => {
+//     console.log(recipe);
+//     // --------------------------------------------------------
+//     cookDish(recipe, dish => {
+//         console.log(dish); // "Delicious Pasta Carbonara"
+//     });
+// });
+
+
+// -------------------------------------------------------------------------callback hell another example
+
+// function maketea(callback) {
+//     setTimeout(() => {
+//         const water = "Add water.";
+//         callback(water);
+//     }, 500)
+// }
+
+// function addsuger(water, callback) {
+//     setTimeout(() => {
+//         const suger = "Add one cup of suger.";
+//         callback(suger);
+//     }, 500);
+// }
+
+// function addmilk(suger, callback) {
+//     setTimeout(() => {
+//         const milk = "Add one liter milk in tea.";
+//         callback(milk);
+//     },500)
+// }
+
+// maketea(water => {
+//     console.log(water);
+//     addsuger(water, suger => {
+//         console.log(suger);
+//         addmilk(suger, milk => {
+//             console.log(suger,milk);
+//         })
+//     })
+// })
 
 
 
+// simple callback function
+
+function getdata(name ,callback)
+{
+    console.log("Hello" + name );
+    callback(name);
+}
 
 
+function callF(name){
+    console.log("Goodname is :" + name);
+}
 
 
-
-
-
-
-
-
-
-
+getdata(' Priyanshi' , callF );
