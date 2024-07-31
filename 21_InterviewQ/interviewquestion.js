@@ -217,16 +217,348 @@
 
 // simple callback function
 
-function getdata(name ,callback)
-{
-    console.log("Hello" + name );
-    callback(name);
-}
+// function getdata(name ,callback){
+//     console.log("Hello" + name );
+//     callback(name);
+// }
+// function callF(name){
+//     console.log("Goodname is :" + name);
+// }
+// getdata(' Priyanshi' , callF );
 
 
-function callF(name){
-    console.log("Goodname is :" + name);
-}
+// --------------------------------------------------------- Promises(resolve , reject) (then,catch,finally) in javascript
+// -------------cheese callback task in primises
+// function getcheese() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const cheese = "🧀";
+//             resolve(cheese);
+//         }, 500);
+//     })
+// }
+
+// function makedough(cheess) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const dough = cheess + "🧇";
+//             // resolve(dough); 
+//             reject("Error occurred");
+//         }, 500)
+//     })
+// }
 
 
-getdata(' Priyanshi' , callF );
+// function makepizza(dough) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const pizza = dough + "🍕";
+//             resolve(pizza);
+//         }, 500)
+//     })
+// }
+
+// using aysnc & await
+
+// async function orderpizza(){
+//     try{
+//     const cheese = await getcheese();
+//     console.log('Here is your cheese');
+//     const dough = await makedough(cheese);
+//     console.log('Here is your dough');
+//     const pizza = await makepizza(dough);
+//     console.log('Here is your pizza');
+//     }
+//     catch(err) {
+//         console.log(err);
+//     }
+//     // finally block
+//     console.log('Proccess is done');
+// }
+
+// orderpizza();
+
+// getcheese()
+// .then((cheese) => {
+//     console.log("Here is your cheese" + cheese);
+//     return makedough(cheese);
+// })
+// .then((dough) => {
+//     console.log('Here is your dough' + dough );
+//     return makepizza(dough);
+// })
+// .then((pizza) => {
+//     console.log('Here is your pizza' + pizza );
+// })
+// .catch(() => {
+//     console.log('There is an error');
+// })
+// .finally(() => {
+//     console.log('Proccess is done');
+// })
+// ---------------------------------------------------------
+
+// new Promise(function(resolve , reject){
+//     setTimeout(() => {
+//         console.log('First Line line for execute');
+//         resolve();
+//     } ,1000)
+// }).then(() => {
+//     console.log('Function is resolved');
+// })
+
+// let promise1 = new Promise((resolve , reject) => {
+//     setTimeout(() => {
+//         console.log('Variable promise is execute');
+//         resolve();
+//     },1000);
+// })
+// promise1.then(() => {
+//     console.log('variable function 2 is resolved');
+// } )
+
+
+// const returnval = new Promise((resolve , reject) => {
+//     setTimeout(() => {
+//         console.log("return promise is returned");
+//         resolve({user: "priyashi" , mail : "abc@gmail.com" })
+//     },1000)
+// })
+
+// returnval.then((user) => {
+//     console.log(user);
+// } )
+
+// const promiseFour = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//         let error = true;
+//         if (!error) {
+//             resolve({ username: "priyanshi", password: "123" })
+//         }
+//         else {
+//             reject("ERROR:Something went wrong");
+//         }
+//     })
+// })
+
+// promiseFour.then((user) => {
+//     console.log(user);
+//     return user.username;
+// }).then((username) => {
+//     console.log(username);
+// }).catch((error) => {
+//     console.log(error);
+// }).finally(() => {
+//     console.log('The is finally either resolve or rejected');
+// })
+
+// Finally part is execute only and when Promise give one result either it is resolve or it is reject then an only finally wii execute
+
+
+// -------------------------------------------------------fetch api
+
+
+// async function getusers(){
+//     try{
+//     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     const data = await response.json();
+//     console.log(data);
+//     }
+//     catch{
+//         console.log(error);
+//     }
+// }
+// getusers()
+
+
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//     .then((response) => {
+//         return response.json();
+//     })
+//     .then((data) => {
+//         console.log(data);
+//     })
+//     .catch((error) => { 
+//         console.log(error) 
+//     })
+
+// interview question 
+
+
+// 1 What is promises?
+
+// In JavaScript, a Promise is an object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed. The possible outcomes here are similar to that of promises in real life.
+
+
+
+// Finally will not run if promises is not resove or reject
+// let pendingPromise = new Promise((resolve, reject) => {
+//     // This promise will remain pending because neither resolve nor reject is called
+//     // console.log("This promise is pending...");
+//     // Commented out resolution or rejection
+//     setTimeout(() => resolve("Resolved!"), 5000);  // Uncomment to eventually resolve
+//     // setTimeout(() => reject("Rejected!"), 5000);   // Uncomment to eventually reject
+// });
+
+// // Attach then, catch, and finally to the promise
+// pendingPromise
+//     .then((result) => {
+//         console.log(result);  // This will not run unless the promise is resolved
+//     })
+//     .catch((error) => {
+//         console.error(error);  // This will not run unless the promise is rejected
+//     })
+//     .finally(() => {
+//         console.log("This will run when the promise settles.");  // This will not run while the promise is pending
+//     });
+
+
+// new Promise((resolve, reject) => {
+//     throw new Error("error");
+// })
+// .catch(err => console.log(err))
+//     .finally(() => console.log("Promise ready")) // triggers first
+
+
+
+// new Promise(function (resolve, reject) {
+//     resolve(1);
+// })
+//     .then(result => {
+//         alert(result)
+//         return new Promise((resolve, reject) => {
+//             setTimeout(() => {
+//                 resolve(result * 5);
+//             },1000)
+//         })
+//     })
+//     .then(result2 => {
+//         alert(result2);
+//         return new Promise((resolve, reject) => {
+//             resolve(result2 * 5);
+//         })
+//     })
+//     .then(result3 => alert(result3))
+//     .catch(error => console.log(error))
+
+
+
+// new Promise((resolve, reject) => {
+//     throw new Error("Whoops!");
+// }).catch( error => console.log(error));
+
+
+
+// new Promise((resolve, reject) => {
+
+//     // throw new Error("Whoops!");
+//     reject('Whoops something went wrong.N')
+// }).catch(function (error) {
+//         alert("Can't handle such error");
+//         throw error; // throwing this or another error jumps to the next catch
+
+// }).then(function () {
+//     console.log("resolved");
+// }).catch(error => { // (**)
+
+//     alert(`The unknown error has occurred: ${error}`);
+//     // don't return anything => execution goes the normal way
+
+// });
+
+// ------------------------------------------------------- async / await
+
+
+// function api() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log('Whether data');
+//             resolve(200);
+//         }, 1000);
+//     })
+// }
+// await mean to wait untill it find data : program aagal na vadva joiae jya sudhi temne awaited data no mle await pchi nu block thai thase jyasudhi aemne awaited data nai male data malse atle aagal code run thase ae khali function maj work karshe inshort meaning of await is to wait untill function can't find data
+
+// async must need a function we need to create function then try to create anonomous function 
+
+// async function getdata() {
+//     await api();
+//     console.log('Getting data1...');
+//     await api();
+//     console.log('Getting data2...');
+//     await api();
+//     console.log('Getting data3...');
+//     console.log('Data after waiting for fetching data');
+// }
+// getdata();
+
+// // by using .then
+// getdata.then(() => {
+//     console.log('Must run last');
+// })
+// // by using again  async function
+// async function main() {
+//     await getdata();
+//     console.log('Must run last');
+// }
+
+
+// IIFE = anonomous function which we use only one time
+
+// (async function () {
+//     await api();
+//     console.log('Getting data1...');
+//     await api();
+//     console.log('Getting data2...');
+//     await api();
+//     console.log('Getting data3...');
+//     console.log('Data after waiting for fetching data');
+// })();
+// getdata();
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------ Lexical scoping / clouser
+
+// function outerF(){
+//     Fname = "priyanshi";
+//     // console.log(secreat);  //error
+//     function innerF(){
+//         let secreat = "123;"
+//         console.log("First inner" ,Fname);
+//     }
+//     function innerFY(){
+//         console.log("Second inner",Fname);
+//         console.log(secreat);
+//     }
+//     innerF();
+//     innerFY();
+// }
+
+// outerF();
+
+
+// function nameF(){
+//     let nameFY = "Hello";
+// }
+// console.log(nameFY);
+
+
+// function outerF(){
+//     const nameF = "priyanshi";
+//     function displayName(){
+//         console.log(nameF);
+//     }
+//     return displayName;
+// }
+
+// // const myFun = outerF();
+// // myFun();
+
+// outerF();
