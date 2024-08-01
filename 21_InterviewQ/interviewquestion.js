@@ -30,7 +30,7 @@
 
 // -------------------------------------------- Null / undefine / NaN --------------------------------------------
 
-// 1. null => Null value represents the intent absence of any object.
+// 1. null => Null value represents the intentional absence of any object.
 
 // 2. Undefined => A variable that has not been assigned value that is called undefine.
 
@@ -180,7 +180,10 @@
 // });
 
 
-// -------------------------------------------------------------------------callback hell another example
+// -----------------------------------------------------callback hell another example
+
+// Callback hell is a phenomenon that happens when multiple callbacks are nested on top of each other. The two common ways of escaping the callback heare are by using promises and async/await. Promises mainly have three stages such as resolved, rejected, and pending. It makes the code more maintainable and understandable.
+
 
 // function maketea(callback) {
 //     setTimeout(() => {
@@ -228,7 +231,10 @@
 
 
 // --------------------------------------------------------- Promises(resolve , reject) (then,catch,finally) in javascript
-// -------------cheese callback task in primises
+
+// In JavaScript, a Promise is an object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed.
+
+// -------------cheese callback task by using primises
 // function getcheese() {
 //     return new Promise((resolve, reject) => {
 //         setTimeout(() => {
@@ -526,6 +532,12 @@
 
 // ------------------------------------------------ Lexical scoping / clouser
 
+// 1. what is clouser ?
+// => In JavaScript, a closure is a function that has access to variables in its outer (enclosing) function's scope, even after the outer function has finished executing.
+// => A closure in JavaScript is a function that has access to variables in its parent scope, even after the parent function has returned. Closures are created when a function is defined inside another function, and the inner function retains access to the variables in the outer function's scope.
+
+
+
 // function outerF(){
 //     Fname = "priyanshi";
 //     // console.log(secreat);  //error
@@ -558,7 +570,7 @@
 //     return displayName;
 // }
 
-// // const myFun = outerF();
-// // myFun();
+// const myFun = outerF();
+// myFun();
 
-// outerF();
+// outerF(); // not work may be

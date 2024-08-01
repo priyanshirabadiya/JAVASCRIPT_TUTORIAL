@@ -56,14 +56,59 @@
 
 // deep  copy
 
-const first_person = {
-    name: "Jack",
-    age: 24,
-};
+// const first_person = {
+//     name: "Jack",
+//     age: 24,
+// };
 
-const second_person = { ...first_person };
-second_person.age = 25;
+// const second_person = { ...first_person };
+// second_person.age = 25;
 
-console.log(first_person.age); // output: 24
-console.log(second_person.age); // output: 25
+// console.log(first_person.age); // output: 24
+// console.log(second_person.age); // output: 25
+
+
+
+
+
+// class Car {
+//     constructor(name, year) {
+//         this.name = name;
+//         this.year = year;
+//     }
+//     age(x) {
+//         return x - this.year;
+//     }
+// }
+
+// const date = new Date();
+// let year = date.getFullYear();
+
+// const myCar = new Car("Ford", 2014);
+// console.log(`Car Name: ${myCar.name}`);
+// console.log(`Car Year: ${myCar.year}`);
+// console.log(`Car Age: ${myCar.age(year)} years`);
+
+
+// -----------------------------------------------------
+
+// class gadi{
+//     constructor(gname , gyear){
+//         this.gname = gname;
+//         this.gyear = gyear;
+//     }
+//     difference(x){
+//         return x - this.gyear;
+//     }
+// }
+
+// const gdate = new Date();
+// const Gyear = gdate.getFullYear();
+// const mygadi = new gadi('shine',2021);
+
+// console.log(`Name is: ${mygadi.gname} `);
+// console.log(`year is: ${mygadi.gyear} `);
+// console.log(`Completed years are : ${mygadi.difference(Gyear)}`);
+
+
 
