@@ -1,11 +1,11 @@
 
-// 1.what is scripting languahe ?
+// 1.what is scripting languahg ?
 // 2.what is javascript ?
 // 3.what is object-oriented programming ?
 // 4.Differences between var , let and const.
 
 
-// -------------------------------------------- copy --------------------------------------------
+// --------------------------------------------shallow copy --------------------------------------------
 
 // 1. what is perform when we do shallow copy or deep copy ?
 // => ans : There is copy value instaed of memory location
@@ -13,7 +13,7 @@
 // 2. Difference between shallow copy and deep copy.
 // =>  shallow copy is just copy only main object whereas in deep copy we can copy nested object also
 
-// 3. How many why to do shallow copy or deep copy ?
+// 3. How many way to do shallow copy or deep copy ?
 // => shallow copy => 1. Object.assign()
 //  2. Object destructuring
 // Deep copy => JSON.parse with JSON.STRINGIFY  => in this data and functions are not work to resolve this problem we can use lodash library or manualy you can do using for loop by copying every element to another file
@@ -53,12 +53,12 @@
 
 
 // splice
-// splice(index , howmany , "new value")
+// splice(Staringindex , howmanyelements , "new value")
 // Splice method is LIKE mid insert and mid delete topic of javascript
 
 // let a = [ 'sanjay' , 'Aman' , 'Rehman' , 'Rahul' , 'Karan' ];
-// a.splice(2 , 0 , "kena");
-// a.splice(2 , 1); // sanjay , aman , rahul
+// console.log(a.splice(2 , 3 , "kena")); // 'Rehman' , 'Rahul' , 'Karan'  2 to 3 
+// console.log(a.splice(2 , 1)); // Rehman
 
 // console.log(a); 
 
@@ -574,3 +574,147 @@
 // myFun();
 
 // outerF(); // not work may be
+
+
+
+// var x = 220;
+// var y = "Hello";
+// var z = undefined;
+
+// console.log(x || y)   // Returns 220 since the first value is truthy
+// console.log(x || z)   // Returns 220 since the first value is truthy
+// console.log(x && y)   // Returns 220 since the first value is truthy
+
+// x && y 
+
+// -------------------------------------- This keyword in javascript
+
+// user = { "..." } // => It is your current context
+// current content ne use karva mate this key word no use karvo
+// In JavaScript, the this keyword refers to the object that is currently executing or calling a piece of code. It's a way to access and manipulate the properties and methods of that object. 
+
+
+// const user = {
+//     username: "priyanshi",
+//     price: 999,
+//     welcomMessage: function () {
+//         console.log(`${this.username} , welcome to website `);
+//         console.log(this);
+//     }
+    
+//     // Aa scope ma je keyword ne access karvo hoi tene this keyword no use karine kari shkai
+// }
+
+// user.welcomMessage();
+// user.username = "sam";
+// user.welcomMessage();
+// console.log(this);   // {}
+
+
+
+
+// bind method in javascript / Function Borrowing
+// With the bind() method, an object can borrow a method from another object.
+
+// const person = {
+//     firstname : "hJi",
+//     lastname : "huifgyiu",
+//     display : function (){
+//         console.log("This is function" + this.firstname);
+//     }
+// }
+
+// Higher order function in javascript
+
+
+
+// function greet(name) { 
+// 	return `Hi!! ${name} `; 
+// } 
+
+// function greet_name(greeting, message, name) { 
+// 	console.log(`${greeting(name)} ${message}`); 
+// } 
+
+// greet_name(greet, 'Welcome To GeeksForGeeks', 'Geeks');
+
+
+// function hello(name){
+// 	return `hello! ${name} `
+// }
+// function meet(sayhi , message , name){
+// 	console.log(`${sayhi(name)} ${message}`);
+// }
+// meet(hello , "How are you ?" , "Priyanshi")
+
+
+
+// function multiplier(factor) { 
+//     return function (x) { 
+//         return x * factor; 
+//     }; 
+// } 
+  
+// const double = multiplier(2); 
+// const triple = multiplier(3); 
+  
+// console.log(double(5));  
+// console.log(triple(5));
+
+
+
+//-------------------------------- exec => regexp
+
+// const regex = /hello \w+/;
+// const str = "hello dorld";
+// const result = regex.exec(str);
+
+// console.log(result); // Output: ["hello world", "world"]
+
+// const regex1 = /hello \w+/;
+// const string = "hello orld";
+// const result1 = regex.test(string);
+// console.log(result1);
+
+
+
+
+
+
+
+// Prototype in javascript
+// In JavaScript, a prototype is a mechanism by which objects inherit properties and methods from other objects. It's a fundamental concept in understanding how inheritance works in JavaScript.
+
+
+// Function.prototype.mybind = function () {
+//     console.log("werwef");
+// }
+
+// function fun() { }
+// fun.mybind()
+
+
+// function fun2() { }
+// fun2.mybind()
+
+
+// function Person(first , last , age , eyecolor){
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyecolor = eyecolor;
+// }
+
+
+// // Person.prototype.nationality = "Indian";
+
+// Person.prototype.name = () => {
+//     return this.firstName + " " + this.lastName;
+// }
+
+// const mydemo = new Person("priyanshi" , "rabadiya" , 15 , "black");
+// // console.log(mydemo);
+// // console.log(mydemo.nationality);
+// console.log(mydemo.name());
+
+

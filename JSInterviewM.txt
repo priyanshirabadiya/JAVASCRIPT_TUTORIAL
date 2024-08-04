@@ -1,0 +1,38 @@
+1.  What are the different data types present in javascript?
+2. Explain Hoisting in javascript.
+3. Why do we use the word “debugger” in javascript?
+4. Difference between “ == “ and “ === “ operators.
+5. Difference between var and let keyword in javascript.
+6. Explain Implicit Type Coercion in javascript.
+7. Is javascript a statically typed or a dynamically typed language?
+8. What is NaN property in JavaScript?
+9. Explain passed by value and passed by reference.
+10. What is an Immediately Invoked Function in JavaScript?
+11. What do you mean by strict mode in javascript and characteristics of javascript strict-mode?
+12. Explain Higher Order Functions in javascript.
+13. Explain “this” keyword.
+
+14. What do you mean by Self Invoking Functions?
+=>  A self-invoking function, also known as an Immediately Invoked Function Expression (IIFE), is a JavaScript function that runs automatically when it's defined. 
+
+15. Explain call(), apply() and, bind() methods.
+16. What is the difference between exec () and test () methods in javascript?
+17. What is currying in JavaScript?
+=> It is a technique in functional programming, that transforms the function of multiple arguments into several functions of a single argument in sequence. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
