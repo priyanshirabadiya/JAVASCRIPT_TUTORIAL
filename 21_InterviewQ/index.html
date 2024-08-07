@@ -9,7 +9,25 @@
     <!-- <button id="orange">orange</button>
     <button id="green">green</button> -->
 
-    <script src="interviewquestion.js" ></script>
+
+    <input type="password" onmousedown="enterInput(event)" />
+
+    <p id="feedback"></p>
+    
+    <script>
+      function enterInput(e) {
+        // var flag = e.getModifierState("NumLock");
+        var flag = e.getModifierState("CapsLock");
+        if (flag) {
+          document.getElementById("feedback").innerHTML = "CapsLock activated";
+        } else {
+          document.getElementById("feedback").innerHTML =
+            "CapsLock not activated";
+        }
+      }
+    </script>
+
+    <!-- <script src="interviewquestion.js" ></script> -->
 
     <!-- <script>
 

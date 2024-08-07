@@ -601,7 +601,7 @@
 //         console.log(`${this.username} , welcome to website `);
 //         console.log(this);
 //     }
-    
+
 //     // Aa scope ma je keyword ne access karvo hoi tene this keyword no use karine kari shkai
 // }
 
@@ -654,10 +654,10 @@
 //         return x * factor; 
 //     }; 
 // } 
-  
+
 // const double = multiplier(2); 
 // const triple = multiplier(3); 
-  
+
 // console.log(double(5));  
 // console.log(triple(5));
 
@@ -718,3 +718,159 @@
 // console.log(mydemo.name());
 
 
+// what is encode and decode string in js
+
+// let uri = "employeeDetails?name=john&occupation=manager";
+// let encoded_uri = encodeURI(uri);
+// let decoded_uri = decodeURI(encoded_uri);
+
+// console.log(encoded_uri);
+// console.log(decoded_uri);
+
+
+
+// what is memorization
+
+
+// Memoization is a technique for saving values returned by a function so that you don't have to repeat calculations you've already done. This strategy is convenient when we have a frequently called function whose analysis is time-consuming.
+
+// like reursion 
+
+
+// OBJECT CONSTRUCTOR IN JAVASCRIPT
+
+// function Person(first, last, age, eyecolor) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eyecolor;
+//   }
+//   const myFather = new Person("John", "Doe", 50, "blue");
+//   const myMother = new Person("Sally", "Rally", 48, "green");
+
+
+// we can add value in this object constructor so to do that we need to use PROTOTYPE : WHY WE USE PROTOTYPE
+
+// function Person(first, last, age, eyecolor) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eyecolor;
+//   }
+
+//   Person.prototype.nationality = "English";
+
+
+// CLASSES in javascript
+// In general, you should consider using classes when you want to create objects that store their own internal data and expose a lot of behavior.
+
+// class car {
+//     constructor(name, price) {
+//         this.name = name;
+//         this.totalprice = price;
+//     }
+//     makecar() {
+//         return `${this.name}'s  price is : ${this.totalprice}  `
+//     }
+// }
+
+// let onecar = new car("BMW", 780000);
+// let seccar = new car("KIA", 30000);
+// console.log(onecar);
+// console.log(seccar);
+// console.log(onecar.makecar());
+// console.log(seccar.makecar());
+// console.log(typeof car);  // function
+
+
+
+// WHAT IS MODULE IN JAVASCRIPT
+
+// => JavaScript Modules are basically libraries which are included in the given program. They are used for connecting two JavaScript programs together to call the functions written in one program without writing the body of the functions itself in another program.
+
+// math.js file
+// export function add(a, b) {
+//     return a + b;
+//   }
+
+// export function subtract(a, b) {
+//     return a - b;
+//   }
+
+// app.js
+// import { add, subtract } from './math.js';
+
+// console.log(add(5, 3)); // Output: 8
+// console.log(subtract(10, 4)); // Output: 6
+
+
+// WHY WE USE MODULES IN JAVASCRIPT
+
+// JavaScript modules are used to split your code into smaller, more manageable pieces rather than keeping it in a single file and moving those pieces to other files or projects. Modules can contain functions, variables, and objects that perform specific functions.
+
+
+
+
+// WAY TO CHECK LOCAL AND SESSION STORAGE IS AVAILABLE OR NOT
+
+// if (typeof Storage !== "undefined") {
+//     // Code for localStorage/sessionStorage.
+//     console.log(Storage);
+
+// } else {
+
+//     console.log(" Sorry! No Web Storage support..");
+// }
+
+
+
+// window.postMessage("Hello from the parent!", "https://google.com");
+
+
+
+// Promise.all() method in javascript
+
+// const promise1 = Promise.resolve(3);
+// const promise2 =  new Promise((resolve, reject) => {
+//     setTimeout(resolve, 1000, 'foo');
+// });
+// const promise3 = new Promise((resolve , reject) => {
+//     setTimeout(resolve , 2000 , "Hello" )
+// }) ;
+
+// Promise.all([promise1,promise3,promise2]).then((values) => {
+//     console.log(values);
+// });
+
+
+// Promise Race
+
+// var promise1 = new Promise(function (resolve, reject) {
+//     setTimeout(resolve, 500, "one");
+// });
+// var promise2 = new Promise(function (resolve, reject) {
+//     setTimeout(resolve, 100, "two");
+// });
+// Promise.race([promise1, promise2]).then(function (value) {
+//     console.log(value); // "two" // Both promises will resolve, but promise2 is faster // so it will produce only those result which is faster 
+// });
+
+
+// What is the purpose of the delete operator
+
+// var user = { firstName: "John", lastName:"Doe", age: 20 };
+// let nameF = "priyanshi";
+// delete user.age;
+// delete nameF;
+// console.log(nameF);
+// console.log(user);
+
+
+function goBack() {
+    window.history.back();
+}
+// function goForward() {
+//     window.history.forward();
+// }
+
+console.log(goBack());
