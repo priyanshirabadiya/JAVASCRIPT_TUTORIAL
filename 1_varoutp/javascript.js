@@ -124,13 +124,13 @@ comments */
     // console.log($a);
     // console.log(_a);
     // let $main_a = 10;
-    // let  1main_a = 10;
-    // console.log(1main_a);
 }
 {
     //invalid
     // var 1a = 'hello'; // this gives an error
     // console.log(a1);
+    // let  1main_a = 10;  // this gives an error
+    // console.log(1main_a);
 }
 
 // JavaScript is case-sensitive. So y and Y are different variables
