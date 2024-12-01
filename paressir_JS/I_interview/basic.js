@@ -208,14 +208,66 @@ let a = [0];
 // 10 , 20 , 30 , 40 , 50 , 60 , 70 , 80 , 90 , 100  
 // -10  -9   -8   -7   -6   -5   -4   -3   -2    -1
 
-let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
-arr.slice(5);
-console.log(arr);
-
-
-
+// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+// arr.slice(5);
+// console.log(arr);
 
 // console.log(arr.splice(2,8));
+
+
+// slice == to understand slice we need to understand shallow copy and deep copy
+
+// shallow copy and deep copy
+// A shallow copy occurs when two variables refer to the same underlying object in memory. Any changes made to the object through one variable will also affect the other because they both point to the same object.
+// second_person is assigned first_person, creating a shallow copy. Both variables now refer to the same object in memory.
+
+// const first_person = {
+//     name: "Jack",
+//     age: 24,
+// };
+
+// // console.log(first_person);
+// const second_person = first_person;
+// console.log(second_person);
+// second_person.age = 56;
+// console.log(second_person); 
+// console.log(first_person);
+
+
+// console.log(first_person.age); // output: 56
+// console.log(first_person); // output: 56
+// console.log(second_person.age); // output: 56
+
+// const obj = {
+//     name: "cjsdi",
+//     rno: 2
+// }
+// const obj2 = obj;
+// obj2.name = "mital";
+// console.log(obj.name);
+// console.log(obj2.name);
+// console.log(obj2);
+
+
+
+// deep  copy
+// A deep copy creates a completely independent copy of an object, meaning the new variable does not share memory with the original object. Changes made to one object do not affect the other because they are separate entities.
+
+// const first_person = {
+//     name: "Jack",
+//     age: 24,
+// };
+// // console.log(first_person);
+// const second_person = { ...first_person };
+// second_person.age = 25;
+// console.log(second_person);
+// console.log(first_person.age); // output: 24
+// console.log(second_person.age); // output: 25
+
+
+
+
+
 
 
 
