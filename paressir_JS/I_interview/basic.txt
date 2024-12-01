@@ -73,3 +73,15 @@ Explicit conversion
 The programmer manually changes the data type of a value using a type conversion keyword or function.
     
 
+15. array in javascript.
+The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations.
+
+push() => push method add elements in array at last position of array it works like stack in dsa.
+unshift() => unshift method add elements in array at first position of array. 
+
+pop() => push method delete elements in array at last position of array it works like stack in dsa.
+shift() => unshift method delete elements in array at first position of array.
+
+
+
+
