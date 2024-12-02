@@ -265,6 +265,36 @@ let a = [0];
 // console.log(second_person.age); // output: 25
 
 
+// deep copy
+
+// let employee = {
+//     eid: "E102",
+//     ename: "Jack",
+//     eaddress: "New York",
+//     salary: 50000
+// }
+// console.log("=========Deep Copy========");
+// // let newEmployee = JSON.parse(JSON.stringify(employee));
+// let newEmployee = { ...employee };
+
+// // console.log("Employee=> ", employee);
+// console.log("New Employee=> ", newEmployee);
+
+
+
+// ---------------------------------------------------------------------
+
+
+// The slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+
+// let fruits = ['apple', 'banana', 'orange', 'kiwi', 'strawberyy']
+
+// console.log(fruits.slice(2));
+// console.log(fruits);
+// fruits.slice(2,4);
+// console.log(fruits);
+// console.log(fruits.slice(-2));
+
 
 
 
