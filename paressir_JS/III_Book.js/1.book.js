@@ -20,8 +20,3 @@
 // A operator that use three values(operands) are called ternary operator.
 // ? : 
 // console.log(true ? 1 : 2)
-
-
-
-
-

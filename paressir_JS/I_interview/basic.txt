@@ -81,7 +81,3 @@ unshift() => unshift method add elements in array at first position of array.
 
 pop() => push method delete elements in array at last position of array it works like stack in dsa.
 shift() => unshift method delete elements in array at first position of array.
-
-
-
-
