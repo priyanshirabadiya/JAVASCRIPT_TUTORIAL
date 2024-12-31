@@ -1,0 +1,37 @@
+body {
+    background-color: white;
+}
+
+.main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 200px;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.make-center{
+    margin-top: 250px;
+}
+
+.btn{
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: gainsboro;
+    cursor: pointer;
+}
+
