@@ -624,8 +624,6 @@
 
 // Higher order function in javascript
 
-
-
 // function greet(name) {
 // 	return `Hi!! ${name} `;
 // }
