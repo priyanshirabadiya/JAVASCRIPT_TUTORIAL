@@ -57,10 +57,10 @@
 // Splice method is LIKE mid insert and mid delete topic of javascript
 
 // let a = [ 'sanjay' , 'Aman' , 'Rehman' , 'Rahul' , 'Karan' ];
-// console.log(a.splice(2 , 3 , "kena")); // 'Rehman' , 'Rahul' , 'Karan'  2 to 3 
+// console.log(a.splice(2 , 3 , "kena")); // 'Rehman' , 'Rahul' , 'Karan'  2 to 3
 // console.log(a.splice(2 , 1)); // Rehman
 
-// console.log(a); 
+// console.log(a);
 
 
 
@@ -70,10 +70,10 @@
 
 // function sayhello(){
 //     console.log("Hello");
-// } 
+// }
 // function sayhi(){
 //     console.log("Hi..");
-// } 
+// }
 
 // function nameF(num1 , num2 , callback) {
 //     console.log(num1 + num2);
@@ -169,7 +169,7 @@
 //     // --------------------------------------------------------
 // });
 
-// callback first to direct last function 
+// callback first to direct last function
 
 // getRecipe(recipe => {
 //     console.log(recipe);
@@ -180,10 +180,9 @@
 // });
 
 
-// -----------------------------------------------------callback hell another example
+// ----------------------------------------------------- callback hell another example
 
-// Callback hell is a phenomenon that happens when multiple callbacks are nested on top of each other. The two common ways of escaping the callback heare are by using promises and async/await. Promises mainly have three stages such as resolved, rejected, and pending. It makes the code more maintainable and understandable.
-
+// Callback hell is a phenomenon that happens when multiple callbacks are nested on top of each other. The two common ways of escaping the callback hell are by using promises and async/await. Promises mainly have three stages such as resolved, rejected, and pending. It makes the code more maintainable and understandable.
 
 // function maketea(callback) {
 //     setTimeout(() => {
@@ -216,8 +215,6 @@
 //     })
 // })
 
-
-
 // simple callback function
 
 // function getdata(name ,callback){
@@ -248,7 +245,7 @@
 //     return new Promise((resolve, reject) => {
 //         setTimeout(() => {
 //             const dough = cheess + "🧇";
-//             // resolve(dough); 
+//             // resolve(dough);
 //             reject("Error occurred");
 //         }, 500)
 //     })
@@ -384,11 +381,11 @@
 //     .then((data) => {
 //         console.log(data);
 //     })
-//     .catch((error) => { 
-//         console.log(error) 
+//     .catch((error) => {
+//         console.log(error)
 //     })
 
-// interview question 
+// interview question
 
 
 // 1 What is promises?
@@ -485,7 +482,7 @@
 // }
 // await mean to wait untill it find data : program aagal na vadva joiae jya sudhi temne awaited data no mle await pchi nu block thai thase jyasudhi aemne awaited data nai male data malse atle aagal code run thase ae khali function maj work karshe inshort meaning of await is to wait untill function can't find data
 
-// async must need a function we need to create function then try to create anonomous function 
+// async must need a function we need to create function then try to create anonomous function
 
 // async function getdata() {
 //     await api();
@@ -536,13 +533,11 @@
 // => In JavaScript, a closure is a function that has access to variables in its outer (enclosing) function's scope, even after the outer function has finished executing.
 // => A closure in JavaScript is a function that has access to variables in its parent scope, even after the parent function has returned. Closures are created when a function is defined inside another function, and the inner function retains access to the variables in the outer function's scope.
 
-
-
 // function outerF(){
-//     Fname = "priyanshi";
+//     var Fname = "priyanshi";
 //     // console.log(secreat);  //error
+//     var secreat = "123";
 //     function innerF(){
-//         let secreat = "123;"
 //         console.log("First inner" ,Fname);
 //     }
 //     function innerFY(){
@@ -556,11 +551,14 @@
 // outerF();
 
 
-// function nameF(){
-//     let nameFY = "Hello";
+// function nameF() {
+//     var nameFY = "Hello";
+//     function fubS2() {
+//         console.log(nameFY);
+//     }
+//     fubS2();
 // }
-// console.log(nameFY);
-
+// nameF();
 
 // function outerF(){
 //     const nameF = "priyanshi";
@@ -573,7 +571,7 @@
 // const myFun = outerF();
 // myFun();
 
-// outerF(); // not work may be
+// outerF(); // not print anything work
 
 
 
@@ -585,13 +583,13 @@
 // console.log(x || z)   // Returns 220 since the first value is truthy
 // console.log(x && y)   // Returns 220 since the first value is truthy
 
-// x && y 
+// x && y
 
 // -------------------------------------- This keyword in javascript
 
 // user = { "..." } // => It is your current context
 // current content ne use karva mate this key word no use karvo
-// In JavaScript, the this keyword refers to the object that is currently executing or calling a piece of code. It's a way to access and manipulate the properties and methods of that object. 
+// In JavaScript, the this keyword refers to the object that is currently executing or calling a piece of code. It's a way to access and manipulate the properties and methods of that object.
 
 
 // const user = {
@@ -628,13 +626,13 @@
 
 
 
-// function greet(name) { 
-// 	return `Hi!! ${name} `; 
-// } 
+// function greet(name) {
+// 	return `Hi!! ${name} `;
+// }
 
-// function greet_name(greeting, message, name) { 
-// 	console.log(`${greeting(name)} ${message}`); 
-// } 
+// function greet_name(greeting, message, name) {
+// 	console.log(`${greeting(name)} ${message}`);
+// }
 
 // greet_name(greet, 'Welcome To GeeksForGeeks', 'Geeks');
 
@@ -649,16 +647,16 @@
 
 
 
-// function multiplier(factor) { 
-//     return function (x) { 
-//         return x * factor; 
-//     }; 
-// } 
+// function multiplier(factor) {
+//     return function (x) {
+//         return x * factor;
+//     };
+// }
 
-// const double = multiplier(2); 
-// const triple = multiplier(3); 
+// const double = multiplier(2);
+// const triple = multiplier(3);
 
-// console.log(double(5));  
+// console.log(double(5));
 // console.log(triple(5));
 
 
@@ -734,7 +732,7 @@
 
 // Memoization is a technique for saving values returned by a function so that you don't have to repeat calculations you've already done. This strategy is convenient when we have a frequently called function whose analysis is time-consuming.
 
-// like reursion 
+// like reursion
 
 
 // OBJECT CONSTRUCTOR IN JAVASCRIPT
@@ -852,7 +850,7 @@
 //     setTimeout(resolve, 100, "two");
 // });
 // Promise.race([promise1, promise2]).then(function (value) {
-//     console.log(value); // "two" // Both promises will resolve, but promise2 is faster // so it will produce only those result which is faster 
+//     console.log(value); // "two" // Both promises will resolve, but promise2 is faster // so it will produce only those result which is faster
 // });
 
 
@@ -916,15 +914,15 @@
 // clousers
 
 
-function outerFunction(outerVariable) {
-    return function innerFunction(innerVariable) {
-        console.log(`Outer Variable: ${outerVariable}`);
-        console.log(`Inner Variable: ${innerVariable}`);
-    };
-}
+// function outerFunction(outerVariable) {
+//     return function innerFunction(innerVariable) {
+//         console.log(`Outer Variable: ${outerVariable}`);
+//         console.log(`Inner Variable: ${innerVariable}`);
+//     };
+// }
 
-const closureFunction = outerFunction("outside");
-closureFunction("inside");
+// const closureFunction = outerFunction("outside");
+// closureFunction("inside");
 
 
 
