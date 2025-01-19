@@ -866,11 +866,65 @@
 // console.log(user);
 
 
-function goBack() {
-    window.history.back();
-}
-// function goForward() {
-//     window.history.forward();
+// function goBack() {
+//     window.history.back();
+// }
+// // function goForward() {
+// //     window.history.forward();
+// // }
+
+// console.log(goBack());
+
+
+
+
+
+
+// ----- call , apply , bind
+
+// function sayhello() {
+//     return "Hello " + this.name;
+// }
+// var obj = { name: "hirva" }
+// console.log(sayhello.call(obj));
+
+
+// function sayapply(message) {
+//     return this.name + " is " + message;
 // }
 
-console.log(goBack());
+// var per4 = { name: "John" };
+// console.log(sayapply.apply(per4, ["tina"]));
+
+
+// curring topic
+// what is curring => Currying is a functional programming technique where a function with multiple arguments is transformed into a series of functions, each taking a single argument.
+// function simpel(ar1, ar2, ar3) {
+//     return ar1 + ar2 + ar3;
+// }
+
+// function simple1(ar1) {
+//     return function (ar2) {
+//         return function (ar3) {
+//             return ar1 + ar2 + ar3;
+//         }
+//     }
+// }
+
+// console.log(simple1("helo")('good')('morning'));
+
+// clousers
+
+
+function outerFunction(outerVariable) {
+    return function innerFunction(innerVariable) {
+        console.log(`Outer Variable: ${outerVariable}`);
+        console.log(`Inner Variable: ${innerVariable}`);
+    };
+}
+
+const closureFunction = outerFunction("outside");
+closureFunction("inside");
+
+
+
