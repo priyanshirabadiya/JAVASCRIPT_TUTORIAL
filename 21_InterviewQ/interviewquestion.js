@@ -877,7 +877,8 @@
 
 
 // ----- call , apply , bind
-
+// call and apply are method which allow explicity set the value of this when calling a function.
+// in call function it takes argument seperately where apply method takes argument in form of array that is the main difference between them.
 // function sayhello() {
 //     return "Hello " + this.name;
 // }
@@ -910,6 +911,24 @@
 // console.log(simple1("helo")('good')('morning'));
 
 // clousers
+// when function give access to it's outer scope that is called clousers
+// laxical scoping = we can use outer funtion property into inner function but we can not use inner 
+// function property or variable into outer function that is called laxical scoping. 
+
+// function init() {
+//     var name = "Mozilla"; // name is a local variable created by init
+//     function displayName() {
+//         var a = 10;
+//         // displayName() is the inner function, that forms a closure
+//         console.log(name); // use variable declared in the parent function
+//     }
+//     console.log(a);
+//     displayName();
+// }
+// init();
+
+
+
 
 
 // function outerFunction(outerVariable) {
