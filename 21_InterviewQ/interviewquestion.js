@@ -231,7 +231,7 @@
 
 // In JavaScript, a Promise is an object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed.
 
-// -------------cheese callback task by using primises
+// -------------cheese callback task by using promises
 // function getcheese() {
 //     return new Promise((resolve, reject) => {
 //         setTimeout(() => {
@@ -247,7 +247,7 @@
 //             const dough = cheess + "🧇";
 //             // resolve(dough);
 //             reject("Error occurred");
-//         }, 500)
+//         }, 2000)
 //     })
 // }
 
@@ -263,42 +263,58 @@
 
 // using aysnc & await
 
-// async function orderpizza(){
-//     try{
-//     const cheese = await getcheese();
-//     console.log('Here is your cheese');
-//     const dough = await makedough(cheese);
-//     console.log('Here is your dough');
-//     const pizza = await makepizza(dough);
-//     console.log('Here is your pizza');
+// async function orderpizza() {
+//     try {
+//         const cheese = await getcheese();
+//         console.log('Here is your cheese');
+//         const dough = await makedough(cheese);
+//         console.log('Here is your dough');
+//         const pizza = await makepizza(dough);
+//         console.log('Here is your pizza');
 //     }
-//     catch(err) {
+//     catch (err) {
 //         console.log(err);
 //     }
 //     // finally block
 //     console.log('Proccess is done');
 // }
 
+
+// function orderpizza() {
+
+//     const cheese = getcheese();
+//     console.log('Here is your cheese');
+//     const dough = makedough(cheese);
+//     console.log('Here is your dough');
+//     const pizza = makepizza(dough);
+//     console.log('Here is your pizza');
+
+//     console.log('Proccess is done');
+// }
+
+
+
+
 // orderpizza();
 
 // getcheese()
-// .then((cheese) => {
-//     console.log("Here is your cheese" + cheese);
-//     return makedough(cheese);
-// })
-// .then((dough) => {
-//     console.log('Here is your dough' + dough );
-//     return makepizza(dough);
-// })
-// .then((pizza) => {
-//     console.log('Here is your pizza' + pizza );
-// })
-// .catch(() => {
-//     console.log('There is an error');
-// })
-// .finally(() => {
-//     console.log('Proccess is done');
-// })
+//     .then((cheese) => {
+//         console.log("Here is your cheese" + cheese);
+//         return makedough(cheese);
+//     })
+//     .then((dough) => {
+//         console.log('Here is your dough' + dough);
+//         return makepizza(dough);
+//     })
+//     .then((pizza) => {
+//         console.log('Here is your pizza' + pizza);
+//     })
+//     .catch(() => {
+//         console.log('There is an error');
+//     })
+//     .finally(() => {
+//         console.log('Proccess is done');
+//     })
 // ---------------------------------------------------------
 
 // new Promise(function(resolve , reject){
@@ -912,8 +928,8 @@
 
 // clousers
 // when function give access to it's outer scope that is called clousers
-// laxical scoping = we can use outer funtion property into inner function but we can not use inner 
-// function property or variable into outer function that is called laxical scoping. 
+// laxical scoping = we can use outer funtion property into inner function but we can not use inner
+// function property or variable into outer function that is called laxical scoping.
 
 // function init() {
 //     var name = "Mozilla"; // name is a local variable created by init
