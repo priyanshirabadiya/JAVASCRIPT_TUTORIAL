@@ -3,6 +3,10 @@
 => It has made modern web applications with which you can interact directly without doing a page reload
 for every action.
 => Javascript is not programming language it is scripting language.
+JavaScript (JS) is a programming language that lets developers create interactive web pages
+
+2.difference between programming and scripting language?
+Programming languages are used to create applications, while scripting languages are used to enhance applications. Programming languages are more structured and efficient, while scripting languages are easier to learn and faster to code. 
 
 3. what is scripting language?
 => scripting language is type of programming language which is execute runtime environment using terpreter rather than a compiler.

@@ -12,8 +12,7 @@
 // var p = data.push(77);
 // data.push(78);
 // console.log(data);
-// console.log(data.push()); //not work
-
+// console.log(data.push()); //this will not work
 
 
 // pop method -> delete last element
@@ -22,7 +21,7 @@
 
 // shift and unshift
 
-// const data = [11,22,33,44,55,66];
+const data = [11,22,33,44,55,66];
 
 // unshift -> insert record at first position
 // shift   -> first delete -> you might write more than 1 time if you want to delete more than one record 
