@@ -257,10 +257,11 @@
 //     name: "Jack",
 //     age: 24,
 // };
-// // console.log(first_person);
+// console.log(first_person);
 // const second_person = { ...first_person };
 // second_person.age = 25;
 // console.log(second_person);
+// console.log(first_person);
 // console.log(first_person.age); // output: 24
 // console.log(second_person.age); // output: 25
 
@@ -274,10 +275,10 @@
 //     salary: 50000
 // }
 // console.log("=========Deep Copy========");
-// // let newEmployee = JSON.parse(JSON.stringify(employee));
-// let newEmployee = { ...employee };
+// let newEmployee = JSON.parse(JSON.stringify(employee));
+// // let newEmployee = { ...employee };
 
-// // console.log("Employee=> ", employee);
+// console.log("Employee=> ", employee);
 // console.log("New Employee=> ", newEmployee);
 
 
@@ -285,7 +286,7 @@
 // ---------------------------------------------------------------------
 
 
-// The slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+// The slice() = returns new array = method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
 
 // let fruits = ['apple', 'banana', 'orange', 'kiwi', 'strawberyy']
 
@@ -294,5 +295,6 @@
 // fruits.slice(2,4);
 // console.log(fruits);
 // console.log(fruits.slice(-2));
+// console.log(fruits);
 
-
+// splice() = it will modify original array
