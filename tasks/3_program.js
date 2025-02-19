@@ -8,7 +8,7 @@
 // }
 // console.log(newarr.join(' '));
 
-
+// make word first letter capital
 function uppercase(str) {
     var array1 = str.split(' ');
     console.log(array1);
@@ -19,7 +19,7 @@ function uppercase(str) {
     }
     return newarray1.join(' ');
   }
-  console.log(uppercase("the quick brown foi"));
+  console.log(uppercase("the quick brown fox"));
 
 
 
