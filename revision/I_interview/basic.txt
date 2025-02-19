@@ -40,7 +40,7 @@ Programming languages are used to create applications, while scripting languages
 =>An immutable value is one whose content cannot be changed without creating an entirely new value, in comparison with mutable values.
 
 8. what is dynamic programming>
-=> it is programming language which manage multipel operations at run time.
+=> it is programming language which manage multiple operations at run time.
    it provide flexibility. This allows developers to write more adaptable and concise code.
 
 9. what are different datatypes present in javascript? 

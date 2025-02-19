@@ -112,7 +112,7 @@
 // console.log(a);
 
 
-let a = [0];
+// let a = [0];
 // console.log(a);
 // console.log(a[0]);
 // console.log(a[0] == " ");
