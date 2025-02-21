@@ -46,8 +46,8 @@
 // {
 //     let x = a.concat(b);
 //     console.log(x);
-    // console.log(a,b);
-    // console.log(b);
+// console.log(a,b);
+// console.log(b);
 // })(["4sdc"],["myfy5"]);
 
 // function myfun(a)
@@ -61,25 +61,25 @@
 
 // let x = function(a)
 // {
-    // console.log(a.slice(2,5,"manju","hina"));
-    // slice method don't add any elemet 
-    // z = a.slice(2,5);
-    // console.log(z);
-    // console.log(a);
-    // console.log(a.slice(1,3));
+// console.log(a.slice(2,5,"manju","hina"));
+// slice method don't add any elemet 
+// z = a.slice(2,5);
+// console.log(z);
+// console.log(a);
+// console.log(a.slice(1,3));
 
-    // a.splice(2,1,"main");
-    // console.log(a.splice(2,1,"main"));
-    // console.log(a.splice(1));
-    // console.log(a);
-    // console.log(a.splice(2,1,"main"));
+// a.splice(2,1,"main");
+// console.log(a.splice(2,1,"main"));
+// console.log(a.splice(1));
+// console.log(a);
+// console.log(a.splice(2,1,"main"));
 
-    // console.log(a);
-    // console.log(a.splice(2,2,"hj"));
+// console.log(a);
+// console.log(a.splice(2,2,"hj"));
 
-    // console.log(a);
-    // console.log(a.splice(1,3));
-    // console.log(a.slice(2));
+// console.log(a);
+// console.log(a.splice(1,3));
+// console.log(a.slice(2));
 // }
 // x(["hello","world","say","hi","lemmon","jini"]);
 
@@ -164,10 +164,18 @@
 // console.log(typeof(z));
 
 
+// let arr = [10, 20, 10, 10, 10, 50, 20, 30, 20];
 
 
-
-
-
-
+let arr = [50, 20, 50, 50, 50, 50, 20, 30, 20];
+var max = 0;
+var repeated = arr[0];
+for (var i = 0; i < arr.length ; i++)
+{
+    if(repeated > max){
+        max = repeated;
+        repeated = arr[i];
+    }
+}
+console.log(repeated);
 
