@@ -166,16 +166,26 @@
 
 // let arr = [10, 20, 10, 10, 10, 50, 20, 30, 20];
 
+let arr = [50, 20, 50, 25, 25, 25, 20, 30, 20];
 
-let arr = [50, 20, 50, 50, 50, 50, 20, 30, 20];
-var max = 0;
-var repeated = arr[0];
-for (var i = 0; i < arr.length ; i++)
-{
-    if(repeated > max){
-        max = repeated;
-        repeated = arr[i];
+let maxCount = 0;
+let mostRepeated;
+
+for (let i = 0; i < arr.length; i++) {
+    let count = 0;
+
+    // Count occurrences of arr[i]
+    for (let j = 0; j < arr.length; j++) {
+        if (arr[i] === arr[j]) {
+            count++;
+        }
+    }
+
+    // Update most repeated if the count is higher
+    if (count > maxCount) {
+        maxCount = count;
+        mostRepeated = arr[i];
     }
 }
-console.log(repeated);
 
+console.log(mostRepeated);
