@@ -164,8 +164,6 @@
 // console.log(typeof(z));
 
 
-// let arr = [10, 20, 10, 10, 10, 50, 20, 30, 20];
-
 let arr = [50, 20, 50, 25, 25, 25, 20, 30, 20];
 
 let maxCount = 0;
