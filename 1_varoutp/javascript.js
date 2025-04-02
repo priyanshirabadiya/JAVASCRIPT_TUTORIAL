@@ -1,4 +1,3 @@
-
 // What is javascript
 
 /*
@@ -20,7 +19,7 @@ Using dom()*/
 
 /****   JavaScript Values   ****/
 //  -> The JavaScript syntax defines two types of values
- 
+
 /*
     -> Fixed values are called Literals.   
     -> Variable values are called Variables.  
@@ -30,50 +29,46 @@ Using dom()*/
 
 /**** var variable type / box variable name / = assignement / 60 assiged values ****/
 
-// javascript language case-sensitive 
+// javascript language case-sensitive
 
-/**************** variable using var() in javascript *************************/ 
+/**************** variable using var() in javascript *************************/
 
-{           
-    // const number1 = 20;   
-    // const number1 = 20;
-    // var number2 = 20;  
-    // var Total = number1 + number2;
-    // console.log(number1)  
-    // var number2 = 40;
-    // console.log(Total)
+{
+  // const number1 = 20;
+  // const number1 = 20;
+  // var number2 = 20;
+  // var Total = number1 + number2;
+  // console.log(number1)
+  // var number2 = 40;
+  // console.log(Total)
 }
 
 // in this var is globle variable and const and let are block scope varables it means if we console that let variable in out of scope then it give an error
 
 {
-    // let a = 10;
-    // let b = 10;
-    // var c = a + b;
+  // let a = 10;
+  // let b = 10;
+  // var c = a + b;
 }
-// console.log(c); 
+// console.log(c);
 // console.log(a); //error
 // console.log(b); //error
 
 /*******New Html Element Add In Though Javascript *********/
 
 {
-    // var newelement = document.createElement("h1"); 
-    // newelement.textContent="hello world"; 
-    // document.body.appendChild(newelement); 
-    
-    // var newelement=document.createElement("marquee" , Option);
-    // newelement.textContent="hello world";
-    // document.body.appendChild(newelement);
-
-    // var newelement=document.createElement("pre");
-    // newelement.textContent="how are you!";
-    // document.body.appendChild(newelement);
-
-    // var newelement = document.createElement("pre");
-    // newelement.textContent = "helloworld";
-    // document.body.append(newelement);
-
+  // var newelement = document.createElement("h1");
+  // newelement.textContent="hello world";
+  // document.body.appendChild(newelement);
+  // var newelement=document.createElement("marquee" , Option);
+  // newelement.textContent="hello world";
+  // document.body.appendChild(newelement);
+  // var newelement=document.createElement("pre");
+  // newelement.textContent="how are you!";
+  // document.body.appendChild(newelement);
+  // var newelement = document.createElement("pre");
+  // newelement.textContent = "helloworld";
+  // document.body.append(newelement);
 }
 
 // js comments
@@ -83,32 +78,25 @@ Using dom()*/
 /* multi-line 
 comments */
 
-
 // Template Literals
 
 {
-    // var _nameone = 40 + '20' - '5';
-    // var _nametwo= '5';
-    // console.log(_nameone);
-    // console.log(typeof(_nameone));
-
-    // var one = 20
-    // var two = 40
-
-    // var three = "one 'two'"
-    // console.log(three);
-
-    // var four  = `'one' "two"'`
-    // console.log(four);
-
-    // var five = `''one''` + `"two"`
-    // console.log(five);
-
-    // var five = `${one} + "two"`
-    // console.log(five);
-
-    // var six = `${one} + ${two}`
-    // console.log(six);
+  // var _nameone = 40 + '20' - '5';
+  // var _nametwo= '5';
+  // console.log(_nameone);
+  // console.log(typeof(_nameone));
+  // var one = 20
+  // var two = 40
+  // var three = "one 'two'"
+  // console.log(three);
+  // var four  = `'one' "two"'`
+  // console.log(four);
+  // var five = `''one''` + `"two"`
+  // console.log(five);
+  // var five = `${one} + "two"`
+  // console.log(five);
+  // var six = `${one} + ${two}`
+  // console.log(six);
 }
 
 // var a = 10;
@@ -117,37 +105,36 @@ comments */
 // Rules for Naming JavaScript Variables
 
 {
-    //valid
-    // let a = 'hello';
-    // let _a = 'hello';
-    // let $a = 'hello';
-    // console.log($a);
-    // console.log(_a);
-    // let $main_a = 10;
+  //valid
+  // let a = 'hello';
+  // let _a = 'hello';
+  // let $a = 'hello';
+  // console.log($a);
+  // console.log(_a);
+  // let $main_a = 10;
 }
 {
-    //invalid
-    // var 1a = 'hello'; // this gives an error
-    // console.log(a1);
-    // let  1main_a = 10;  // this gives an error
-    // console.log(1main_a);
+  //invalid
+  // var 1a = 'hello'; // this gives an error
+  // console.log(a1);
+  // let  1main_a = 10;  // this gives an error
+  // console.log(1main_a);
 }
 
 // JavaScript is case-sensitive. So y and Y are different variables
 
 {
-    // let y = "hi";
-    // let Y = 5;
-
-    // console.log(y);
-    // console.log(Y); 
+  // let y = "hi";
+  // let Y = 5;
+  // console.log(y);
+  // console.log(Y);
 }
 
 // Keywords cannot be used as variable names.
 
 {
-    //invalid
-    // let new = 5; // Error! new is a keyword.
+  //invalid
+  // let new = 5; // Error! new is a keyword.
 }
 
 /*  
@@ -156,9 +143,21 @@ Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ 
 
 */
 
-
 // var num = 1 + "2" + 3 - 1;
 // console.log(num);
 // console.log(typeof(num));
 
+function example() {
+  if (true) {
+    var x = 10;
+    let y = 20;
+    console.log(x); // Output: 10
+    console.log(y); // Output: 20
+  }
+  console.log(x); // Output: 10 (var is function-scoped)
+  // console.log(y); // Error: y is not defined (let is block-scoped)
+}
 
+example();
+
+console.log("out of function" + x);

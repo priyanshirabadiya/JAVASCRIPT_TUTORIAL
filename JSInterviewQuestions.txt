@@ -28,3 +28,16 @@
 4.promise resolves call back hell.promisr chain is quite complex. To overcome this ecma script introduces Async and await .just use these for asynchronous operation
 5.improving application performance - observe throttling and debouncing.simple write better code
 6. Debugging techniques - debug on the console using dev tool debugger. Easy peasy.
+
+
+1.  What are the different data types present in javascript?
+JavaScript as a language provides the following eight basic data types:
+Number.
+String.
+Boolean.
+Null.
+Undefined.
+BigInt.
+Symbol.
+Object.
+
