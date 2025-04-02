@@ -14,7 +14,7 @@ Using window.alert()
 Using console.log()
 Using dom()*/
 
-// taking input mthods
+// taking input methods
 // Using window.prompt()
 // Using appendChild()
 

@@ -21,3 +21,10 @@
 => It is a technique in functional programming, that transforms the function of multiple arguments into several functions of a single argument in sequence. 
 
 
+
+1. Event loop - gate keeper to callstack . Pushes functions to callstack from macro and micro task queue provided callstack is empty
+2.micro queue - stores functions received from fetch api when there is network calls and mutation functions where as macro queue stores callbacks from the web api such as settimeout,local storage and others in a queue format.micro takes precedence over micro 
+3. Map reduce filter - higher order function.map - works on each an every element on an array and returns the modified array.filter - filters the array based on a condition and returns a new arr with filtered value.reduce returns a scalar value after performing operations with each and every element on an arr.
+4.promise resolves call back hell.promisr chain is quite complex. To overcome this ecma script introduces Async and await .just use these for asynchronous operation
+5.improving application performance - observe throttling and debouncing.simple write better code
+6. Debugging techniques - debug on the console using dev tool debugger. Easy peasy.
