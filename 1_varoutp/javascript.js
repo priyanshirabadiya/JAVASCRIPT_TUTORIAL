@@ -147,17 +147,25 @@ Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ 
 // console.log(num);
 // console.log(typeof(num));
 
-function example() {
-  if (true) {
-    var x = 10;
-    let y = 20;
-    console.log(x); // Output: 10
-    console.log(y); // Output: 20
-  }
-  console.log(x); // Output: 10 (var is function-scoped)
-  // console.log(y); // Error: y is not defined (let is block-scoped)
-}
+// function example() {
+//   if (true) {
+//     var x = 10;
+//     let y = 20;
+//     var x = 20;
+//     y = 56;
+//     console.log(x); 
+//     console.log(y); 
+//   }
+//   console.log(x); 
+//   // console.log(y); // Error: y is not defined (let is block-scoped)
+// }
 
-example();
+// example();
 
-console.log("out of function" + x);
+// console.log("out of function" + x);
+
+
+console.log(5 + "5");
+console.log(true + 1);
+
+
