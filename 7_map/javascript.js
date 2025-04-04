@@ -298,7 +298,7 @@ size 	    Returns the number of elements in a Map
 // console.log(fruits.get("apple"));
 
 
-// map size is not function but it is 
+// map size is not function but it is property
 // console.log(fruits.size);
 
 // map has 
