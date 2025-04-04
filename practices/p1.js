@@ -33,7 +33,6 @@
 // var add = (a) => a.unshift(5);
 // console.log(add([6,4,6,7]));
 
-
 // var x = function(a)
 // {
 //     a[0] = "kiwi";
@@ -57,12 +56,10 @@
 // }
 // console.log(myfun(["w","f","j","l","a"]));
 
-
-
 // let x = function(a)
 // {
 // console.log(a.slice(2,5,"manju","hina"));
-// slice method don't add any elemet 
+// slice method don't add any elemet
 // z = a.slice(2,5);
 // console.log(z);
 // console.log(a);
@@ -86,27 +83,20 @@
 // var a = ["hello","main","hi","lemmon","jini"];
 // console.log();
 
-
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // fruits.splice(2, 0, "Lemon", "Kiwi");
 // Banana,Orange,Lemon,Kiwi,Apple,Mango
 // console.log(fruits);
 
-
-
 // let p = ["hello","main","hi","lemmon","jini"];
 // console.log(p.slice(3));
 // console.log(p.splice(3));
 
-
-
 // let z = (a) => a.sort();
-// console.log(z(["ji","apple","mahi","target"])); 
-
+// console.log(z(["ji","apple","mahi","target"]));
 
 // let x = (a) => a.reverse();
 // console.log(x(["hjvd","sds","pink"]));
-
 
 // function myfun(a)
 // {
@@ -114,10 +104,8 @@
 // }
 // console.log(myfun(["5","6","2","4","3"]));
 
-
 // let a = (b) => Math.max.apply(null,b);
 // console.log(a([2,4,7,68,3]));
-
 
 // function myfun(arr){
 //     return arr.sort();
@@ -125,12 +113,9 @@
 // z = myfun([4,6,5,7,3]);
 // console.log(z);
 
-
-
 // const arr = [1,4,1,5,8];
 // const map1 = arr.map((x) => x > 2);
 // console.log(map1);
-
 
 // function myfun(val)
 // {
@@ -138,7 +123,6 @@
 // }
 // z = [1,4,3,5,7].filter(myfun);
 // console.log(z);
-
 
 // let a = (x) => x > 1;
 // let z = [1,3,5,3,7,0].filter(a);
@@ -154,15 +138,12 @@
 // }
 // myGeeks()
 
-
-
 // let arr = ["string","main","banana","jain"]
 // z = arr.toString();
 // console.log(arr);
 // console.log(z);
 // console.log(typeof(arr));
 // console.log(typeof(z));
-
 
 // let arr = [50, 20, 50, 25, 25, 25, 20, 30, 20];
 
@@ -188,5 +169,11 @@
 
 // console.log(mostRepeated);
 
-
-
+// for (var i = 0; i < 5; i++) {
+//   for (let j = 0; j <= i; j++) {
+//     // console.log("* ");
+//     // document.writeln("* ");
+//     process.stdout.write(" *");
+//   }
+//   console.log("");
+// }
