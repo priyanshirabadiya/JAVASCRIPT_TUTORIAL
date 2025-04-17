@@ -1,0 +1,425 @@
+
+--- questions with answers---
+
+what is javascript?
+JavaScript (JS) is a programming language used to create interactive web pages. 
+JavaScript is a client-side scripting language that runs in the browser.
+Javascript is not programming language it is scripting language.
+
+
+what is scripting language?
+=> Scripting languages are typically interpreted, meaning the code is read and executed line by line, unlike compiled languages that need to be translated into machine code before running.
+
+
+Explain the difference between `var`, `let`, and `const`.
+=>var – Old school (before ES6)
+Function-scoped
+Can be redeclared and updated
+Gets hoisted to the top of its scope (but not initialized)
+EX:function testVar() {
+  console.log(a); // undefined (due to hoisting)
+  var a = 5;
+  console.log(a); // 5
+}
+=>let – Modern, block-scoped variable
+Block-scoped (inside {})
+Can be updated, but not redeclared in the same scope
+Also hoisted, but not initialized (temporal dead zone)
+EX:let x = 10;
+x = 20;      // ✅ OK
+let x = 30;  // ❌ Error: already declared
+=>const – Constant reference
+Block-scoped
+Must be initialized when declared
+Cannot be reassigned, but objects/arrays it holds can be mutated
+EX:const a = 42;
+a = 50; // ❌ Error
+const person = { name: "Alice" };
+person.name = "Bob"; // ✅ You can mutate the object
+
+
+What are the different datatype present in javascript?
+= primitives
+String
+Number
+BigInt
+Boolean
+Undefined
+Null
+Symbol
+= non-primitives
+object
+array
+function
+date 
+map/set
+-Primitive data types can store only a single value. To store multiple and complex values, non-primitive data types are used.
+object , array(one kind of object in js) , function 
+
+
+What is Hoisting?
+=>Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.
+
+
+difference between programming and scripting language?
+Programming languages are used to create applications, while scripting languages are used to enhance applications. Programming languages are more structured and efficient, while scripting languages are easier to learn and faster to code. 
+
+
+what javascript can do?
+=>javascript give html designers to a programming tool
+  javascript can put dynamic text into an html page
+  javascript can react event
+  javascript is also used to provide validations also
+  javascript can also be used to store data into locastorage,sessionstorage or in cookies also.
+
+
+javascript is syncronys?
+=> yes javascript is synschronous single-threaded language which execute the code one by one ex. it only execute line of code after completing one execution line.
+
+
+Explain javascript variables.
+=>in programming language variables are contaiers which are used to store information.
+    variables are also called containers
+    in javascript there are three types of 
+    1. var
+    2. let 
+    3. const
+    and explain it all.
+
+
+what is mutable and imutable in javascript?
+=>A mutable value is one that can be changed without creating an entirely new value, in comparison with immutable values.
+=>An immutable value is one whose content cannot be changed without creating an entirely new value, in comparison with mutable values.
+== example - mutable
+let person = { name: "Amit" };
+person.name = "Ravi"; // Changing the property
+console.log(person); // { name: "Ravi" }
+
+let numbers = [1, 2, 3];
+numbers.push(4); // Modifying the array
+console.log(numbers); // [1, 2, 3, 4]
+
+== example - immutable
+let a = "hello";
+a[0] = "H"; 
+console.log(a); // "hello" – doesn't change
+
+let num = 5;
+num = 10; // This creates a **new number**, doesn't change the old one // ans is 10
+
+type    mutable  example
+String	❌ No	"hello"
+Number	❌ No	42
+Boolean	❌ No	true/false
+Object	✅ Yes	{ name: "Amit" }
+Array	  ✅ Yes	[1, 2, 3]
+Function	✅ Yes	function() {}
+
+
+Explain Implicit Type Coercion in javascript.
+Implicit Type Coercion is JavaScript's automatic conversion of one data type to another when performing operations involving different types. It happens when JavaScript automatically converts values to match the expected type in an expression.
+Ex:
+let value1 = "5";
+let value2 = 9;
+let sum = value1 + value2;
+console.log(typeof sum); // Output: "string"
+
+
+what is dynamic programming?
+=> it is programming language which manage multiple operations at run time.
+   it provide flexibility. This allows developers to write more adaptable and concise code.
+
+
+Is javascript a statically typed or a dynamically typed language?
+=> javascript is a dynamically typed language.
+In JavaScript, variable types are determined at runtime, and you don't have to declare a specific type when defining a variable. The type of a variable can change during execution.
+ex : 
+let x = 10;       // x is a number
+x = "Hello";      // Now x is a string
+x = true;         // Now x is a boolean
+Feature	         Static Typing (Java, C++)	  Dynamic Typing (e.g., JavaScript)
+Type Checking	   Done at compile time	        Done at runtime
+Variable Types	 Must be explicitly declared	Can change during execution
+Flexibility	- Less flexible, more predictable	  More flexible, but riskier.
+
+
+What is NaN property in JavaScript?
+NaN (Not-a-Number) is a special value in JavaScript that represents an invalid or undefined mathematical operation. It is a property of the global Number object.
+
+
+Explain passed by value and passed by reference. 
+=> In JavaScript, primitives are passed by value, while objects are passed by reference. It is also known as a self-executing anonymous function. 
+
+
+What is an Immediately Invoked Function in JavaScript?
+An Immediately Invoked Function Expression (IIFE) is a function that runs as soon as it is defined.
+
+
+why we use strict mode in javascript?
+"use strict" is a directive introduced in ECMAScript 5 that enforces stricter parsing and error handling in JavaScript code. It helps developers write more secure, reliable, and maintainable code by catching common coding mistakes and preventing potentially problematic behaviors.
+
+
+Explain “this” keyword.
+The this keyword refers to the object that is currently executing the function.
+This keyword in JavaScript refers to the object that is executing the current function.
+
+
+What do you mean by Self Invoking Functions?
+=> A self-invoking function, also known as an Immediately Invoked Function Expression (IIFE), is a JavaScript function that runs as soon as it is defined.
+
+
+Explain call(), apply() and, bind() methods.
+=> call() - Use .call() when you want to - Explicitly set value of this keyword to a specific object inside a function.
+=> apply() - apply() is just like call() but takes arguments as an array.
+=> bind() - when you want to permanently set the value of this in a function, without calling it immediately.
+
+
+
+What is the difference between exec () and test () methods in javascript?
+Both methods belong to Regular Expressions (RegExp).
+test() – Returns true or false as per matching elements
+exec() – Returns an array with match details or null
+
+
+What is currying in JavaScript?
+=> It is a technique in functional programming, that transforms the function of multiple arguments into several functions of a single argument in sequence. 
+
+
+Why do we use the word “debugger” in javascript?
+The debugger for the browser must be activated in order to debug the code. Built-in debuggers may be switched on and off, requiring the user to report faults. The remaining section of the code should stop execution before moving on to the next line while debugging.
+
+
+Difference between “ == “ and “ === “ operators.
+Both are comparison operators. The difference between both the operators is that “==” is used to compare values whereas, “ === “ is used to compare both values and types.
+
+
+Types of error in javascript.
+=> Syntax error => when there is any issue in syntax that cause syntax error like we to give variable like @varname it is not allowed by syntax than it cause a syntax error 
+
+Reference Error => The ReferenceError object represents an error when a variable that doesn't exist (or hasn't yet been initialized) in the current scope is referenced
+
+Type error => an operand or argument passed to a function is incompatible with the type expected by that operator or function that is cause of type error. error on const variable re-initialization.
+
+
+Types of type conversion in javascript
+=>Implicit conversion
+The compiler automatically handles the conversion without requiring any special syntax in the source code. Implicit conversions are usually successful and don't result in data loss. For example, in Visual Basic, an integer can be implicitly converted to a double.
+
+Explicit conversion
+The programmer manually changes the data type of a value using a type conversion keyword or function.
+
+
+
+Array in javascript.
+=>An array is a special variable that can store multiple values in a single variable.
+push(): push method add elements in array at last position of array it works like stack in dsa.
+unshift(): unshift method add elements in array at first position of array. 
+pop(): push method delete elements in array at last position of array it works like stack in dsa.
+shift(): unshift method delete elements in array at first position of array.
+splice(): Adds or removes elements from any position in the array.
+concat(): Merges two or more arrays.
+slice(): Extracts a section of an array and returns a new array.
+indexOf(): Returns the index of the first occurrence of an element.
+includes(): Checks if an array contains a specific element.
+map(): Creates a new array by applying a function to each element. 
+filter(): Creates a new array with elements that pass a test. 
+forEach(): Executes a provided function once for each array element.
+reduce(): Applies a function to accumulate the elements of an array into a single value.
+
+
+what is use of async await in javascript?
+=> The main use of async and await in JavaScript is to make asynchronous code easier to write, read, and manage — especially when dealing with operations that take time to complete, like:
+-Fetching data from an API
+-Reading files
+-Waiting for a timer/ timeout functions
+-Performing database operations (in Node.js)
+-Avoiding Callback Hell
+Callbacks can get deeply nested and unreadable. async/await flattens that structure.
+=>Instead of chaining .then() calls with Promises:
+fetchData()
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+You can use async/await:
+async function fetchData(){
+  try{
+    let response = await fetch("api");
+    let data = await response.json();
+    console.log(data);
+  }
+}
+
+
+what is the difference between for...in and for...of loops? 
+=> Loops over KEYS (indexes or property names)
+- Use it to loop through object properties or array indexes.
+let obj = { name: "priyanshi", sname: "rabadiya" };
+let arr = ["a", "b", "c"];
+
+for (let key in obj) {
+  console.log(key, ":", obj[key]);
+}
+
+for(let index in arr){
+    console.log(index , ":" , arr[index]);
+}
+
+for...of 👉 Loops over VALUES
+- Use it to loop through the actual values in an array, string, or other iterable.
+
+
+what is destructuring in javascript?
+=>Destructuring in JavaScript is a feature that allows the extraction of values from arrays or objects and assignment to distinct variables.
+const user = {
+  id: 1,
+  name: "divy2",
+  address: {
+    street: "num1",
+    house: "65 rounded",
+  },
+};
+
+const {
+  id,
+  name,
+  address: { street, house },
+} = user;
+console.log(id, name, street, house);
+
+
+What is the difference between `map()`, `filter()`, and `reduce()`?
+map()
+-map(): transforms every elements in array individually and creates a new array.
+-filter(): removes elements that are not required and creates a new array containing the ones needed.
+- filter elements of array as per condition and create new array. 
+-reduce(): reduces all array elements into a single value.
+
+
+Explain Higher Order Functions in javascript.
+A Higher-Order Function (HOF) is a function that takes another function as an argument or returns a function.
+-map(),filter() and reduce() are higher order function.
+
+Ex-function greet(name) {
+  return "Hello, " + name + "!";
+}
+function processUserInput(callback) {
+  const name = "Alice";
+  return callback(name);
+}
+const result = processUserInput(greet);
+console.log(result); // "Hello, Alice!"
+
+
+What are JavaScript modules, and how do you use them?
+A module is just a JavaScript file that exports something (like a function, object, or variable), and imports it where needed.
+-Makes code reusable.
+-Keeps logic organized.
+-Helps with code sharing and testing.
+// mathUtils.js
+export function add(a, b) {
+  return a + b;
+}
+export const PI = 3.14159;
+
+// main.js
+import { add, PI } from './mathUtils.js';
+console.log(add(2, 3)); // 5
+console.log(PI);        // 3.14159
+
+
+What is the event loop in JavaScript?
+The event loop in JavaScript is a mechanism that allows asynchronous code to run without blocking the main thread, even though JavaScript is single-threaded.
+-ex:
+console.log('Start');
+setTimeout(() => {
+  console.log('Timeout');
+}, 0);
+Promise.resolve().then(() => {
+  console.log('Promise');
+});
+console.log('End');
+ANS=>
+Start
+End
+Promise
+Timeout
+
+
+what is closures in javascript?
+A closure gives a function access to its outer scope. In JavaScript, closures are created every time a function is created, at function creation time.
+
+
+What are arrow functions, and how are they different from regular functions?
+Arrow functions in JavaScript are a shorter syntax for writing functions, introduced in ES6. But beyond just being shorter, they also behave a bit differently — especially when it comes to this.
+Example of this behaviour:
+const person = {
+  name: "Alice",
+  regularFunc: function () {
+    console.log("Regular:", this.name);
+  },
+  arrowFunc: () => {
+    console.log("Arrow:", this.name);
+  }
+};
+
+person.regularFunc(); // Regular: Alice
+person.arrowFunc();   // Arrow: undefined (or global `this`)
+
+
+Explain the difference between synchronous and asynchronous programming.
+Synchronous programming :
+One thing at a time, in order.
+Each line of code waits for the previous line to finish.
+Can be blocking — if a task takes time, everything else waits.
+Asynchronous programming :
+Asynchronous programming in JavaScript is a way to perform tasks like fetching data from a server, reading files, or waiting for timeouts without blocking the main thread. 
+- Async/Await is a cleaner way to write asynchronous code.
+
+
+What are JavaScript promises? How do you use them?
+What is a Promise?
+->JavaScript Promises are a modern way to handle asynchronous operations. They represent a value that may not be available yet, but will be resolved (or rejected) in the future.
+A Promise is an object that can be in one of three states:
+Pending – the operation is still ongoing.
+Fulfilled – the operation completed successfully.
+Rejected – the operation failed.
+EX- 
+const promise = new Promise((resolve, reject) => {
+  // Simulate async task
+  setTimeout(() => {
+    const success = true;
+
+    if (success) {
+      resolve("Task completed!");
+    } else {
+      reject("Task failed!");
+    }
+  }, 1000);
+});
+promise
+  .then(result => {
+    console.log(result); // Task completed!
+  })
+  .catch(error => {
+    console.error(error); // Task failed!
+  });
+
+
+What is the difference between `null` and `undefined`?
+Great question! null and undefined are both primitive values in JavaScript that represent "no value", but they are used in different contexts and have different meanings.
+undefined
+->Meaning: A variable has been declared but not assigned a value yet.
+->assigned:Automatically assigned by JavaScript.
+->typeof result: undefined
+null
+->Meaning: A variable is intentionally set to have "no value".
+->assigned:assigned by developers to indicate "empty" or "nothing here on purpose".
+->typeof result: object
+
+When to use what?
+-Use undefined if you're dealing with uninitialized variables or missing properties.
+-Use null when you want to explicitly say: "There should be a value here, but it's empty for now."
+
+
+How does prototypal inheritance work in JavaScript?
+JavaScript implements inheritance by using objects. Each object has an internal link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.
