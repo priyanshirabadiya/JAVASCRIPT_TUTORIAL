@@ -1,9 +1,6 @@
-
 // 1.what is scripting languahg ?
 // 2.what is javascript ?
 // 3.what is object-oriented programming ?
-// 4.Differences between var , let and const.
-
 
 // --------------------------------------------shallow copy --------------------------------------------
 
@@ -18,6 +15,20 @@
 //  2. Object destructuring
 // Deep copy => JSON.parse with JSON.STRINGIFY  => in this data and functions are not work to resolve this problem we can use lodash library or manualy you can do using for loop by copying every element to another file
 
+// shallow copy
+// => shallow copy occurs when you copy the reference of an object to the variable
+
+// let employee = {
+//   id: 1,
+//   name: "priyanshi",
+//   sname: "rabadiya",
+//   salary: 50,
+// };
+
+// console.log("Employee", employee);
+// let newEmployee = employee;
+// newEmployee.name = "shubham";
+// console.log("newEmployee", newEmployee);
 
 // -------------------------------------------- Map/set --------------------------------------------
 
@@ -26,7 +37,6 @@
 
 // 2. what is set method ?
 // => Set is a built-in data structure that stores unique values of any type. It provides methods for adding, removing, and checking for elements. Creating a Set.
-
 
 // -------------------------------------------- Null / undefine / NaN --------------------------------------------
 
@@ -41,16 +51,11 @@
 
 // 4. NaN => NaN is a number that is not legal number.
 
-
-
-
 // -------------------------------------------- Array slice / splice --------------------------------------------
-
 
 // let a = [ 'sanjay' , 'Aman' , 'Rehman' , 'Rahul' , 'Karan' ];
 // console.log(a.slice(1,3)); // Aman , Rehman // syntax : firstindex of array which value you want to get and lastindex + 1 then and only it will give your acject value
 // console.log(a.slice(2)); // all values after 2nd index
-
 
 // splice
 // splice(Staringindex , howmanyelements , "new value")
@@ -61,8 +66,6 @@
 // console.log(a.splice(2 , 1)); // Rehman
 
 // console.log(a);
-
-
 
 // -------------------------------------------- callbacks --------------------------------------------
 
@@ -86,8 +89,6 @@
 //     console.log("Bye...");
 // });
 
-
-
 // ---------------------------------------------------------------------------------------------------------
 
 // 1. callback hell
@@ -101,8 +102,6 @@
 // 9. copywithin
 // 10. shallow / deep
 // summutenesly
-
-
 
 // -----------------------------------------------Callback hell----------------------------------------------------------
 
@@ -129,8 +128,6 @@
 //         console.log("Got my dough", dough);
 //     })
 // });
-
-
 
 // function getRecipe(callback) {
 //     setTimeout(() => {
@@ -179,7 +176,6 @@
 //     });
 // });
 
-
 // ----------------------------------------------------- callback hell another example
 
 // Callback hell is a phenomenon that happens when multiple callbacks are nested on top of each other. The two common ways of escaping the callback hell are by using promises and async/await. Promises mainly have three stages such as resolved, rejected, and pending. It makes the code more maintainable and understandable.
@@ -226,7 +222,6 @@
 // }
 // getdata(' Priyanshi' , callF );
 
-
 // --------------------------------------------------------- Promises(resolve , reject) (then,catch,finally) in javascript
 
 // In JavaScript, a Promise is an object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed.
@@ -250,7 +245,6 @@
 //         }, 2000)
 //     })
 // }
-
 
 // function makepizza(dough) {
 //     return new Promise((resolve, reject) => {
@@ -279,7 +273,6 @@
 //     console.log('Proccess is done');
 // }
 
-
 // function orderpizza() {
 
 //     const cheese = getcheese();
@@ -291,9 +284,6 @@
 
 //     console.log('Proccess is done');
 // }
-
-
-
 
 // orderpizza();
 
@@ -336,7 +326,6 @@
 //     console.log('variable function 2 is resolved');
 // } )
 
-
 // const returnval = new Promise((resolve , reject) => {
 //     setTimeout(() => {
 //         console.log("return promise is returned");
@@ -373,9 +362,7 @@
 
 // Finally part is execute only and when Promise give one result either it is resolve or it is reject then an only finally wii execute
 
-
 // -------------------------------------------------------fetch api
-
 
 // async function getusers(){
 //     try{
@@ -388,7 +375,6 @@
 //     }
 // }
 // getusers()
-
 
 // fetch("https://jsonplaceholder.typicode.com/posts")
 //     .then((response) => {
@@ -403,12 +389,9 @@
 
 // interview question
 
-
 // 1 What is promises?
 
 // In JavaScript, a Promise is an object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed. The possible outcomes here are similar to that of promises in real life.
-
-
 
 // Finally will not run if promises is not resove or reject
 // let pendingPromise = new Promise((resolve, reject) => {
@@ -431,14 +414,11 @@
 //         console.log("This will run when the promise settles.");  // This will not run while the promise is pending
 //     });
 
-
 // new Promise((resolve, reject) => {
 //     throw new Error("error");
 // })
 // .catch(err => console.log(err))
 //     .finally(() => console.log("Promise ready")) // triggers first
-
-
 
 // new Promise(function (resolve, reject) {
 //     resolve(1);
@@ -460,13 +440,9 @@
 //     .then(result3 => alert(result3))
 //     .catch(error => console.log(error))
 
-
-
 // new Promise((resolve, reject) => {
 //     throw new Error("Whoops!");
 // }).catch( error => console.log(error));
-
-
 
 // new Promise((resolve, reject) => {
 
@@ -486,7 +462,6 @@
 // });
 
 // ------------------------------------------------------- async / await
-
 
 // function api() {
 //     return new Promise((resolve, reject) => {
@@ -521,7 +496,6 @@
 //     console.log('Must run last');
 // }
 
-
 // IIFE = anonomous function which we use only one time
 
 // (async function () {
@@ -534,14 +508,6 @@
 //     console.log('Data after waiting for fetching data');
 // })();
 // getdata();
-
-
-
-
-
-
-
-
 
 // ------------------------------------------------ Lexical scoping / clouser
 
@@ -566,7 +532,6 @@
 
 // outerF();
 
-
 // function nameF() {
 //     var nameFY = "Hello";
 //     function fubS2() {
@@ -589,8 +554,6 @@
 
 // outerF(); // not print anything work
 
-
-
 // var x = 220;
 // var y = "Hello";
 // var z = undefined;
@@ -607,7 +570,6 @@
 // current content ne use karva mate this key word no use karvo
 // In JavaScript, the this keyword refers to the object that is currently executing or calling a piece of code. It's a way to access and manipulate the properties and methods of that object.
 
-
 // const user = {
 //     username: "priyanshi",
 //     price: 999,
@@ -623,9 +585,6 @@
 // user.username = "sam";
 // user.welcomMessage();
 // console.log(this);   // {}
-
-
-
 
 // bind method in javascript / Function Borrowing
 // With the bind() method, an object can borrow a method from another object.
@@ -650,7 +609,6 @@
 
 // greet_name(greet, 'Welcome To GeeksForGeeks', 'Geeks');
 
-
 // function hello(name){
 // 	return `hello! ${name} `
 // }
@@ -658,8 +616,6 @@
 // 	console.log(`${sayhi(name)} ${message}`);
 // }
 // meet(hello , "How are you ?" , "Priyanshi")
-
-
 
 // function multiplier(factor) {
 //     return function (x) {
@@ -672,8 +628,6 @@
 
 // console.log(double(5));
 // console.log(triple(5));
-
-
 
 //-------------------------------- exec => regexp
 
@@ -688,15 +642,8 @@
 // const result1 = regex.test(string);
 // console.log(result1);
 
-
-
-
-
-
-
 // Prototype in javascript
 // In JavaScript, a prototype is a mechanism by which objects inherit properties and methods from other objects. It's a fundamental concept in understanding how inheritance works in JavaScript.
-
 
 // Function.prototype.mybind = function () {
 //     console.log("werwef");
@@ -705,10 +652,8 @@
 // function fun() { }
 // fun.mybind()
 
-
 // function fun2() { }
 // fun2.mybind()
-
 
 // function Person(first , last , age , eyecolor){
 //     this.firstName = first;
@@ -716,7 +661,6 @@
 //     this.age = age;
 //     this.eyecolor = eyecolor;
 // }
-
 
 // // Person.prototype.nationality = "Indian";
 
@@ -729,7 +673,6 @@
 // // console.log(mydemo.nationality);
 // console.log(mydemo.name());
 
-
 // what is encode and decode string in js
 
 // let uri = "employeeDetails?name=john&occupation=manager";
@@ -739,15 +682,11 @@
 // console.log(encoded_uri);
 // console.log(decoded_uri);
 
-
-
 // what is memorization
-
 
 // Memoization is a technique for saving values returned by a function so that you don't have to repeat calculations you've already done. This strategy is convenient when we have a frequently called function whose analysis is time-consuming.
 
 // like reursion
-
 
 // OBJECT CONSTRUCTOR IN JAVASCRIPT
 
@@ -760,7 +699,6 @@
 //   const myFather = new Person("John", "Doe", 50, "blue");
 //   const myMother = new Person("Sally", "Rally", 48, "green");
 
-
 // we can add value in this object constructor so to do that we need to use PROTOTYPE : WHY WE USE PROTOTYPE
 
 // function Person(first, last, age, eyecolor) {
@@ -771,7 +709,6 @@
 //   }
 
 //   Person.prototype.nationality = "English";
-
 
 // CLASSES in javascript
 // In general, you should consider using classes when you want to create objects that store their own internal data and expose a lot of behavior.
@@ -794,8 +731,6 @@
 // console.log(seccar.makecar());
 // console.log(typeof car);  // function
 
-
-
 // WHAT IS MODULE IN JAVASCRIPT
 
 // => JavaScript Modules are basically libraries which are included in the given program. They are used for connecting two JavaScript programs together to call the functions written in one program without writing the body of the functions itself in another program.
@@ -815,13 +750,9 @@
 // console.log(add(5, 3)); // Output: 8
 // console.log(subtract(10, 4)); // Output: 6
 
-
 // WHY WE USE MODULES IN JAVASCRIPT
 
 // JavaScript modules are used to split your code into smaller, more manageable pieces rather than keeping it in a single file and moving those pieces to other files or projects. Modules can contain functions, variables, and objects that perform specific functions.
-
-
-
 
 // WAY TO CHECK LOCAL AND SESSION STORAGE IS AVAILABLE OR NOT
 
@@ -834,11 +765,7 @@
 //     console.log(" Sorry! No Web Storage support..");
 // }
 
-
-
 // window.postMessage("Hello from the parent!", "https://google.com");
-
-
 
 // Promise.all() method in javascript
 
@@ -854,7 +781,6 @@
 //     console.log(values);
 // });
 
-
 // Promise Race
 
 // var promise1 = new Promise(function (resolve, reject) {
@@ -867,7 +793,6 @@
 //     console.log(value); // "two" // Both promises will resolve, but promise2 is faster // so it will produce only those result which is faster
 // });
 
-
 // What is the purpose of the delete operator
 
 // var user = { firstName: "John", lastName:"Doe", age: 20 };
@@ -876,7 +801,6 @@
 // delete nameF;
 // console.log(nameF);
 // console.log(user);
-
 
 // function goBack() {
 //     window.history.back();
@@ -887,11 +811,6 @@
 
 // console.log(goBack());
 
-
-
-
-
-
 // ----- call , apply , bind
 // call and apply are method which allow explicity set the value of this when calling a function.
 // in call function it takes argument seperately where apply method takes argument in form of array that is the main difference between them.
@@ -901,14 +820,12 @@
 // var obj = { name: "hirva" }
 // console.log(sayhello.call(obj));
 
-
 // function sayapply(message) {
 //     return this.name + " is " + message;
 // }
 
 // var per4 = { name: "John" };
 // console.log(sayapply.apply(per4, ["tina"]));
-
 
 // curring topic
 // what is curring => Currying is a functional programming technique where a function with multiple arguments is transformed into a series of functions, each taking a single argument.
@@ -943,10 +860,6 @@
 // }
 // init();
 
-
-
-
-
 // function outerFunction(outerVariable) {
 //     return function innerFunction(innerVariable) {
 //         console.log(`Outer Variable: ${outerVariable}`);
@@ -956,6 +869,3 @@
 
 // const closureFunction = outerFunction("outside");
 // closureFunction("inside");
-
-
-
