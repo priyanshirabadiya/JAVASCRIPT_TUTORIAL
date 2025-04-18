@@ -152,14 +152,3 @@
 // console.log(a);
 
 // adding here oops in js
-
-let person = {
-    name : "Hello",
-    last_name : "latiya",
-    getFunction : function(){
-        return (`The name of the person is ${person.name} ${person.last_name}`)
-    },
-    phone_numeber : {
-        mobile :'123654'
-    }
-}
