@@ -15,7 +15,7 @@
 // You want to combine things
 // You want to change parts without touching the original
 
-// copy things
+// copy array
 // const fruits = ["apple", "banana"];
 // const moreFruits = [...fruits];
 // console.log(moreFruits);
@@ -25,9 +25,12 @@
 // const mergedarray = [1 , 2 , ...fruits , 3 , "hello"]
 // console.log(mergedarray);
 
-
-
-
+// copy an object
+// let person = { name: "priyanshi", work: "engineering" };
+// let storeperson = {...person};
+// storeperson.name = "neek"
+// console.log(storeperson);
+// console.log(person);
 
 
 // In this code problem is that it is being copy address(memory) when we assign obj to another variable so it change value if we give any other value
