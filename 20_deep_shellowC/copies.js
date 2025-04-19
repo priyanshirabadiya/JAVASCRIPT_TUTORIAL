@@ -1,3 +1,5 @@
+// import _ from 'lodash';
+
 // understand speard operator before understanding shallow and deep copy
 // speard operator
 // The spread operator in JavaScript is written as ...
@@ -52,8 +54,11 @@
 // console.log(x);
 // console.log(y);
 
-// SHALLOW COPY
-// SOLUTION 1
+// ------------------------------- SHALLOW COPY -------------------------------
+// You want to change parts without touching the original array or object. 
+// Shallow copy consider only first object it is not consider object which is in under of object or within object
+
+// SOLUTION 1 - using Object.assign() method
 // let obj = {
 //     name: "Peter",
 //     address: {
@@ -66,7 +71,7 @@
 // console.log(user);
 // console.log(obj);
 
-// SOLUTION 2
+// SOLUTION 2 - using speard operator
 // let obj = {
 //     name: "Peter",
 //     address: {
@@ -80,10 +85,12 @@
 // console.log(users);
 // console.log(obj);
 
-// but shallow copy also have one issue that's =>
+// but shallow copy also have one issue this =>
 // Shallow copy consider only first object it is not consider object which is in under of object or within object
 // following is problem that it change name in user city and obj city also.
 // To solve this problem generally we use deep copy
+
+// PROBLEM
 
 // let obj = {
 //     name: "Peter",
@@ -98,7 +105,20 @@
 // console.log(users);
 // console.log(obj);
 
-// DEEP COPY
+// ------ main diffrence between shallow and deep copy ------ 
+
+// shallow copy
+// Copies only the top level.
+// Nested objects/arrays are still linked (shared) with the original.
+// “Just the surface is copied, the inside is still connected.”
+
+// deep copy
+// Copies everything — top level and all nested stuff.
+// Completely independent copy.
+// “Everything is cloned. No links to the original.”
+
+// ------------------------------- DEEP COPY ----------------------------------
+// deep copy consider not only first object it is also consider object which is in under of object or within object
 
 // let obj = {
 //   name: "Peter",
@@ -114,6 +134,7 @@
 // console.log("User", user);
 
 // By using lodash library : we can see function also right now
+// const _ = require('lodash');
 
 // let obj = {
 //     name: "Peter",
@@ -121,35 +142,39 @@
 //         city: "Noida",
 //         stat: "UP"
 //     },
-//     hello:function(){
+//     hello: function () {
 //         return "Hello world";
 //     }
 // };
+
+
+// const ingredientsList = ["noodles", { list: ["eggs", "flour", "water"] } , "OG"];
+
+// const ingredientsListDeepCopy = JSON.parse(JSON.stringify(ingredientsList));
+
+// ingredientsListDeepCopy[1].list = ["hello","you","all"];
+
+// console.log(ingredientsListDeepCopy);
+
+
 // let user = _.cloneDeep(obj);
-// user.address.city = "surat";
-// console.log( "real object" , obj);
-// console.log( "User" , user);
+// user.address.city = "Surat";
+
+// console.log("real object", obj);
+// console.log("User", user);
+// console.log("User says:", user.hello()); // ✅ function still works!
+
 
 // Interview questions
 
-// 1. what is perform when we do shallow copy or deep copy ? ans : There is copy value instaed of memory location
-// 2. Difference between shallow copy and deep copy. ans : shallow copy is just copy only main object whereas in deep copy we can copy nested object also
+// 1. what is perform when we do shallow copy or deep copy ?
+//  ans : There is copy value instaed of memory location
+
+// 2. Difference between shallow copy and deep copy. 
+// ans : shallow copy is just copy only main object whereas in deep copy we can copy nested object also
 
 // 3. How many why to do shallow copy or deep copy
 //  shallow copy 
-// => 1. Object.assign() 2. Object destructuring
+// => 1. Object.assign()  2. Object destructuring using speard operator
 // Deep copy
 //  => JSON.parse with JSON.STRINGIFY  => in this data and functions are not work to resolve this problem we can use lodash library or manualy you can do using for loop by copying every element to another file.
-
-
-// deep copy
-// => You make a new copy of an object or array.
-// => It copies everything inside, even nested objects or arrays.
-// => So changing the copy does not affect the original.
-
-// const ingredientsList = ["noodles", { list: ["eggs", "flour", "water"] }];
-// const ingredientsListDeepCopy = JSON.parse(JSON.stringify(ingredientsList));
-// console.log(ingredientsList);
-// ingredientsListDeepCopy.list = ["sdfs","sdfert","rtytry"];
-// console.log(ingredientsListDeepCopy);
-// console.log(ingredientsList);
