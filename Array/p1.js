@@ -78,7 +78,16 @@ const data = [11,22,33,44,55,66];
 // console.log(fruits.slice(5));
 // console.log(fruits.splice(1));
 
+// let a = [ 'sanjay' , 'Aman' , 'Rehman' , 'Rahul' ];
+// console.log(a.slice(1,3));
+// console.log(a.slice(2)); // all values after 2
 
+// splice(index(position no where you want to insert) , howmany , "new value")
+
+// a.splice(2 , 0 , "kena");
+// a.splice(2 , 1); // sanjay , aman , rahul
+
+// console.log(a);
 
 // sort
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];

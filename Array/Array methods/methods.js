@@ -28,12 +28,19 @@
 // strArr.splice(1, 2, "Geeks", "Geeks1", "Geeks2"); 
 // console.log(strArr);
 
-
-// array slice
+// second example
 
 // let arr = [1,2,3,8,5,12,6,89];
 // let m = arr.slice(3);
 // console.log(m);
+
+// let a = [ 'sanjay' , 'Aman' , 'Rehman' , 'Rahul' ];
+// console.log(a.slice(1,3));
+// console.log(a.slice(2)); // all values after 2
+// splice(index(position no where you want to insert) , howmany , "new value")
+// a.splice(2 , 0 , "kena");
+// a.splice(2 , 1); // sanjay , aman , rahul
+// console.log(a);
 
 
 // // Array map()
