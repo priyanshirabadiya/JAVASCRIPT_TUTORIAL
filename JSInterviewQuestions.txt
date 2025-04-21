@@ -1,5 +1,5 @@
 
---- questions with answers---
+--- questions with answers ---
 
 what is javascript?
 JavaScript (JS) is a programming language used to create interactive web pages. 
@@ -54,7 +54,7 @@ function
 date 
 map/set
 -Primitive data types can store only a single value. To store multiple and complex values, non-primitive data types are used.
-object , array(one kind of object in js) , function 
+object , array(one kind of object in js) , function.
 
 
 What is Hoisting?
