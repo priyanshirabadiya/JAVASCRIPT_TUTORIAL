@@ -16,7 +16,7 @@ what is interpreted language?
 
 
 Explain the difference between `var`, `let`, and `const`.
-=>var – Old school (before ES6)
+=> var – Old school (before ES6)
 Function-scoped
 Can be redeclared and updated
 Gets hoisted to the top of its scope (but not initialized)
