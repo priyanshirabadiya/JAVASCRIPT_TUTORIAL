@@ -2,21 +2,76 @@
 --- questions with answers ---
 
 what is javascript?
-Javascript is not programming language it is scripting language.
-JavaScript (JS) is a programming language used to create interactive web pages. 
+"js" is a popular programming language used to create dynamic and interactive web pages.
 JavaScript is a client-side scripting language that runs in the browser.
+Javascript is not programming language it is scripting language.
 
 
 what is scripting language?
 => Scripting languages are typically interpreted, meaning the code is read and executed line by line, unlike compiled languages that need to be translated into machine code before running.
 
 
-what is interpreted language?
-=> An interpreted language is a programming language where code is executed directly by an interpreter, which reads and executes instructions line by line, without requiring a separate compilation step into machine code beforehand.
+difference between programming and scripting language?
+Programming languages are used to create applications, while scripting languages are used to enhance applications. Programming languages are more structured and efficient, while scripting languages are easier to learn and faster to code. 
+
+
+Explain operators in javascript.
+=> 1 Arithmetic operator
+These operators perform mathematical calculations:
++ (Addition): Adds two operands.
+- (Subtraction): Subtracts the right operand from the left.
+* (Multiplication): Multiplies two operands.
+/ (Division): Divides the left operand by the right.
+% (Modulus): Returns the remainder of a division.
+++ (Increment): Increases the value of a variable by 1.
+-- (Decrement): Decreases the value of a variable by 1.
+** (Exponentiation): Raises the left operand to the power of the right.
+
+=> 2 Assignment operator
+These operators assign values to variables:
+= (Assignment): Assigns the value on the right to the variable on the left.
++= (Addition assignment): Adds the right operand to the left and assigns the result to the left.
+-= (Subtraction assignment): Subtracts the right from the left and assigns the result to the left.
+*= (Multiplication assignment): Multiplies the left operand by the right and assigns the result to the left.
+/= (Division assignment): Divides the left operand by the right and assigns the result to the left.
+%= (Modulus assignment): Calculates the modulus and assigns the result to the left. 
+**= (Exponentiation assignment): Raises the left operand to the power of the right and assigns the result to the left.
+
+=> 3 Comparison Operators
+These operators compare two operands and return a Boolean value (true or false):
+== (Equal to): Checks if two operands are equal (value only).
+=== (Strict equal to): Checks if two operands are equal (both value and type).
+!= (Not equal to): Checks if two operands are not equal (value only).
+!== (Strict not equal to): Checks if two operands are not equal (both value and type).
+> (Greater than): Checks if the left operand is greater than the right.
+< (Less than): Checks if the left operand is less than the right.
+>= (Greater than or equal to): Checks if the left operand is greater than or equal to the right.
+<= (Less than or equal to): Checks if the left operand is less than or equal to the right.
+
+=> 4 Logical Operators
+These operators perform logical operations on Boolean values:
+&& (Logical AND): Returns true if both operands are true.
+|| (Logical OR): Returns true if at least one operand is true.
+! (Logical NOT): Returns true if the operand is false and vice-versa.
+
+=> 5 Bitwise Operators
+These operators perform operations on the binary representation of numbers:
+& (Bitwise AND): Performs a bitwise AND operation.
+| (Bitwise OR): Performs a bitwise OR operation.
+^ (Bitwise XOR): Performs a bitwise XOR operation.
+~ (Bitwise NOT): Performs a bitwise NOT operation.
+<< (Left shift): Shifts bits to the left.
+>> (Right shift): Shifts bits to the right, preserving the sign.
+>>> (Unsigned right shift): Shifts bits to the right, filling with zeros.
+
+=> 6 Conditional (Ternary) Operator
+The ternary operator is a shorthand for an if-else statement:
+condition ? expressionIfTrue : expressionIfFalse
+
 
 
 Explain the difference between `var`, `let`, and `const`.
-=> var – Old school (before ES6)
+=>var – Old school (before ES6)
 Function-scoped
 Can be redeclared and updated
 Gets hoisted to the top of its scope (but not initialized)
@@ -58,15 +113,11 @@ function
 date 
 map/set
 -Primitive data types can store only a single value. To store multiple and complex values, non-primitive data types are used.
-object , array(one kind of object in js) , function.
+object , array(one kind of object in js) , function 
 
 
 What is Hoisting?
 =>Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.
-
-
-difference between programming and scripting language?
-Programming languages are used to create applications, while scripting languages are used to enhance applications. Programming languages are more structured and efficient, while scripting languages are easier to learn and faster to code. 
 
 
 what javascript can do?
@@ -114,7 +165,7 @@ num = 10; // This creates a **new number**, doesn't change the old one // ans is
 type    mutable  example
 String	❌ No	"hello"
 Number	❌ No	42
-Boolean	❌ No	true/false
+Boolean	❌ No	true/false  
 Object	✅ Yes	{ name: "Amit" }
 Array	  ✅ Yes	[1, 2, 3]
 Function	✅ Yes	function() {}
@@ -127,6 +178,14 @@ let value1 = "5";
 let value2 = 9;
 let sum = value1 + value2;
 console.log(typeof sum); // Output: "string"
+
+
+Types of type conversion in javascript.
+=>Implicit conversion
+The compiler automatically handles the conversion without requiring any special syntax in the source code. Implicit conversions are usually successful and don't result in data loss. For example, in Visual Basic, an integer can be implicitly converted to a double.
+
+Explicit conversion
+The programmer manually changes the data type of a value using a type conversion keyword or function.
 
 
 what is dynamic programming?
@@ -172,11 +231,10 @@ What do you mean by Self Invoking Functions?
 => A self-invoking function, also known as an Immediately Invoked Function Expression (IIFE), is a JavaScript function that runs as soon as it is defined.
 
 
-Explain call(), apply() and, bind() methods.
+Explain call(), apply() and, bind() methods of functions.
 => call() - Use .call() when you want to - Explicitly set value of this keyword to a specific object inside a function.
 => apply() - apply() is just like call() but takes arguments as an array.
 => bind() - when you want to permanently set the value of this in a function, without calling it immediately.
-
 
 
 What is the difference between exec () and test () methods in javascript?
@@ -205,25 +263,17 @@ Reference Error => The ReferenceError object represents an error when a variable
 Type error => an operand or argument passed to a function is incompatible with the type expected by that operator or function that is cause of type error. error on const variable re-initialization.
 
 
-Types of type conversion in javascript
-=>Implicit conversion
-The compiler automatically handles the conversion without requiring any special syntax in the source code. Implicit conversions are usually successful and don't result in data loss. For example, in Visual Basic, an integer can be implicitly converted to a double.
-
-Explicit conversion
-The programmer manually changes the data type of a value using a type conversion keyword or function.
-
-
-
 Array in javascript.
 =>An array is a special variable that can store multiple values in a single variable.
 push(): push method add elements in array at last position of array it works like stack in dsa.
 unshift(): unshift method add elements in array at first position of array. 
-pop(): push method delete elements in array at last position of array it works like stack in dsa.
-shift(): unshift method delete elements in array at first position of array.
+pop(): pop method in JavaScript that removes the last element from an array, working similarly to a stack in data structures and algorithms (DSA).
+shift(): shift method delete elements in array at first position of array.
 splice(): Adds or removes elements from any position in the array.
 concat(): Merges two or more arrays.
 slice(): Extracts a section of an array and returns a new array.
-indexOf(): Returns the index of the first occurrence of an element.
+indexOf(): Returns the index of the first occurrence of an element. OR
+indexOf() is a JavaScript method that returns the index of the first occurrence of a specified element in an array. If the element is not found, it returns -1.
 includes(): Checks if an array contains a specific element.
 map(): Creates a new array by applying a function to each element. 
 filter(): Creates a new array with elements that pass a test. 
@@ -255,7 +305,7 @@ async function fetchData(){
 
 
 what is the difference between for...in and for...of loops? 
-=> Loops over KEYS (indexes or property names)
+=> for...in 👉 Loops over KEYS (indexes or property names)
 - Use it to loop through object properties or array indexes.
 let obj = { name: "priyanshi", sname: "rabadiya" };
 let arr = ["a", "b", "c"];
@@ -273,7 +323,7 @@ for...of 👉 Loops over VALUES
 
 
 what is destructuring in javascript?
-=>Destructuring in JavaScript is a feature that allows the extraction of values from arrays or objects and assignment to distinct variables.
+=> Destructuring in JavaScript is a feature that allows the extraction of values from arrays or objects and assignment to distinct variables.
 const user = {
   id: 1,
   name: "divy2",
@@ -349,6 +399,10 @@ Promise
 Timeout
 
 
+what is task starviation in javascript?
+=> if we added repeatly task in microtask queue then we don't have chance to take task from task queue that is called starviation in js.
+
+
 what is closures in javascript?
 A closure gives a function access to its outer scope. In JavaScript, closures are created every time a function is created, at function creation time.
 
@@ -378,6 +432,20 @@ Can be blocking — if a task takes time, everything else waits.
 Asynchronous programming :
 Asynchronous programming in JavaScript is a way to perform tasks like fetching data from a server, reading files, or waiting for timeouts without blocking the main thread. 
 - Async/Await is a cleaner way to write asynchronous code.
+
+what is async await in javascript?
+-async and await are keywords in JavaScript that simplify working with asynchronous operations in JavaScript.
+
+async keyword:
+The async keyword is used to declare a function as asynchronous. 
+An async function always returns a Promise.
+
+await Keyword: 
+The await keyword can only be used inside an async function.
+When a Promise is resolved, the await expression returns the resolved value.
+When a Promise is rejected, it throws an error, which can be handled using a try/catch block.
+
+async functions enable you to write asynchronous code that looks and behaves more like synchronous code.
 
 
 What are JavaScript promises? How do you use them?
@@ -409,8 +477,14 @@ promise
   });
 
 
+way to handle asynchronous javascript
+- Callbacks – This is the traditional approach where a function is passed as an argument and invoked after the asynchronous task completes. However, nested callbacks can lead to "callback hell," making the code hard to read and maintain.
+- Promises – Promises were introduced to handle async operations more cleanly. A Promise represents a value that may be available now, later, or never. They allow chaining using .then() and error handling with .catch(). This improves readability and helps avoid deeply nested code.
+async/await – Introduced in ES2017, async/await builds on top of Promises and offers a more synchronous-looking syntax, which enhances code readability. It allows developers to write asynchronous code in a try/catch block, which makes error handling simpler and more intuitive.
+
+
 What is the difference between `null` and `undefined`?
-Great question! null and undefined are both primitive values in JavaScript that represent "no value", but they are used in different contexts and have different meanings.
+-> null and undefined are both primitive values in JavaScript that represent "no value", but they are used in different contexts and have different meanings.
 undefined
 ->Meaning: A variable has been declared but not assigned a value yet.
 ->assigned:Automatically assigned by JavaScript.
@@ -425,5 +499,21 @@ When to use what?
 -Use null when you want to explicitly say: "There should be a value here, but it's empty for now."
 
 
-How does prototypal inheritance work in JavaScript?
-JavaScript implements inheritance by using objects. Each object has an internal link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.
+javascript literals with example.
+In JavaScript, literals are fixed values that are directly written in the code. 
+They represent data values and come in various forms. 
+Here's a breakdown of common JavaScript literals with examples:
+1. String Literals:
+Represent textual data enclosed in single or double quotes.
+2. Numeric Literals:
+Represent numerical values.
+Integer literals: Whole numbers, like 10, -5, 0.
+Floating-point literals: Numbers with decimal points, like 3.14, -0.5, 2.0. They can also be written in scientific notation, such as 2e3 (2000) or 1.5e-2 (0.015).
+3. Boolean Literals:
+Represent logical values, either true or false.
+4. Array Literals:
+Represent collections of values enclosed in square brackets [].
+5. Object Literals:
+Represent collections of key-value pairs enclosed in curly braces {}.
+6. Template Literals:
+Enclosed in backticks ``, allowing string interpolation using ${expression}.
