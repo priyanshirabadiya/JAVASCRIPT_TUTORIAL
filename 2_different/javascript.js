@@ -75,7 +75,8 @@
 //     console.log(x);
 // }
 
-// in this var is globle variable and const and let are block scope varables it means if we console that let variable in out of scope then it give an error
+// in this var is globle variable and const and let are block scope varables it means if we console that let variable in out of 
+// scope({}) then it give an error
 
 {
     // let a = 10;
@@ -207,13 +208,3 @@
     // etc...
 }
 
-
-
-
-
-
-
-         
-
-         
-            
