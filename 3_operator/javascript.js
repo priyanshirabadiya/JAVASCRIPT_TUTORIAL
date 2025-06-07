@@ -6,7 +6,8 @@
 2. Assignment Operators 
 3. Comparison (Relational) Operators 
 4. Logical Operators
-5. Special Operators
+5. Bitwise Operators
+6. Conditional (Ternary) Operator
 
 */
 
@@ -138,9 +139,9 @@ Checks if the value of the left operand is less than or equal to the value of th
 Ex: (A <= B) is true.
 
 */
-// === ma type same hova joiae atle number hoi to banne number and string hoi to banne string
+// === checks if the types are the same, so if both are numbers or both are strings, it will return true
 
-// !== ae === ni jem type check krshe jo type same hse to false or-else false aapse
+// !== works like === and checks types too. If the types are the same, it returns false; otherwise, it returns true
 
 {
     var a = 50;
@@ -156,7 +157,7 @@ Ex: (A <= B) is true.
     // var c = a <= b ;
     
     // console.log(d);
-    // console.log(c);
+    console.log(c);
 }
 
 /* Logical Operators */
@@ -197,7 +198,7 @@ Ex: ! (A && B) is false.
 }
 
 
-/* Miscellaneous Operator
+/* Miscellaneous / Conditional (Ternary)  Operator
 
 ? tarnary operator
 : (Conditional )
