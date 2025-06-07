@@ -157,7 +157,7 @@ Ex: (A <= B) is true.
     // var c = a <= b ;
     
     // console.log(d);
-    console.log(c);
+    // console.log(c);
 }
 
 /* Logical Operators */
