@@ -7,10 +7,10 @@
 }
 
 {
-  var a = 50;
-  var b = 20;
-  if (a > b) console.log(`A is larger ${a}`);
-  else console.log("B is larger");
+//   var a = 50;
+//   var b = 20;
+//   if (a > b) console.log(`A is larger ${a}`);
+//   else console.log("B is larger");
 }
 
 // var a = 10 ;
