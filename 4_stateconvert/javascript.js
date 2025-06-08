@@ -71,7 +71,7 @@ if...else if...else statement
     //   }
  }
  
- 
+
  /* There is nothing special about this code. It is just a series of if statements, where each if is a part of the else clause of the previous statement. Statement(s) are executed based on the true condition, if none of the conditions is true, then the else block is executed. */
  
  {
@@ -260,9 +260,12 @@ parseInt() Parse its argument and returns a whole number
    //  console.log(method8);
    //  console.log(method2);
    //  console.log(method3);
+   //  console.log(method10);
    //  console.log(method11);
    //  console.log(method12);
    //  console.log(method13);
+   // console.log(method15);
+   
  }
  
  
