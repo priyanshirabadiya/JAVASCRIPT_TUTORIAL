@@ -12,15 +12,15 @@
 
 // var zz = 20 + 20 + "5" + 20 + 20
 
-// var zzz = 20 + 20 + "5" + 20 + 20 + 20   
+// var zzz = 20 + 20 + "5" + 20 + 20 + 20
 
 // var zzzz = 20 + 20 + "5" + 20 + 20 + 20 + 20 + 20 + 20
 
-// var zzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2 
+// var zzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2
 
 // var zzzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2 - 50  // 405202040 - 50
 
-// var zzzzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2 - 50 + "5" // 405202040 - 50 
+// var zzzzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2 - 50 + "5" // 405202040 - 50
 // console.log(zzzzzz);
 
 // console.log(y);
@@ -40,12 +40,11 @@
 // console.log(zzzzzz);
 // console.log(typeof(zzzzz));
 
-// What will be ans of this following question? 
+// What will be ans of this following question?
 
 // let x = 1 + 1 + "2" + 1 + 1 * 3 - 1;  // 2213-1   2212
 // console.log(x);
 // console.log(typeof(x));
-
 
 /*  Declaration var() */
 
@@ -65,98 +64,96 @@
 
 /* Block-scope variables */
 
-// let x = 'javascript'
-// {
-//     // let x = "hello"
-//     // let x = 'java'
-//     console.log(x);
-// }
+// let x = "javascript";
+{
+  // let x = "javascript";
+  // let x = "hello";
+  // let x = 'java';
+  //   console.log(x);
+}
 
-// in this var is globle variable and const and let are block scope varables it means if we console that let variable in out of 
+// in this var is globle variable and const and let are block scope varables it means if we console that let variable in out of
 // scope({}) then it give an error
 
 {
-    // let a = 10;
-    // let b = 10;
-    // var c = a + b;
-    // var a = 10;
-    // let a = 10
-    // const a = 10;
+  //   let a = 10;
+  //   let b = 10;
+  //   var c = a + b;
+  // var a = 10;
+  // let a = 10;
+  // const a = 10;
 }
-// console.log(c); 
+// console.log(c);
 // console.log(a); //error
 // console.log(b); //error
 // var a = 10;
 
 {
-    // let a = 10;
-    // const a = 10;
-    // var a = 10;
+  // let a = 10;
+  // const a = 10;
+  // var a = 10;
 }
 // console.log(a);
 
 {
-//   let y = 2;
+  //   let y = 2;
 }
 // console.log(y);
-
 
 // -------------------const----------------------------
 
 {
-    // const num = 10;
-    // // calling the function inside block
-	// // console.log(num)
-    // console.log(num)
+  //   const num = 10;
+  // calling the function inside block
+  //   console.log(num)
 }
 
-//  const x = 20;
-//  {
-//     const x = 50;
-//     console.log(x);
-// }
-// {
-//     const x = 30;
-// }
+// const x = 20;
+{
+//   const x = 50;
+//   console.log(x);
+}
+{
+//   const x = 30;
+//   console.log(x);
+}
 
 // console.log(x);
 
 {
-    // let x = 'sun'
-    // console.log(x);
+  let x = 'sun';
+  console.log(x);
 }
-
 
 /* Declaration const() */
 
 // let x = 20;
 
 {
-    // let x = 20;
-    // console.log(x);
+  // let x = 20;
+  // console.log(x);
 }
 {
-    // let x = 50;
+  // let x = 50;
 }
 
 // console.log(x);
 
-
 /* string with quotes */
 
 {
-    // let string1  = "He'llo"
-    // let string2  = 'He"llo'
-    // let string3  = "He\"llo"
-    // let string4  = 'He\'llo'
-    // let string5  = "He\nllo"
-    // let string6  = "He\t\tllo"
-    // console.log(string1);
-    // console.log(string2);
-    // console.log(string3);
-    // console.log(string4);
-    // console.log(string5);
-    // console.log(string6);
+  // let string1  = "He'llo"
+  // let string2  = 'He"llo'
+  // let string3  = "He\"llo"
+  // let string4  = 'He\'llo'
+  // let string5  = "He\nllo"
+  // let string6  = "He\t\tllo"
+  // console.log(string1);
+  // console.log(string2);
+  // console.log(string3);
+  // console.log(string4);
+  // console.log(string5);
+  // console.log(string6);
 }
 
 /*
@@ -180,28 +177,27 @@
 */
 
 {
-    // const x , y;
-    // const x = 20;
-    // const y = 50;
-    // console.log(x);
-    // console.log(y);
+  // const x , y;
+  // const x = 20;
+  // const y = 50;
+  // console.log(x);
+  // console.log(y);
 }
 
 /* Types Of Variables */
 
 {
-    // var myInteger = 12; // 32-bit number (from -2,147,483,648 to 2,147,483,647)
-    // var myLong = 9310141419482; // 64-bit number (from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
-    // var myFloat = 5.5; // 32-bit floating-point number (decimal)
-    // var myDouble = 9310141419482.22; // 64-bit floating-point number
-    // var myBoolean = true; // 1-bit true/false (0 or 1)
-    // var myBoolean2 = false;
-    // var myNotANumber = NaN;
-    // var NaN_Example = 0/0; // NaN: Division by Zero is not possible
-    // var notDefined; // undefined: we didn't define it to anything yet
-    // x = 20
-    // window.alert(xx); // undefined
-    // var myNull = null; // null
-    // etc...
+  // var myInteger = 12; // 32-bit number (from -2,147,483,648 to 2,147,483,647)
+  // var myLong = 9310141419482; // 64-bit number (from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+  // var myFloat = 5.5; // 32-bit floating-point number (decimal)
+  // var myDouble = 9310141419482.22; // 64-bit floating-point number
+  // var myBoolean = true; // 1-bit true/false (0 or 1)
+  // var myBoolean2 = false;
+  // var myNotANumber = NaN;
+  // var NaN_Example = 0/0; // NaN: Division by Zero is not possible
+  // var notDefined; // undefined: we didn't define it to anything yet
+  // x = 20
+  // window.alert(xx); // undefined
+  // var myNull = null; // null
+  // etc...
 }
-
