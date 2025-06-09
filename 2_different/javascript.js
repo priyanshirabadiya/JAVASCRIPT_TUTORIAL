@@ -14,25 +14,15 @@
 
 // var zzz = 20 + 20 + "5" + 20 + 20 + 20   
 
-// var zzzx = 20 + 20 + "5" + 20 + 20 + 20 + 20 + 20 + 20
+// var zzzz = 20 + 20 + "5" + 20 + 20 + 20 + 20 + 20 + 20
 
 // var zzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2 
 
-// var zzzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2 - 50
+// var zzzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2 - 50  // 405202040 - 50
 
-// var zzzzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2 - 50 + "5" 
+// var zzzzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2 - 50 + "5" // 405202040 - 50 
+// console.log(zzzzzz);
 
-// What will be ans of this let 
-
-// let x = 1 + 1 + "2" + 1 + 1 * 3 - 1;
-// console.log(x);
-
-
-// 405202040 - 50
-// 4052019905
-
-// console.log(x);
-// console.log(typeof(x));
 // console.log(y);
 // console.log(typeof(y));
 // console.log(z);
@@ -49,6 +39,13 @@
 // console.log(typeof(zzzzz));
 // console.log(zzzzzz);
 // console.log(typeof(zzzzz));
+
+// What will be ans of this following question? 
+
+// let x = 1 + 1 + "2" + 1 + 1 * 3 - 1;  // 2213-1   2212
+// console.log(x);
+// console.log(typeof(x));
+
 
 /*  Declaration var() */
 
