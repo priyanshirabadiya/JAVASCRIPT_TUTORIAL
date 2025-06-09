@@ -121,8 +121,8 @@
 // console.log(x);
 
 {
-  let x = 'sun';
-  console.log(x);
+//   let x = 'sun';
+//   console.log(x);
 }
 
 /* Declaration const() */
@@ -142,18 +142,18 @@
 /* string with quotes */
 
 {
-  // let string1  = "He'llo"
-  // let string2  = 'He"llo'
-  // let string3  = "He\"llo"
-  // let string4  = 'He\'llo'
-  // let string5  = "He\nllo"
-  // let string6  = "He\t\tllo"
-  // console.log(string1);
-  // console.log(string2);
-  // console.log(string3);
-  // console.log(string4);
-  // console.log(string5);
-  // console.log(string6);
+//   let string1  = "He'llo"
+//   let string2  = 'He"llo'
+//   let string3  = "He\"llo"
+//   let string4  = 'He\'llo'
+//   let string5  = "He\nllo"
+//   let string6  = "He\t\tllo"
+//   console.log(string1);
+//   console.log(string2);
+//   console.log(string3);
+//   console.log(string4);
+//   console.log(string5);
+//   console.log(string6);
 }
 
 /*
