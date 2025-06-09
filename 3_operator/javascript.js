@@ -11,7 +11,6 @@
 
 */
 
-
 /* Arithmetic Operators */
 
 /*
@@ -27,16 +26,13 @@
 
 */
 
-
 /* Arithmetic Operators */
 
 {
-    // let x  = 1;
-    // let y = 5;
-    // console.log(2**3*1**3);
+  // let x  = 1;
+  // let y = 5;
+  // console.log(2**3*1**3);
 }
-
-
 
 /*  ASSIGEMENT OPERATOR  */
 
@@ -73,35 +69,31 @@ Ex: C**=A IS equivalent to C=C**A
 */
 
 {
-    var a = 3;
-    var b = 3;  
-    // var c = a+=b; // (b+=a) b=b+a a = a + b
-    // var c = b-=a; // b = b-a
-    // var c = b*=a; // b = b*a
-    // var c = a%=b  // a = a%b
-    // var c = a/=b  // a = a/b;
-    // var c = a**=b; // a = a ** b ;
-    // console.log(c);
-    // console.log(a); 
-    // console.log(b);
+  // var a = 3;
+  // var b = 3;
+  // var c = a+=b; // (b+=a) b=b+a a = a + b
+  // var c = b-=a; // b = b-a
+  // var c = b*=a; // b = b*a
+  // var c = a%=b  // a = a%b
+  // var c = a/=b  // a = a/b;
+  // var c = a**=b; // a = a ** b ;
+  // console.log(c);
+  // console.log(a);
+  // console.log(b);
 }
 
 {
-    // a = 3
-    // b = 3
-
-    // a  = a + b
-    // a = 6
-
-    // b = b - a
-    // b = 3 - 6
-    // b = -3
-
-    // c = b-=a
-    // c = b
-    // c = -3
-
-    // a = 6
+  // a = 3
+  // b = 3
+  // a  = a + b
+  // a = 6
+  // b = b - a
+  // b = 3 - 6
+  // b = -3
+  // c = b-=a
+  // c = b
+  // c = -3
+  // a = 6
 }
 
 /* Comparison Operators */
@@ -144,20 +136,20 @@ Ex: (A <= B) is true.
 // !== works like === and checks types too. If the types are the same, it returns false; otherwise, it returns true
 
 {
-    var a = 50;
-    var b = "20";
-    
-    // var c = a == b;
-    // var d = a != b ;
-    // var c = a === b;
-    // var c = a!==b;
-    // var c = a > b;
-    // var c = a >= b;
-    // var c = a < b;
-    // var c = a <= b ;
-    
-    // console.log(d);
-    // console.log(c);
+  var a = 50;
+  var b = "20";
+
+  // var c = a == b;
+  // var d = a != b ;
+  // var c = a === b;
+  // var c = a !== b;
+//   var c = a > b;
+//   var c = a >= b;
+//   var c = a < b;
+  // var c = a <= b ;
+
+  // console.log(d);
+  console.log(c);
 }
 
 /* Logical Operators */
@@ -190,13 +182,10 @@ Ex: ! (A && B) is false.
 */
 
 {
-
-    // console.log(true && true && false);
-    // console.log(true || false || false);
-    // console.log(!(true || false || false));
-  
+  // console.log(true && true && false);
+  // console.log(true || false || false);
+  // console.log(!(true || false || false));
 }
-
 
 /* Miscellaneous / Conditional (Ternary)  Operator
 
@@ -227,4 +216,3 @@ If Condition is true? Then value X : Otherwise value Y
 // let x = 1/0;
 // console.log(typeof(x));
 // console.log(x);
-
