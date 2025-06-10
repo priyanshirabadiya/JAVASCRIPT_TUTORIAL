@@ -32,7 +32,7 @@
 // c = a % b;
 // console.log(c);
 
-// c = a++ + ++b;
+// c = a++ + ++b; // 10 + 21 
 // console.log(c);
 
 // c = a ** b ;
