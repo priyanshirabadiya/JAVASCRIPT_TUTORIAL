@@ -198,16 +198,16 @@ parseInt() Parse its argument and returns a whole number
   // console.log(typeof pi7);
 }
 {
-//   let pf1 =  parseFloat("10");
-//   let pf2 =  parseFloat("10.33");
-//   let pf3 =  parseFloat("10 20 30");
-//   let pf4 =  parseFloat("10 years");
-//   let pf5 =  parseFloat("years 10");
-//   console.log(pf1);
-//   console.log(pf2);
-//   console.log(pf3);
-//   console.log(pf4);
-//   console.log(pf5);
+  //   let pf1 =  parseFloat("10");
+  //   let pf2 =  parseFloat("10.33");
+  //   let pf3 =  parseFloat("10 20 30");
+  //   let pf4 =  parseFloat("10 years");
+  //   let pf5 =  parseFloat("years 10");
+  //   console.log(pf1);
+  //   console.log(pf2);
+  //   console.log(pf3);
+  //   console.log(pf4);
+  //   console.log(pf5);
 }
 
 /* Number Object Method */
@@ -222,19 +222,18 @@ parseInt() Parse its argument and returns a whole number
  */
 
 {
-  // let method1 = Number.isInteger(10);
-  // let method1 = Number.isInteger(10.5);
-  //  console.log(method1);
+  //   let method1 = Number.isInteger(10);
+  //   let method1 = Number.isInteger(10.5);
   //  let method2 = Number.isSafeInteger(10);
-  // let method3 = Number.isSafeInteger(5678901234567890);
-  // console.log(method3);
+  //  let method3 = Number.isSafeInteger(5678901234567890);
   //  let method4 = Number.parseFloat("10");
   //  let method5 = Number.parseFloat("10.33");
   //  let method6 = Number.parseFloat("10 20 30");
   //  let method7 = parseFloat("10 years");
   //  let method8 = Number.parseFloat("years 10");
-  //  let method9 = parseInt("5years 10");
+//   let method9 = parseInt("5years 10");
   //  let method9  =  Number.parseInt("-10");
+//   console.log(typeof method9);
   //  let method10 = Number.parseInt("-10.33");
   //  let method11 = Number.parseInt("10");
   //  let method12 = Number.parseInt("10.33");
