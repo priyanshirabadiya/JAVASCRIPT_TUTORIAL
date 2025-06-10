@@ -182,7 +182,7 @@ parseInt() Parse its argument and returns a whole number
   //   let n7 = Number("10.33");
   //   let n8 =  Number("10,33");
   //   let n9 =  Number("10 33");
-  //   let n10 =  Number("10John");
+  //   let n10 =  Number("sdf10John");
   //   console.log(n10);
   //   console.log(typeof n10);
 }
@@ -193,21 +193,21 @@ parseInt() Parse its argument and returns a whole number
   // let pi4 =  parseInt("10.33");
   // let pi5 =  parseInt("20 30");
   // let pi6 =  parseInt("10 years");
-  // let pi7 = parseInt("years 10");
-  // console.log(pi7);
-  // console.log(typeof pi7);
+  //   let pi7 = parseInt("years 10");
+  //   console.log(pi7);
+  //   console.log(typeof pi7);
 }
 {
   //   let pf1 =  parseFloat("10");
   //   let pf2 =  parseFloat("10.33");
   //   let pf3 =  parseFloat("10 20 30");
-  //   let pf4 =  parseFloat("10 years");
-  //   let pf5 =  parseFloat("years 10");
+  //  let pf4 =  parseFloat("10 years");
+  //  let pf5 =  parseFloat("years 10");
   //   console.log(pf1);
   //   console.log(pf2);
   //   console.log(pf3);
-  //   console.log(pf4);
-  //   console.log(pf5);
+  //  console.log(pf4);
+  //  console.log(pf5);
 }
 
 /* Number Object Method */
@@ -229,11 +229,15 @@ parseInt() Parse its argument and returns a whole number
   //  let method4 = Number.parseFloat("10");
   //  let method5 = Number.parseFloat("10.33");
   //  let method6 = Number.parseFloat("10 20 30");
-  //  let method7 = parseFloat("10 years");
-  //  let method8 = Number.parseFloat("years 10");
-//   let method9 = parseInt("5years 10");
+  // let method7 = parseFloat("10 years");
+  // let method8 = Number.parseFloat("212.010");
+  // let method9 = Number.parseInt("years 10");
+  // console.log(typeof method7);
+  // console.log( method8);
+  // console.log(typeof method9);
+  //   let method9 = parseInt("5years 10");
   //  let method9  =  Number.parseInt("-10");
-//   console.log(typeof method9);
+  //   console.log(typeof method9);
   //  let method10 = Number.parseInt("-10.33");
   //  let method11 = Number.parseInt("10");
   //  let method12 = Number.parseInt("10.33");
