@@ -1,71 +1,62 @@
 /* Break , Continue and Nested Statements/Loop */
 
-
 /*  The break statement is used to terminate the loop immediately when it is encountered. */
 
 {
-    // for (let counter = 0; counter <= 10; counter++) {
-    //      if (counter == 6) {
-    //           break;
-    //      }
-    //     document.write(counter);
-    //     document.write("<br>");
-    // }
-
-    // let i = 0;
-
-    // while(i<=5)
-    // {
-    //     if(i == 3){
-    //           break;
-    //     }
-    //     document.write("Hello");
-    //     i++;
-    // }
+  // for (let counter = 0; counter <= 10; counter++) {
+  //      if (counter == 6) {
+  //           break;
+  //      }
+  //     document.write(counter);
+  //     document.write("<br>");
+  // }
+  // let i = 0;
+  // while(i<=5)
+  // {
+  //     if(i == 3){
+  //           break;
+  //     }
+  //     // document.write("Hello");
+  //     console.log("Hello");
+  //     i++;
+  // }
 }
 
 /* Continue Statement */
 
 {
-    //  for (let counter = 1; counter <= 10; counter++) {
-
-    //       if (counter == 5) {
-    //            continue;
-    //       }
-
-    //       if (counter == 6) {
-    //            continue;
-    //       }
-
-    //       document.write(counter);
-    //       document.write("<br>");
-    // }
+  //  for (let counter = 1; counter <= 10; counter++) {
+  //       if (counter == 5) {
+  //            continue;
+  //       }
+  //       if (counter == 6) {
+  //            continue;
+  //       }
+  //       document.write(counter);
+  //       document.write("<br>");
+  // }
 }
 
 /* Neasted Statement/Loop */
 
 {
-    //  link: for (let counter = 1; counter <= 15; counter++) {
-
-    //       document.write(counter);
-    //       document.write("<br>");
-
-    //       link2: for (let counter2 = 1; counter2 <= 10; counter2++) {
-
-    //            if (counter == 11) {
-    //                 break link;
-    //            }
-    //            document.write(counter + "x" + counter2 + "=")
-    //            document.write(counter*counter2);
-    //            document.write("<br>");
-    //       }
-    //  }
+  //   link: for (let counter = 1; counter <= 15; counter++) {
+  //     document.write(counter);
+  //     document.write("<br>");
+  //     link2: for (let counter2 = 1; counter2 <= 10; counter2++) {
+  //       if (counter == 11) {
+  //         break link;
+  //       }
+  //       document.write(counter + "x" + counter2 + "=");
+  //       document.write(counter * counter2);
+  //       document.write("<br>");
+  //     }
+  //   }
 }
 
 // -------------------------second-lecture ------------------
 
 /* Javascript Loops */
-
 
 /* javascript while loop */
 
@@ -89,7 +80,6 @@ while (condition)
 //     }
 // }
 
-
 /* JavaScript Do while loop
 
 The JavaScript do while loop iterates the elements for the infinite number of times like while loop. But, code is executed at least once whether condition is true or false. 
@@ -103,13 +93,11 @@ do{
 // let i = 0;
 
 {
-    // do{
-    //     console.log(`number:- ${i}`);
-    //     i++;
-    // }while(i<=6)
+  // do{
+  //     console.log(`number:- ${i}`);
+  //     i++;
+  // }while(i<=6)
 }
-
-
 
 /* javascript for loop
 
@@ -130,8 +118,8 @@ for ([initialExpression]; [conditionExpression]; [incrementExpression])
 */
 
 {
-    // let i = -2;
-    // for(i; i<=0; i++){
-    //     document.write("hello" + "<br>")
-    // }
+//   let i = -2;
+//   for(i; i<=0; i++){
+//       document.write("hello" + "<br>")
+//   }
 }
