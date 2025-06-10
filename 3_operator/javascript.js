@@ -136,20 +136,18 @@ Ex: (A <= B) is true.
 // !== works like === and checks types too. If the types are the same, it returns false; otherwise, it returns true
 
 {
-  var a = 50;
-  var b = "20";
-
+  // var a = 50;
+  // var b = "20";
   // var c = a == b;
   // var d = a != b ;
   // var c = a === b;
-  // var c = a !== b;
-//   var c = a > b;
-//   var c = a >= b;
-//   var c = a < b;
+  // var c = a !== b; 
+  //   var c = a > b;
+  //   var c = a >= b;
+  //   var c = a < b;
   // var c = a <= b ;
-
   // console.log(d);
-  console.log(c);
+  // console.log(c);
 }
 
 /* Logical Operators */
@@ -205,13 +203,22 @@ If Condition is true? Then value X : Otherwise value Y
 // let age = aggriment == 5 ? "Login" : "Logout";
 // document.write(age);
 
+// let rname = "john";
+// let orgname = rname == "john" ? "Yes you can go" : "You can't go";
+// console.log(orgname);
+
+
 // let ny = 0;
 // let pji = ny == 0 ? "hello" : "bye" ;
 // document.write(pji);
+
+// comma operator 
+// The comma operator in JavaScript evaluates each of its operands from left to right and returns the value of the last operand
+
 // let x = (6,6,7,5,10)
 // console.log(x);
 
-// typeof
+// typeof operator
 
 // let x = 1/0;
 // console.log(typeof(x));
