@@ -53,7 +53,7 @@ The syntax for Math any methods is : Math.method(number)
 //Math.ceil(x) returns the value of x rounded up to its nearest integer.
 //Example:-
 
-// let math5 = Math.ceil(54.2)
+// let math5 = Math.ceil(54.1)
 // let math6 = Math.ceil(-54.8)
 // console.log(math5);
 // console.log(math6);
@@ -64,8 +64,8 @@ The syntax for Math any methods is : Math.method(number)
 //Math.floor(x) returns the value of x rounded down to its nearest integer.
 //Example:-
 
-// let math7 = Math.floor(-89.12)
-// let math8  = Math.floor(89.52)
+// let math7 = Math.floor(-89.5)
+// let math8  = Math.floor(89.2)
 // console.log(math7);
 // console.log(math8);
 
@@ -83,7 +83,13 @@ The syntax for Math any methods is : Math.method(number)
 		
 
 //Math.sign():-
-//Math.sign(x) returns  if x is negative, null or positive.
+// Math.sign(x) returns the sign of a number:
+// -1 if the number is negative
+// 1 if the number is positive
+// 0 if the number is +0
+// -0 if the number is -0
+// NaN if the value is not a number
+
 //Example:-
 
 // let math10 = Math.sign(-0)
