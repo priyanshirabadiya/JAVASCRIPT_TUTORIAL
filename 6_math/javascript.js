@@ -102,8 +102,6 @@ The syntax for Math any methods is : Math.method(number)
 // console.log(math13);
 
 
-	
-
 //Math.pow():-
 
 //Math.pow(x, y) returns the value of x to the power of y.
