@@ -36,8 +36,20 @@
 // let message = confirm("this is js?");
 // document.write(message);
 
-/* Javascript Map Methods */
+// Map and Set in JS.
 
+// what is map and set in javascript?
+// They are both constructor functions in JavaScript. This means:
+// You use them with the new keyword to create new instances of Map or Set objects.
+
+//  So, what is a constructor?
+// In JavaScript:
+// A constructor is a special function used to create and initialize objects.
+// You call it with the new keyword.
+
+
+
+/* Javascript Map Methods */
 /*
 new Map()	Creates a new Map object
 set()	    Sets the value for a key in a Map
