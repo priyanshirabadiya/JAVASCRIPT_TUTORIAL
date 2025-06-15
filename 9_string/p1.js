@@ -13,19 +13,20 @@
 
 // slice
 // **slice()** extracts a part of a string and returns the extracted part in a new string.
+// It creates new string it will not chages its original string.
 
 // The method takes 2 parameters: start position, and end position (end not included).
 // let text = "Apple, Banana, Kiwi";
-// let length = text.slice(2, 13); // Banana
-// let length2 = text.slice(-2); // Banana
-// console.log(length);
+// let slicedpart = text.slice(2, 13); // Banana
+// let length2 = text.slice(-2); // wi
+// console.log(slicedpart);
 // console.log(length2);
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango" ];
+// fruits.slice(2,0);
+// console.log(fruits);
 
 // // At position 2, add "Lemon" and "Kiwi":
-// let ee = fruits.slice(1,4)
-// console.log(ee);
 
 
 
