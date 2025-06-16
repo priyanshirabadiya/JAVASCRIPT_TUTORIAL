@@ -26,15 +26,18 @@
 // fruits.slice(2,0);
 // console.log(fruits);
 
-// // At position 2, add "Lemon" and "Kiwi":
-
-
 
 // string slice
 // let txt = "12345678910112";
 // let txt2 = "javascript is a language";
 // console.log(txt.slice(2,10));
-// console.log(txt.slice(2,-10));
+
+// console.log(txt.slice(2,-10)); 
+// The first argument (2) is the start index, meaning it starts at the 3rd character (indexing starts from 0).
+// The second argument (-10) is the end index counted from the end, so:
+// -10 means 10 characters from the end → index 14 - 10 = 4.
+// So this slice is equivalent to: txt.slice(2, 4)
+
 // console.log(txt.slice(-3,-2)); // this series can't move -10 of 0  and can't go on minus side because JavaScript counts positions from zero.
 // console.log(txt.slice(5));
 // console.log(txt2.slice(-10));
