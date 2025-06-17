@@ -50,12 +50,16 @@ let txt2 = "javascript is a language";
 // It returns a new string.
 // (-)count compulsory from 0
 // In JavaScript, .substring(start, end) does NOT support negative numbers.
-// If you use a negative number, JavaScript will treat it as zero.
+// If you use a negative number, JavaScript will treat it as zero(0).
 
-let text = "Apple,Banana,Kiwi";
-let data = text.substring(2, -3); // 20 to 0
+// let text = "Apple,Banana,Kiwi";
+// let data = text.substring(2, -3); // 20 to 0  
+// Now, .substring(2, 0) becomes .substring(0, 2) because:
+// If start > end, .substring() swaps them internally 
+// So .substring(2, -3) → .substring(2, 0) → swapped → .substring(0, 2)
+
 // let data = text.substring(-20, -5); // 0 to 0
-console.log(data);
+// console.log(data);
 
 // substr
 /*
