@@ -27,7 +27,7 @@
 
 // string slice
 // let txt = "12345678910112";
-let txt2 = "javascript is a language";
+// let txt2 = "javascript is a language";
 // console.log(txt.slice(2,10));
 
 // console.log(txt.slice(2,-10));
@@ -36,7 +36,7 @@ let txt2 = "javascript is a language";
 // -10 means 10 characters from the end → index 14 - 10 = 4.
 // So this slice is equivalent to: txt.slice(2, 4)
 
-// console.log(txt.slice(-3, -2)); // 14 - 3 , 14 - 2  // 11 , 12 
+// console.log(txt.slice(-3, -2)); // 14 - 3 , 14 - 2  // 11 , 12
 // // this series can't move -10 of 0  and can't go on minus side because JavaScript counts positions from zero.
 // console.log(txt.slice(5));
 // console.log(txt2.length);
@@ -53,9 +53,9 @@ let txt2 = "javascript is a language";
 // If you use a negative number, JavaScript will treat it as zero(0).
 
 // let text = "Apple,Banana,Kiwi";
-// let data = text.substring(2, -3); // 20 to 0  
+// let data = text.substring(2, -3); // 20 to 0
 // Now, .substring(2, 0) becomes .substring(0, 2) because:
-// If start > end, .substring() swaps them internally 
+// If start > end, .substring() swaps them internally
 // So .substring(2, -3) → .substring(2, 0) → swapped → .substring(0, 2)
 
 // let data = text.substring(-20, -5); // 0 to 0
@@ -74,13 +74,13 @@ let txt2 = "javascript is a language";
 
 // string replace
 // let text = "Please visit Microsoft! And Microsoft is also the best one.";
-// let replaceStr = text.replace(/Microsoft/g, "SkillQode");
-// // let replaceStr = text.replaceAll("Microsoft", "SkillQode");
+// let replaceStr = text.replace("Microsoft", "Google");
+// let replaceStr = text.replace(/Microsoft/g, "Google");
+// let replaceStr = text.replaceAll("Microsoft", "Google");
 // console.log(replaceStr);
 // console.log(text);
 
 // upper lower
-
 // let txt = 'hello WORLD';
 // console.log(txt.toUpperCase());
 // console.log(txt.toLowerCase());
@@ -91,23 +91,26 @@ let txt2 = "javascript is a language";
 // console.log(txt.trimEnd());     //remove space from end
 
 // pad start
+// In JavaScript, padStart() and padEnd() are string methods used to add padding characters to the beginning or end of a string until it reaches a specified target length.
 // let txt = "52";
-// let txt2 ="12";
+// let txt2 = "12";
+// let padstart = txt.padStart(8, "x");
+// console.log(padstart);
 // let start = txt.padStart(4, "x");
 // let end = txt2.padEnd(4, "x");
-// let arr = [start,end];
-// console.log(arr.join(""));
-
+// let arr = [start, end];
+// console.log(arr);
+// let str = arr.join("");
+// console.log(str);
 // console.log(start);
 // console.log(end);
 
-// console.log();
 // let text = "5";
-// let padded = text.padStart(4,"0"); // 0005
-// console.log(padded);
+// let padstart = text.padStart(4,"0"); // 0005
+// console.log(padstart);
 
 // let txt = 'hello , world';
-// console.log(txt.split("L"));
+// console.log(txt.split("l"));
 // console.log(txt.split(" "));
 
 // concat string
