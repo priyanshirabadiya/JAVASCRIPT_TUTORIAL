@@ -113,16 +113,6 @@
 // console.log(txt.split("l"));
 // console.log(txt.split(" "));
 
-// concat string
-// let txt1 = "hello";
-// let txt2 = "world";
-// console.log(txt1.concat(" ",txt2));
-
-// charAt
-
-// let txt = "hello pc";
-// console.log(char);
-
 // let text = "HELLO WORLD l jufn ,kh";
 // let data = text.split(",") // Split on commas
 // let data1 = text.split(" ") // Split on spaces
@@ -130,3 +120,12 @@
 // console.log(data);
 // console.log(data1);
 // console.log(data2);
+
+// concat string
+// let txt1 = "hello";
+// let txt2 = "world";
+// console.log(txt1.concat(" ",txt2));
+
+// charAt
+// let txt = "hello pc";
+// console.log(txt.charAt(6));
