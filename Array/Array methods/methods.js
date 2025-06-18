@@ -36,17 +36,64 @@
 // delete arr[1];
 // console.log(arr);
 
-// concate method
+// JavaScript Array concat() Method
+// The concat() method is used to concatenate two or more arrays and it gives the merged array.
 
-// let arr = [1,2,4,5];
-// let arr2 = [6,5,7,8,7];
-// console.log(arr.concat(arr2));
+// let arr = [1, 2, 4, 5];
+// let arr1 = [10, 20, 30, 40, 50];
+// let arr2 = [6, 5, 7, 8, 7];
+// console.log(arr.concat(arr2,arr1));
 
-// array push
-
+// JavaScript Array.push() Method
+// The push() method is used to add an element at the end of an Array.
 // let pt = ["ty","fy","sy"];
-// console.log(pt.push("mainadded"));
+// console.log(pt.push("elementadded"));
 // console.log(pt);
+
+// JavaScript Array.unshift() Method
+// The unshift() method is used to add elements to the front of an Array.
+
+// let arr = [10, 20, 30];
+// arr.unshift(5, 1);
+// console.log(arr);
+
+// JavaScript Array.pop() Method
+// The pop() method is used to remove elements from the end of an array.
+// let arr = [10, 20, 30, 40, 5];
+// arr.pop();
+// console.log(arr);
+
+// JavaScript Array.shift() Method
+// The shift() method is used to remove elements from the beginning of an array
+// let arr = [50, 10, 20, 30];
+// arr.shift();
+// console.log(arr);
+
+// JavaScript Array.splice() Method
+// The splice() method is used to Insert and Remove elements in between the Array.
+// splice() -
+// Modifies the original array
+// Can add, remove, or replace elements
+// Syntax: array.splice(start, deleteCount, item1, item2, ...)
+// start: index at which to start changing the array
+// deleteCount: number of elements to remove
+// item1, item2, ...: optional elements to add
+
+// let arr = [10, 20, 30, 40];
+// console.log(arr.splice(1, 2));
+// console.log(arr);
+
+// JavaScript Array.slice() Method
+// Does not modify the original array
+// Returns a shallow copy of a portion of the array
+// Syntax: array.slice(start, end)
+// start: index to begin extraction (inclusive)
+// end: index to stop extraction (exclusive)
+
+// let arr = [10, 20, 30, 40];
+// console.log(arr.slice(1,2))
+// console.log(arr);
+
 
 // array splice
 // let numArr = [20, 30, 40, 50];
