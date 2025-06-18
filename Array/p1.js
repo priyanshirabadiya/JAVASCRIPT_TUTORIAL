@@ -3,7 +3,6 @@
 // console.log(arr[2]);
 // console.log(arr.length);
 
-
 // array methods
 
 // const data = [11,22,33,44,55,66];
@@ -14,17 +13,16 @@
 // console.log(data);
 // console.log(data.push()); //this will not work
 
-
 // pop method -> delete last element
 // data.pop()
 // console.log(data);
 
 // shift and unshift
 
-// const data = [11,22,33,44,55,66];
+const data = [11, 22, 33, 44, 55, 66];
 
 // unshift -> insert record at first position
-// shift   -> first delete -> you might write more than 1 time if you want to delete more than one record 
+// shift   -> first delete -> you might write more than 1 time if you want to delete more than one record
 // data.unshift(110);
 // data.unshift(200,56,23);
 // data.shift();
@@ -34,13 +32,11 @@
 // console.log(data);
 
 // concat
-  
+
 // let arr = ['skill' , 'Qode'];
 // console.log(arr);
 // console.log(data.concat(arr , 'hello' , 12 , 45 , 56));
 // console.log(data.concat(arr , ['hello'] , [12 , 45 , 56]));
-
-
 
 // splice method
 
@@ -55,7 +51,6 @@
 // console.log(fruits);
 // fruits.splice(1, 2, "Lemon", "Kiwi");
 // console.log(fruits);
-
 
 // const fruits = ["Banana", "Orange", "Apple"];
 // fruits[fruits.length] = "Lemon"; // Adds "Lemon" to fruits
@@ -104,16 +99,12 @@
 // console.log(points);
 // 1,5,10,25,40,100
 
-
-
 // console.log(citrus);
 // Orange, Lemon, Apple, Mango
-
 
 // reverese
 // const data = [11,22,33,568,44,55,125,66];
 // console.log(data.reverse());
-
 
 // sort method
 
@@ -126,7 +117,6 @@
 // let a = txt.sort((a,b)=>a-b);
 // console.log(a);
 
-
 // let str = ["bdsa" , 'hello' , 'Apple' , 'banana'];
 // console.log(str.sort());
 
@@ -134,14 +124,10 @@
 // console.log(Math.min.apply(null,txt));
 
 // slice
-// txt na main array na data ma koi farak padse nai and only slice part j output ma aapse 
+// txt na main array na data ma koi farak padse nai and only slice part j output ma aapse
 // console.log(txt);
 // a = txt.slice(2);
 // console.log(a);
-
-
-
-
 
 // function uppercase(str) {
 //     var array1 = str.split(' ');
@@ -155,19 +141,13 @@
 //   }
 //   console.log(uppercase("the quick brown fox"));
 
- 
-
-
-
 // a = txt.slice(2,5);
 // console.log(txt.slice(2));
 // console.log(txt.splice(2,5));
 
-
 // splice 2 pchi thi 5 indexs count krshe and splice valo part j output ma aapshe
 // console.log(txt.splice(2,4, 'hello' ,'mam'));  //[11, 133, 44, 22]
 // console.log(txt);
-
 
 // shift
 // let he = [xc,gf];
@@ -186,7 +166,6 @@
 // console.log(arr1);
 // console.log(arr1.unshift());
 
-
 // revese data
 // let data = [10 , 20 , 50 , 60];
 // console.log(data.reverse());
@@ -197,4 +176,3 @@
 // function myfun(1 , 2 , 3){
 //     return 1 * 2;
 // }
-
