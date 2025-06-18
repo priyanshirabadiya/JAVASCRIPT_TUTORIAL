@@ -83,6 +83,19 @@
 // console.log(arr.splice(1, 2));
 // console.log(arr);
 
+// let numArr = [20, 30, 40, 50];
+// numArr.splice(1, 2, 0, 3, 4, 5);
+// console.log(numArr);
+// let strArr = ["amit", "sumit", "anil"];
+// strArr.splice(1, 2, "Geeks", "Geeks1", "Geeks2");
+// console.log(strArr);
+
+// Replacing Elements in an Array
+// let fruits = ["Apple", "Banana", "Cherry", "Date"];
+// fruits.splice(1, 2, "Orange", "Grape");
+// console.log(fruits);
+
+
 // JavaScript Array.slice() Method
 // Does not modify the original array
 // Returns a shallow copy of a portion of the array
@@ -94,18 +107,7 @@
 // console.log(arr.slice(1,2))
 // console.log(arr);
 
-
-// array splice
-// let numArr = [20, 30, 40, 50];
-// numArr.splice(1, 2, 0, 3, 4, 5);
-// console.log(numArr);
-// let strArr = ["amit", "sumit", "anil"];
-// strArr.splice(1, 2, "Geeks", "Geeks1", "Geeks2");
-// console.log(strArr);
-
-// second example
-
-// let arr = [1,2,3,8,5,12,6,89];
+// let arr = [1, 2, 3, 8, 5, 12, 6, 89];
 // let m = arr.slice(3);
 // console.log(m);
 
@@ -116,6 +118,7 @@
 // a.splice(2 , 0 , "kena");
 // a.splice(2 , 1); // sanjay , aman , rahul
 // console.log(a);
+
 
 // // Array map()
 // const numbers1 = [45, 4, 9, 16, 25];
