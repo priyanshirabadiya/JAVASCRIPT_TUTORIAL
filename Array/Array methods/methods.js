@@ -95,7 +95,6 @@
 // fruits.splice(1, 2, "Orange", "Grape");
 // console.log(fruits);
 
-
 // JavaScript Array.slice() Method
 // Does not modify the original array
 // Returns a shallow copy of a portion of the array
@@ -120,38 +119,32 @@
 // console.log(a);
 
 
-// // Array map()
+// Javascript Array map() Method
+// The map() method in javascript creates a new array by applying a function to each element of the original array.
+// It skips empty elements and does not modify the original array.
+// Syntax
+// arr.map((element, index, array) => { /* … */ })
+// Parameters 
+// element: It is a required parameter and holds the current element's value.
+// index: It is an optional parameter and it holds the index of the current element.
+// arr: It is an optional parameter and it holds the array.
+
 // const numbers1 = [45, 4, 9, 16, 25];
 // const numbers2 = numbers1.map(myFunction);
-
 // function myFunction(value, index, array) {
-// 	return value * 2;
+//   return value * 2;
 // }
 // console.log(numbers2);
-// 90,8,18,32,50.
-
-// Array map()
-// const numbers1 = [45, 4, 9, 16, 25];
-// const numbers2 = numbers1.map(myFunction);
-
-// function myFunction(value, index, array) {
-//     // value: current element being processed in the array
-//     // index: index of the current element being processed in the array
-//     // array: the array map was called upon
-//     return value * 2 + index + array.length;
-// }
-
-// console.log(numbers2);
+// 90, 8, 18, 32, 50
 
 // Original array
 // const numbers = [1, 2, 3, 4, 5];
-
-// // Mapping function: square each number
+// Mapping function: square of each number
 // const squaredNumbers = numbers.map(num => num * num);
-
 // console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
 
-// Array filter
+
+// Javascript Array filter() Method
 // const numbers = [45, 4, 9, 16, 25];
 // const over18 = numbers.filter(myFunction);
 
@@ -299,7 +292,7 @@
 // console.log(fruits.copyWithin(2, 0, 2));
 // Banana, Orange, Banana, Orange, Kiwi, Papaya
 
-const numbers = [45, 4, 9, 16, 25];
+// const numbers = [45, 4, 9, 16, 25];
 // const first = numbers.find(function(numbers){
 // 			return numbers > 18;
 // });
