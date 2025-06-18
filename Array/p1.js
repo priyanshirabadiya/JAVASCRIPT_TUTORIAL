@@ -1,9 +1,33 @@
+// Array in javascript:
+// An array is a special variable that can hold more than one value at a time.
+
+//  Why Use an Array?
+// Instead of creating many variables:
+// let fruit1 = "apple";
+// let fruit2 = "banana";
+// let fruit3 = "orange";
+// You can store them all in one array:
+// let fruits = ["apple", "banana", "orange"];
+
+// How to Create an Array
+// Using square brackets []:
+// let colors = ["red", "green", "blue"];
+// let colors = new Array("red", "green", "blue");
+
+// Common Array Methods
+// push() – Add item to the end
+// pop() – Remove item from the end
+// shift() – Remove item from the beginning
+// unshift() – Add item to the beginning
+// includes() – Check if item exists
+// indexOf() – Find the index of an item
+
+// array methods(practice) line by line methods are available in Array methods folder
+
 // const arr = [1,2,3,'hello' , true , false];
 // console.log(arr);
 // console.log(arr[2]);
 // console.log(arr.length);
-
-// array methods
 
 // const data = [11,22,33,44,55,66];
 
@@ -19,7 +43,7 @@
 
 // shift and unshift
 
-const data = [11, 22, 33, 44, 55, 66];
+// const data = [11, 22, 33, 44, 55, 66];
 
 // unshift -> insert record at first position
 // shift   -> first delete -> you might write more than 1 time if you want to delete more than one record

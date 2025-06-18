@@ -1,11 +1,40 @@
-// length
-// tostring method
+// Array Methods in javascript -
+// JavaScript methods make our code:
+// Shorter
+// Easier to read
+// More powerful
+// Instead of writing a lot of code manually, methods let you do common tasks quickly.
 
+// JavaScript Array length Method
+// let a = ["HTML", "CSS", "JS", "React"];
+// console.log(a.length);
 
-// join method
+//  JavaScript Array toString() Method
+// let a  = ["HTML", "CSS", "JS", "React"];
+// let s = a.toString();
+// console.log(s);
+// console.log(typeof s);
+
+// JavaScript Array join() Method
 // let arr = ["hj","utiy","main","js"];
 // console.log(arr);
-// console.log(arr.join(""));  
+// console.log(arr.join(""));
+// let join = arr.join(",");
+// console.log(join);
+
+// JavaScript Array delete Operator :
+// The delete operator is used to delete the given value which can be an object, array, or anything.
+// let emp = {
+//     fname : "john",
+//     lname : "Doe",
+//     salary : 4000
+// }
+// console.log(delete emp.fname);
+// console.log(emp);
+
+// let arr = [10, 20, 30];
+// delete arr[1];
+// console.log(arr);
 
 // concate method
 
@@ -13,19 +42,18 @@
 // let arr2 = [6,5,7,8,7];
 // console.log(arr.concat(arr2));
 
-// array push 
+// array push
 
 // let pt = ["ty","fy","sy"];
 // console.log(pt.push("mainadded"));
 // console.log(pt);
 
-
 // array splice
-// let numArr = [20, 30, 40, 50]; 
-// numArr.splice(1, 2, 0, 3, 4, 5); 
-// console.log(numArr); 
-// let strArr = ["amit", "sumit", "anil"]; 
-// strArr.splice(1, 2, "Geeks", "Geeks1", "Geeks2"); 
+// let numArr = [20, 30, 40, 50];
+// numArr.splice(1, 2, 0, 3, 4, 5);
+// console.log(numArr);
+// let strArr = ["amit", "sumit", "anil"];
+// strArr.splice(1, 2, "Geeks", "Geeks1", "Geeks2");
 // console.log(strArr);
 
 // second example
@@ -41,7 +69,6 @@
 // a.splice(2 , 0 , "kena");
 // a.splice(2 , 1); // sanjay , aman , rahul
 // console.log(a);
-
 
 // // Array map()
 // const numbers1 = [45, 4, 9, 16, 25];
@@ -66,7 +93,6 @@
 
 // console.log(numbers2);
 
-
 // Original array
 // const numbers = [1, 2, 3, 4, 5];
 
@@ -74,7 +100,6 @@
 // const squaredNumbers = numbers.map(num => num * num);
 
 // console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
-
 
 // Array filter
 // const numbers = [45, 4, 9, 16, 25];
@@ -84,8 +109,7 @@
 // 	return value > 18;
 // }
 // console.log(over18);
-// 45,25. 
-
+// 45,25.
 
 // array some
 // function myfun(ele)
@@ -96,11 +120,10 @@
 // let val = arr.filter(myfun);
 // console.log(val);
 
-
 // let a = x => x > 5;
 // let arr2 = [2,5,6,8,6,3];
 // z = arr2.filter(a);
-// console.log(z); 
+// console.log(z);
 
 // (function(a){
 //     let array = a.filter(a => a > 5);
@@ -114,7 +137,6 @@
 // });
 // console.log(sum);
 // // 99
-
 
 // const numbers = [45, 100];
 // const sum = numbers.reduceRight(function ( tatol){
@@ -136,14 +158,12 @@
 // console.log(allOver18);
 // false
 
-
 // let sm = function(a)
 // {
 //     arr = a.filter(a => a > 5);
 //     return arr;
 // }
 // console.log(sm([2,4,5,7,3,7,6,90,76,54]));
-
 
 // find method --> returns only first element of array
 // const numbers = [78, 45, 4, 9, 16, 25 , 56];
@@ -159,7 +179,6 @@
 // })
 // console.log(fun);
 
-
 // let num = [2,4,,7,6,54,8,0];
 // console.log(num.find(num => num > 5));
 // function findn(num)
@@ -168,7 +187,6 @@
 //     console.log(z);
 // }
 // findn(num);
-
 
 // let x = [25,6,5,9,8];
 // let z = x.findIndex(function(val){
@@ -193,12 +211,10 @@
 // let array2 = array.entries();
 // console.log(array2.next().val);
 
-
 // const array1 = ['a', 'b', 'c'];
 // const iterator1 = array1.entries();
 // console.log(iterator1.next().value); // [0, "a"]
 // console.log(iterator1.next().value); // [1, "b"]
-
 
 // const nums = ['hello' , 'worls' , 'i' , 'say' , 'this' , 'at' , 'last'];
 // for (const [index, num] of nums.entries()) {
@@ -208,18 +224,14 @@
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits.includes("kiwi"));
 
-
-
 // const array1 = ['a', 'b', 'c'];
 // const iterator1 = array1.entries();
 // console.log(iterator1.next().value); // [0, "a"]
 // console.log(iterator1.next().value); // [1, "b"]
 
-
 // let arr = [34,67,54,87,23,17,90];
 // console.log(Math.max.apply(null,arr));
 // console.log(arr.every(arr => arr > 500));
-
 
 // function myArrayMax(arr) {
 //     return Math.max.apply(null, arr);
@@ -228,19 +240,14 @@
 // myArrayMax(points);
 // // The highest number is 100.
 
-
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits);
 // console.log(fruits.copyWithin(2, 1)); // Banana, Orange, Banana, Orange
-
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
 // console.log(fruits);
 // console.log(fruits.copyWithin(2, 0, 2));
 // Banana, Orange, Banana, Orange, Kiwi, Papaya
-
-
-
 
 const numbers = [45, 4, 9, 16, 25];
 // const first = numbers.find(function(numbers){
@@ -252,5 +259,3 @@ const numbers = [45, 4, 9, 16, 25];
 // let num = [1,2,3,4,5,6];
 // let fnum = num.find(num => num > 5);
 // console.log(fnum);
-
-
