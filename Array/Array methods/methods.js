@@ -118,13 +118,12 @@
 // a.splice(2 , 1); // sanjay , aman , rahul
 // console.log(a);
 
-
 // Javascript Array map() Method
 // The map() method in javascript creates a new array by applying a function to each element of the original array.
 // It skips empty elements and does not modify the original array.
 // Syntax
 // arr.map((element, index, array) => { /* … */ })
-// Parameters 
+// Parameters
 // element: It is a required parameter and holds the current element's value.
 // index: It is an optional parameter and it holds the index of the current element.
 // arr: It is an optional parameter and it holds the array.
@@ -143,37 +142,49 @@
 // const squaredNumbers = numbers.map(num => num * num);
 // console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
 
-
 // Javascript Array filter() Method
+// The filter() method in JavaScript creates a new array with all elements that pass the test implemented by the provided function. It does not modify the original array.
+// filter elements of array as per condition and create new array.
+
 // const numbers = [45, 4, 9, 16, 25];
 // const over18 = numbers.filter(myFunction);
-
 // function myFunction(value) {
 // 	return value > 18;
 // }
 // console.log(over18);
 // 45,25.
 
-// array some
-// function myfun(ele)
-// {
-//     return ele > 5;
+// using arrow function
+// let newarr = numbers.filter((val)=>{
+//     return val > 10;
+// })
+// console.log(newarr);
+
+// function myfun(ele) {
+//   return ele > 5;
 // }
-// let arr = [4,3,7,6,5,9,23];
+// let arr = [4, 3, 7, 6, 5, 9, 23];
 // let val = arr.filter(myfun);
 // console.log(val);
 
-// let a = x => x > 5;
-// let arr2 = [2,5,6,8,6,3];
+// let a = (x) => x > 5;
+// let arr2 = [2, 5, 6, 8, 6, 3];
 // z = arr2.filter(a);
 // console.log(z);
 
-// (function(a){
-//     let array = a.filter(a => a > 5);
-//     console.log(array);
-// })([2,4,5,3,6,8,56,2,78]);
+// using IIFE function
 
-// reduce
+// (function (arr) {
+//   let filterdarr = arr.filter((arr) => arr > 20);
+//   console.log(filterdarr);
+// })([10, 20, 30, 40, 50, 60]);
+
+// JavaScript Array reduce() Method
+// The reduce() method is used to reduce the array to a single value and executes a provided function for each value of the array (from left to right) and the return value of the function is stored in an accumulator.
+// What is an Accumulator in reduce()?
+// In JavaScript's reduce() method, the accumulator is a variable that stores the result of all the previous operations as the array is processed.
+// Think of it as a "running total" that gets updated as you go through each element in the array.
+
 // const numbers = [45, 4, 9, 16, 25];
 // const sum = numbers.reduce(function(total , val){
 // 			return total + val ;
