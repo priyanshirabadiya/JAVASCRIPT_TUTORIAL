@@ -15,7 +15,8 @@
 // console.log(s);
 // console.log(typeof s);
 
-// JavaScript Array join() Method
+// JavaScript Array join() Method   
+// The JavaScript Array.join() method is used to join the elements of the array together into a string.
 // let arr = ["hj","utiy","main","js"];
 // console.log(arr);
 // console.log(arr.join(""));
