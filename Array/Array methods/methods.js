@@ -195,11 +195,10 @@
 // // 99
 
 // const numbers = [45, 100];
-// const sum = numbers.reduceRight(function ( tatol){
-// 			return tatol;
+// const sum = numbers.reduceRight(function (tatol) {
+//   return tatol;
 // });
 // console.log(sum);
-// 99
 
 // let red = [3,6,45,78,2,9];
 // let fun = red.reduce(function(total,v){
@@ -214,12 +213,11 @@
 // console.log(allOver18);
 // false
 
-// let sm = function(a)
-// {
-//     arr = a.filter(a => a > 5);
-//     return arr;
-// }
-// console.log(sm([2,4,5,7,3,7,6,90,76,54]));
+// let sm = function (a) {
+//   arr = a.filter((a) => a > 5);
+//   return arr;
+// };
+// console.log(sm([2, 4, 5, 7, 3, 7, 6, 90, 76, 54]));
 
 // find method --> returns only first element of array
 // const numbers = [78, 45, 4, 9, 16, 25 , 56];
@@ -235,12 +233,11 @@
 // })
 // console.log(fun);
 
-// let num = [2,4,,7,6,54,8,0];
-// console.log(num.find(num => num > 5));
-// function findn(num)
-// {
-//     let z = num.find(num => num > 5);
-//     console.log(z);
+// let num = [2, 4, 7, 6, 54, 8, 0];
+// console.log(num.find((num) => num > 5));
+// function findn(num) {
+//   let z = num.find((num) => num > 5);
+//   console.log(z);
 // }
 // findn(num);
 
@@ -250,14 +247,13 @@
 // })
 // console.log(z);
 
-// let x = [25,6,5,9,8];
-// console.log(x.findIndex(x => x > 10));
+// let x = [25, 6, 5, 9, 8];
+// console.log(x.findIndex((x) => x > 10));
 
-// let val = [25,6,5,99,8];
-// function x(val)
-// {
-//     let z = val.findIndex(val => val > 55);
-//     console.log(z);
+// let val = [25, 6, 5, 99, 8];
+// function x(val) {
+//   let z = val.findIndex((val) => val > 55);
+//   console.log(z);
 // }
 // x(val);
 
@@ -285,9 +281,9 @@
 // console.log(iterator1.next().value); // [0, "a"]
 // console.log(iterator1.next().value); // [1, "b"]
 
-// let arr = [34,67,54,87,23,17,90];
-// console.log(Math.max.apply(null,arr));
-// console.log(arr.every(arr => arr > 500));
+// let arr = [34, 67, 54, 87, 23, 17, 90];
+// console.log(Math.max.apply(null, arr));
+// console.log(arr.every((arr) => arr > 500));
 
 // function myArrayMax(arr) {
 //     return Math.max.apply(null, arr);
@@ -306,8 +302,8 @@
 // Banana, Orange, Banana, Orange, Kiwi, Papaya
 
 // const numbers = [45, 4, 9, 16, 25];
-// const first = numbers.find(function(numbers){
-// 			return numbers > 18;
+// const first = numbers.find(function (numbers) {
+//   return numbers > 18;
 // });
 // console.log(first);
 // 25

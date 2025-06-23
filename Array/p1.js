@@ -29,7 +29,7 @@
 // console.log(arr[2]);
 // console.log(arr.length);
 
-// const data = [11,22,33,44,55,66];
+// const data = [11, 22, 33, 44, 55, 66];
 
 // push method -> add element in last
 // var p = data.push(77);
