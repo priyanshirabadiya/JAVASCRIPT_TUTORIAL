@@ -15,7 +15,7 @@
 // console.log(s);
 // console.log(typeof s);
 
-// JavaScript Array join() Method   
+// JavaScript Array join() Method
 // The JavaScript Array.join() method is used to join the elements of the array together into a string.
 // let arr = ["hj","utiy","main","js"];
 // console.log(arr);
@@ -156,9 +156,10 @@
 // 45,25.
 
 // using arrow function
-// let newarr = numbers.filter((val)=>{
-//     return val > 10;
-// })
+// let numbers = [10, 20.6, 8];
+// let newarr = numbers.filter((val) => {
+//   return val > 10;
+// });
 // console.log(newarr);
 
 // function myfun(ele) {
