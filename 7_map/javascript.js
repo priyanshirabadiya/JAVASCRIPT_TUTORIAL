@@ -202,8 +202,8 @@ size 	    Returns the number of elements in a Map
 
 {
   // let mp = new Map();
-  // mp.set("a", 1);
-  // mp.set("b", 2);
+  // mp.set("a", 18);
+  // mp.set("b", 29);
   // mp.set("c", 3);
   // mp.forEach((values, keys) => {
   //   console.log(values, keys);

@@ -53,7 +53,7 @@
 // If you use a negative number, JavaScript will treat it as zero(0).
 
 // let text = "Apple,Banana,Kiwi";
-// let data = text.substring(2, -3); // 20 to 0
+// let data = text.substring(2, -3); // 2 to 0
 // Now, .substring(2, 0) becomes .substring(0, 2) because:
 // If start > end, .substring() swaps them internally
 // So .substring(2, -3) → .substring(2, 0) → swapped → .substring(0, 2)
