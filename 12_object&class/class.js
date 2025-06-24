@@ -54,7 +54,7 @@
 // console.log(obj.anme);
 // console.log(obj2.anme);
 
-// deep  copy
+// shallow  copy
 
 // const first_person = {
 //     name: "Jack",

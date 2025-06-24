@@ -2,7 +2,7 @@
 // 2.what is javascript ?
 // 3.what is object-oriented programming ?
 
-// --------------------------------------------shallow copy --------------------------------------------
+// --------------------------------------------shallow/deep copy --------------------------------------------
 
 // 1. what is perform when we do shallow copy or deep copy ?
 // => ans : There is copy value instaed of memory location
@@ -15,6 +15,22 @@
 //  2. Object destructuring
 // Deep copy => JSON.parse with JSON.STRINGIFY  => in this data and functions are not work to resolve this problem we can use lodash library or manualy you can do using for loop by copying every element to another file
 
+// let obj = {
+//   name: "Peter",
+//   address: {
+//     city: "Noida",
+//     stat: "UP",
+//   }
+// };
+
+// let user = JSON.parse(JSON.stringify(obj));
+// user.address.city = "surat";
+
+// let user = JSON.parse(JSON.stringify(obj))
+// user.address.city = "surat"
+// console.log("real object", obj);
+// console.log("User", user);
+
 // shallow copy
 // => shallow copy occurs when you copy the reference of an object to the variable
 // A shallow copy means copying the main object, but not the nested objects inside it.
@@ -24,7 +40,6 @@
 
 // copy.name = "Mike"; // OK, changes only in copy
 // copy.address.city = "Mumbai"; // ❗ Changes original too!
-
 
 // let employee = {
 //   id: 1,
@@ -104,7 +119,7 @@
 // 2. Promisis hell
 // 3. what is exception handling
 // 4. what syncronys and asyncronys
-// 5. tryu catch block
+// 5. try catch block
 // 6. call , apply , bind method in javascript
 // 7. javascript is single therated ot multi therated
 // 8. promises return function
@@ -117,19 +132,19 @@
 // Windows + . => for emojies
 
 // function cheessF(callback) {
-//     setTimeout(() => {
-//         const cheese = "🧀";
-//         console.log("Here is your chees", cheese);
-//         callback(cheese);
-//     }, 500)
+//   setTimeout(() => {
+//     const cheese = "🧀";
+//     console.log("Here is your chees", cheese);
+//     callback(cheese);
+//   }, 500);
 // }
 
-// function makeDough(cheese , callback) {
-//     setTimeout(() => {
-//         const dough = cheese + '🧇';
-//         console.log('Here is a dough', dough);
-//         callback(dough);
-//     }, 1000);
+// function makeDough(cheese, callback) {
+//   setTimeout(() => {
+//     const dough = cheese + "🧇";
+//     console.log("Here is a dough", dough);
+//     callback(dough);
+//   }, 1000);
 // }
 
 // cheessF((cheese) => {
@@ -373,17 +388,16 @@
 
 // -------------------------------------------------------fetch api
 
-// async function getusers(){
-//     try{
+// async function getusers() {
+//   try {
 //     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
 //     const data = await response.json();
 //     console.log(data);
-//     }
-//     catch{
-//         console.log(error);
-//     }
+//   } catch {
+//     console.log(error);
+//   }
 // }
-// getusers()
+// getusers();
 
 // fetch("https://jsonplaceholder.typicode.com/posts")
 //     .then((response) => {
@@ -405,7 +419,7 @@
 // Finally will not run if promises is not resove or reject
 // let pendingPromise = new Promise((resolve, reject) => {
 //     // This promise will remain pending because neither resolve nor reject is called
-//     // console.log("This promise is pending...");
+//     console.log("This promise is pending...");
 //     // Commented out resolution or rejection
 //     setTimeout(() => resolve("Resolved!"), 5000);  // Uncomment to eventually resolve
 //     // setTimeout(() => reject("Rejected!"), 5000);   // Uncomment to eventually reject
@@ -424,10 +438,10 @@
 //     });
 
 // new Promise((resolve, reject) => {
-//     throw new Error("error");
+//   throw new Error("error");
 // })
-// .catch(err => console.log(err))
-//     .finally(() => console.log("Promise ready")) // triggers first
+//   .catch((err) => console.log(err))
+//   .finally(() => console.log("Promise ready")); // triggers first
 
 // new Promise(function (resolve, reject) {
 //     resolve(1);
@@ -480,7 +494,11 @@
 //         }, 1000);
 //     })
 // }
-// await mean to wait untill it find data : program aagal na vadva joiae jya sudhi temne awaited data no mle await pchi nu block thai thase jyasudhi aemne awaited data nai male data malse atle aagal code run thase ae khali function maj work karshe inshort meaning of await is to wait untill function can't find data
+// await mean to wait untill it find data :
+// Sure! Here's the English translation of your sentence:
+// > The program should not move forward until it gets the awaited data. The code after `await` will be blocked and won't run until the awaited data is received. Once the data is received, the rest of the code will continue. This behavior works only inside an `async` function.
+// >
+// > **In short**, the meaning of `await` is **to wait until the function receives the data**.
 
 // async must need a function we need to create function then try to create anonomous function
 
@@ -576,7 +594,7 @@
 // -------------------------------------- This keyword in javascript
 
 // user = { "..." } // => It is your current context
-// current content ne use karva mate this key word no use karvo
+// > To use the current content, use the `this` keyword.
 // In JavaScript, the this keyword refers to the object that is currently executing or calling a piece of code. It's a way to access and manipulate the properties and methods of that object.
 
 // const user = {
@@ -586,8 +604,7 @@
 //         console.log(`${this.username} , welcome to website `);
 //         console.log(this);
 //     }
-
-//     // Aa scope ma je keyword ne access karvo hoi tene this keyword no use karine kari shkai
+//   To access a keyword (value/variable) within the current scope, you can use the `this` keyword.
 // }
 
 // user.welcomMessage();
@@ -609,6 +626,15 @@
 // Higher order function in javascript
 
 // function greet(name) {
+//   return function (message) {
+//     console.log(`hello ${name}, ${message}`);
+//   };
+// }
+
+// let letgreet = greet("Priyanshi");
+// letgreet("Rabadiya");
+
+// function greet(name) {
 // 	return `Hi!! ${name} `;
 // }
 
@@ -618,13 +644,13 @@
 
 // greet_name(greet, 'Welcome To GeeksForGeeks', 'Geeks');
 
-// function hello(name){
-// 	return `hello! ${name} `
+// function hello(name) {
+//   return `hello! ${name} `;
 // }
-// function meet(sayhi , message , name){
-// 	console.log(`${sayhi(name)} ${message}`);
+// function meet(sayhi, message, name) {
+//   console.log(`${sayhi(name)} ${message}`);
 // }
-// meet(hello , "How are you ?" , "Priyanshi")
+// meet(hello, "How are you ?", "Priyanshi");
 
 // function multiplier(factor) {
 //     return function (x) {
@@ -641,13 +667,13 @@
 //-------------------------------- exec => regexp
 
 // const regex = /hello \w+/;
-// const str = "hello dorld";
+// const str = "hello world 1";
 // const result = regex.exec(str);
 
 // console.log(result); // Output: ["hello world", "world"]
 
 // const regex1 = /hello \w+/;
-// const string = "hello orld";
+// const string = "hello world";
 // const result1 = regex.test(string);
 // console.log(result1);
 
