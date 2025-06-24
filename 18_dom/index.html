@@ -107,7 +107,7 @@
 
 
 <!-- remove attribute -->
-<button onclick="remove()" title="this is remove attribute" id="p1">remove button</button>
+<!-- <button onclick="remove()" title="this is remove attribute" id="p1">remove button</button> -->
 <!-- <p id="demo">this is p</p> -->
 <!-- <form action=""></form>
 <form action=""></form>
@@ -129,7 +129,34 @@
 
 <p title="hello" class="demo3">thi sd</p> -->
 
-    <script src="dom.js"></script> 
+
+
+
+    <form action="" id="mainForm" onsubmit="validationFunction()" >
+        <input type="text" id="name" >
+        <button type="submit" >Submit</button>
+    </form>
+
+
+    <script>
+
+        function validationFunction(){
+            const name = document.getElementById("name").value;
+            if(name == ""){
+                alert("should not be empty")
+                return false;
+            }
+            alert("Submited");
+            return true;
+        }
+
+    </script>
+
+
+
+
+
+    <!-- <script src="dom.js"></script>  -->
 </body>
 
 </html>

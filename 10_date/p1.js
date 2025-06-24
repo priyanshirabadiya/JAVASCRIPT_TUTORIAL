@@ -46,7 +46,7 @@
 
 
 // ---------------------set methods
-const d = new Date();
+// const d = new Date();
 // z = d.setSeconds(30);
 // d.setMinutes(2); 
 // d.setHours(3); 
@@ -64,8 +64,8 @@ const d = new Date();
 // console.log(day);
 
 // const d = new Date();
-d.setTime(133282588);
+// d.setTime(133282588);
 // console.log(d);
-console.log(d.getTime());
+// console.log(d.getTime());
 
 // console.log(Date.now());

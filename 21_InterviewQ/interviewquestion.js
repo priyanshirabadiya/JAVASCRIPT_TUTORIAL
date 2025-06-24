@@ -1,4 +1,4 @@
-// 1.what is scripting languahg ?
+// 1.what is scripting language ?
 // 2.what is javascript ?
 // 3.what is object-oriented programming ?
 
@@ -17,6 +17,14 @@
 
 // shallow copy
 // => shallow copy occurs when you copy the reference of an object to the variable
+// A shallow copy means copying the main object, but not the nested objects inside it.
+
+// const original = { name: "John", address: { city: "Delhi" } };
+// const copy = { ...original }; // Shallow copy using spread operator
+
+// copy.name = "Mike"; // OK, changes only in copy
+// copy.address.city = "Mumbai"; // ❗ Changes original too!
+
 
 // let employee = {
 //   id: 1,
@@ -29,6 +37,7 @@
 // let newEmployee = employee;
 // newEmployee.name = "shubham";
 // console.log("newEmployee", newEmployee);
+// console.log("Employee change or not", employee);
 
 // -------------------------------------------- Map/set --------------------------------------------
 

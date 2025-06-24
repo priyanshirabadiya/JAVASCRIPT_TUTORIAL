@@ -1,5 +1,4 @@
 // try and catch statement is used to handle the exceptions.
-// like last topic-exception handling of PL/SQL in college
 
 {
     // try and catch statement is used to handle the exxceptions.
@@ -60,7 +59,6 @@
     //     }
     //     catch(error){
     //         // body of catch
-
     //     }
     // }
 

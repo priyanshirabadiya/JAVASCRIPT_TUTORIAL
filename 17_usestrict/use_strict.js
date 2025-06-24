@@ -1,5 +1,7 @@
 // Javascript "Use strict"
 // 'use strict';
+// What is use strict in JavaScript? (Easy Explanation)
+// "use strict" is a special instruction in JavaScript that tells the browser or Node.js to run the code in "strict mode".
 
 {
     // myvariable = 9;

@@ -56,6 +56,12 @@
 // }
 // showtime();
 
+// function hello(){
+//     console.log("hello function");
+// }
+
+// setTimeout(hello,1000)
+
 
 // the settimeout() method calls the function only once after the time interval(here 1 second)
 
@@ -155,7 +161,7 @@
     //     }
     // });
 
-    // //  console.log(countvalue);
+    //  console.log(countvalue);
 
     // countvalue.then((result)=>console.log(result))
     // .catch((err)=>console.log(err + "xfjiojdios"))

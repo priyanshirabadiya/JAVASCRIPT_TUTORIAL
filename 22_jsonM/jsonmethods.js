@@ -1,18 +1,14 @@
-
-// let fetchData = fetch('https://jsonplaceholder.typicode.com/users')
+// let fetchData = fetch("https://jsonplaceholder.typicode.com/users")
 //   .then((res) => res.json())
-//    .then((res) => console.log(res))
-//    .then((res) => console.log(JSON.parse(res))) // It will not convert into parse becuse this data is already is in json formate 
-//    .then((res) => console.log(JSON.stringify(res)))   // convert json into stringify if you want
-//   .catch((error) => console.error('Error:', error));
-
-
-
+//   .then((res) => console.log(res))
+//   .then((res) => console.log(JSON.parse(res))) // It will not convert into parse becuse this data is already is in json formate
+//   .then((res) => console.log(JSON.stringify(res))) // convert json into stringify if you want
+//   .catch((error) => console.error("Error:", error));
 
 // let jsonobj = [
 //     {
 //         name : "priyanshi",
-//         sname : "rabadiya" , 
+//         sname : "rabadiya" ,
 //         friend : "mansi",
 //         food : "biryani"
 //     }

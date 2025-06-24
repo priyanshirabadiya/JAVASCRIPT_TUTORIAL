@@ -1,4 +1,3 @@
-import _ from 'lodash';
 
 // understand speard operator before understanding shallow and deep copy
 // speard operator
@@ -6,6 +5,8 @@ import _ from 'lodash';
 // It is used to "spread out" the elements of an array, object, or iterable into individual elements.
 // 💡 What does "spread out" mean?
 // It just means breaking things apart.
+
+const { use } = require("react");
 
 // Imagine you have a box of toys:
 // const toys = ["car", "ball", "doll"];
@@ -109,6 +110,7 @@ import _ from 'lodash';
 
 // shallow copy
 // Copies only the top level.
+// A shallow copy means copying the main object, but not the nested objects inside it.
 // Nested objects/arrays are still linked (shared) with the original.
 // “Just the surface is copied, the inside is still connected.”
 
@@ -119,6 +121,7 @@ import _ from 'lodash';
 
 // ------------------------------- DEEP COPY ----------------------------------
 // deep copy consider not only first object it is also consider object which is in under of object or within object
+// A deep copy means making a complete copy of an object — including all nested objects.
 
 // let obj = {
 //   name: "Peter",
@@ -130,6 +133,9 @@ import _ from 'lodash';
 
 // let user = JSON.parse(JSON.stringify(obj));
 // user.address.city = "surat";
+
+// let user = JSON.parse(JSON.stringify(obj))
+// user.address.city = "surat"
 // console.log("real object", obj);
 // console.log("User", user);
 

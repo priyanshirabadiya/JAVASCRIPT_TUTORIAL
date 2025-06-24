@@ -341,6 +341,9 @@ const {
 console.log(id, name, street, house);
 
 
+destructing in js
+Destructuring in JavaScript means taking values from arrays or objects and putting them into separate variables.
+
 What is the difference between `map()`, `filter()`, and `reduce()`?
 map()
 -map(): transforms every elements in array individually and creates a new array.
@@ -446,7 +449,6 @@ When a Promise is resolved, the await expression returns the resolved value.
 When a Promise is rejected, it throws an error, which can be handled using a try/catch block.
 
 async functions enable you to write asynchronous code that looks and behaves more like synchronous code.
-
 
 What are JavaScript promises? How do you use them?
 What is a Promise?
