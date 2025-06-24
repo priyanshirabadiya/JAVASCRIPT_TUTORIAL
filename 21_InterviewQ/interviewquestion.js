@@ -772,12 +772,12 @@
 
 // math.js file
 // export function add(a, b) {
-//     return a + b;
-//   }
+//   return a + b;
+// }
 
 // export function subtract(a, b) {
-//     return a - b;
-//   }
+//   return a - b;
+// }
 
 // app.js
 // import { add, subtract } from './math.js';
@@ -805,28 +805,43 @@
 // Promise.all() method in javascript
 
 // const promise1 = Promise.resolve(3);
-// const promise2 =  new Promise((resolve, reject) => {
-//     setTimeout(resolve, 1000, 'foo');
+// const promise2 = new Promise((resolve, reject) => {
+//   setTimeout(resolve, 1000, "foo");
 // });
-// const promise3 = new Promise((resolve , reject) => {
-//     setTimeout(resolve , 2000 , "Hello" )
-// }) ;
+// const promise3 = new Promise((resolve, reject) => {
+//   setTimeout(resolve, 2000, "Hello");
+// });
 
-// Promise.all([promise1,promise3,promise2]).then((values) => {
-//     console.log(values);
+// Promise.all([promise1, promise3, promise2]).then((values) => {
+//   console.log(values);
 // });
 
 // Promise Race
 
 // var promise1 = new Promise(function (resolve, reject) {
-//     setTimeout(resolve, 500, "one");
+//   setTimeout(resolve, 500, "one");
 // });
 // var promise2 = new Promise(function (resolve, reject) {
-//     setTimeout(resolve, 100, "two");
+//   setTimeout(resolve, 100, "two");
 // });
 // Promise.race([promise1, promise2]).then(function (value) {
-//     console.log(value); // "two" // Both promises will resolve, but promise2 is faster // so it will produce only those result which is faster
+//   console.log(value); // "two" // Both promises will resolve, but promise2 is faster // so it will produce only those result which is faster
 // });
+
+// let promise1 = new Promise(function (resolve, reject) {
+//   setTimeout(() => {
+//     resolve("Hello");
+//     // reject("good bye");
+//   }, 1000);
+// });
+
+// promise1
+//   .then((result) => {
+//     console.log("Result:", result);
+//   })
+//   .catch((err) => {
+//     console.log("Got error:",err);
+//   });
 
 // What is the purpose of the delete operator
 
@@ -862,6 +877,7 @@
 // var per4 = { name: "John" };
 // console.log(sayapply.apply(per4, ["tina"]));
 
+
 // curring topic
 // what is curring => Currying is a functional programming technique where a function with multiple arguments is transformed into a series of functions, each taking a single argument.
 // function simpel(ar1, ar2, ar3) {
@@ -890,7 +906,7 @@
 //         // displayName() is the inner function, that forms a closure
 //         console.log(name); // use variable declared in the parent function
 //     }
-//     console.log(a);
+//     // console.log(a);
 //     displayName();
 // }
 // init();

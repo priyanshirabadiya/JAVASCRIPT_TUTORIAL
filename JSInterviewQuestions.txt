@@ -324,6 +324,8 @@ for...of 👉 Loops over VALUES
 
 what is destructuring in javascript?
 => Destructuring in JavaScript is a feature that allows the extraction of values from arrays or objects and assignment to distinct variables.
+Or Destructuring in JavaScript means taking values from arrays or objects and putting them into separate variables.
+
 const user = {
   id: 1,
   name: "divy2",
@@ -340,9 +342,6 @@ const {
 } = user;
 console.log(id, name, street, house);
 
-
-destructing in js
-Destructuring in JavaScript means taking values from arrays or objects and putting them into separate variables.
 
 What is the difference between `map()`, `filter()`, and `reduce()`?
 map()

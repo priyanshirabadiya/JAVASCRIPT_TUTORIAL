@@ -7,8 +7,8 @@
 
 
 
-let a = "defga";
-let data = a.split("");
-let sorting = data.sort();
-let j = sorting.join("");
-console.log(j.toString());
+// let a = "defga";
+// let data = a.split("");
+// let sorting = data.sort();
+// let j = sorting.join("");
+// console.log(j.toString());

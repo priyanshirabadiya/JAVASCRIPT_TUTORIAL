@@ -1,19 +1,19 @@
-// function findLongestWord(str) {
-//     var words = str.split(' ');
-//     var maxLength = 0;
-//     var longestWord = '';
-//     for (var i = 0; i < words.length; i++) {
-//         // console.log(words);
-//         if (words[i].length > maxLength) {
-//             maxLength = words[i].length;
-//             console.log(maxLength);
-//             longestWord = words[i];
-//         }
-//     }
-//     return longestWord;
-// }
-// var longest = findLongestWord("The quick brown fox");
-// console.log("The longest word is:", longest);
+function findLongestWord(str) {
+    var words = str.split(' ');
+    var maxLength = 0;
+    var longestWord = '';
+    for (var i = 0; i < words.length; i++) {
+        // console.log(words);
+        if (words[i].length > maxLength) {
+            maxLength = words[i].length;
+            console.log(maxLength);
+            longestWord = words[i];
+        }
+    }
+    return longestWord;
+}
+var longest = findLongestWord("The quick brown fox");
+console.log("The longest word is:", longest);
 
 
 
