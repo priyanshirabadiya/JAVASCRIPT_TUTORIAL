@@ -40,40 +40,37 @@
 //     time_el.innerHTML = "00:00:00"
 // }
 
-
-let takeclass = document.querySelector('.time');
+let takeclass = document.querySelector(".time");
 
 let second = 0;
 let interval = null;
-function timer(){
-    second++;
+function timer() {
+  second++;
 
-    let hr = Math.floor(second / 3600);
-    let min = Math.floor((second - (hr * 3600))/60);
-    let sec = second % 60;
+  let hr = Math.floor(second / 3600);
+  let min = Math.floor((second - hr * 3600) / 60);
+  let sec = second % 60;
 
-    if(hr < 10) hr = "0" + hr;
-    if(min < 10) min = "0" + min;
-    if( sec < 10) sec = "0" + sec ;
+  if (hr < 10) hr = "0" + hr;
+  if (min < 10) min = "0" + min;
+  if (sec < 10) sec = "0" + sec;
 
-
-
-    takeclass.innerHTML = `${hr}:${min}:${sec}`;
+  takeclass.innerHTML = `${hr}:${min}:${sec}`;
 }
 
-function start(){
-    if(interval){
-        return;
-    }
-    interval = setInterval(timer , 1000);
+function start() {
+  if (interval) {
+    return;
+  }
+  interval = setInterval(timer, 1000);
 }
 
-function stop(){
-    interval = clearInterval(interval);
+function stop() {
+  interval = clearInterval(interval);
 }
 
-function reset(){
-    stop();
-    takeclass.innerHTML = "00:00:00"
-    second = 0;
+function reset() {
+  stop();
+  takeclass.innerHTML = "00:00:00";
+  second = 0;
 }

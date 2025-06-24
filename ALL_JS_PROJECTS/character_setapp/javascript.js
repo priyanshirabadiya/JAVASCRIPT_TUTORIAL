@@ -42,6 +42,8 @@ const numbers = () => {
     for (let i = 0; i < text.length; i++) {
         if (text[i].match(/[0-9]/)) {
             countN++;
+        }else{
+            countN = 0;
         }
     }
     input.value = ` Numbers are : ${countN}`;
