@@ -6,7 +6,7 @@ function findLongestWord(str) {
         // console.log(words);
         if (words[i].length > maxLength) {
             maxLength = words[i].length;
-            console.log(maxLength);
+            // console.log(maxLength);
             longestWord = words[i];
         }
     }
