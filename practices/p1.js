@@ -177,3 +177,18 @@
 //   }
 //   console.log("");
 // }
+
+
+// let arr = [1, 2, 2, 3, 4, 5, 5];
+// let uniquearr;
+// let unique = arr.filter((item)=>{
+//     return arr.indexOf(item) == arr.lastIndexOf(item);
+// });
+
+// console.log(unique);
+
+// let arr = [1, 2, 2, 3, 4, 5, 5];
+// let set = new Set(arr);
+// console.log([...set]);
+ 
+
