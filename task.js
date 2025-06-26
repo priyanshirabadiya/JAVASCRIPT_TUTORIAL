@@ -125,5 +125,14 @@
 // "object" = [1,2,3]
 // string === object
 
-// let ar2 = [1, 2, 3];
 // console.log(ar1 == ar2);
+
+// let arr = [1, 2, 3];
+// let obj = { num: 1, name: "sdf" };
+
+// that's why
+// arr = "Object"
+// string = Object = false;
+
+// console.log(arr == obj);
+
