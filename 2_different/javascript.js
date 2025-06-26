@@ -7,21 +7,28 @@
 // if any value of - that it being -
 
 // var y = 20 + 20 + "5"
+// console.log(y);
 
 // var z = 20 + 20 + "5" + 20
+// console.log(z);
 
 // var zz = 20 + 20 + "5" + 20 + 20
+// console.log(zz);
 
 // var zzz = 20 + 20 + "5" + 20 + 20 + 20
+// console.log(zzz);
 
 // var zzzz = 20 + 20 + "5" + 20 + 20 + 20 + 20 + 20 + 20
+// console.log(zzzz);
 
 // var zzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2
+// console.log(zzzz);
 
 // var zzzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2 - 50  // 405202040 - 50
+// console.log(typeof zzzzz);
 
 // var zzzzzz = 20 + 20 + "5" + 20 + 20 + 20 * 2 - 50 + "5" // 405202040 - 50
-// console.log(zzzzzz);
+// console.log(typeof zzzzzz);
 
 // console.log(y);
 // console.log(typeof(y));
@@ -52,13 +59,13 @@
 
 // var z = 20;
 // {
-//     var x = 20;
+//   var x = 20;
 // }
 // {
-//     var y = 40;
+//   var y = 40;
 // }
 
-// console.log(y)
+// console.log(y);
 
 /* Declaration let() */
 
@@ -110,19 +117,19 @@
 
 // const x = 20;
 {
-//   const x = 50;
-//   console.log(x);
+  //   const x = 50;
+  //   console.log(x);
 }
 {
-//   const x = 30;
-//   console.log(x);
+  //   const x = 30;
+  //   console.log(x);
 }
 
 // console.log(x);
 
 {
-//   let x = 'sun';
-//   console.log(x);
+  //   let x = 'sun';
+  //   console.log(x);
 }
 
 /* Declaration const() */
@@ -142,18 +149,18 @@
 /* string with quotes */
 
 {
-//   let string1  = "He'llo"
-//   let string2  = 'He"llo'
-//   let string3  = "He\"llo"
-//   let string4  = 'He\'llo'
-//   let string5  = "He\nllo"
-//   let string6  = "He\t\tllo"
-//   console.log(string1);
-//   console.log(string2);
-//   console.log(string3);
-//   console.log(string4);
-//   console.log(string5);
-//   console.log(string6);
+    // let string1  = "He'llo"
+  //   let string2  = 'He"llo'
+  //   let string3  = "He\"llo"
+  //   let string4  = 'He\'llo'
+  //   let string5  = "He\nllo"
+  //   let string6  = "He\t\tllo"
+    // console.log(string1);
+  //   console.log(string2);
+  //   console.log(string3);
+  //   console.log(string4);
+  //   console.log(string5);
+  //   console.log(string6);
 }
 
 /*
@@ -201,3 +208,22 @@
   // var myNull = null; // null
   // etc...
 }
+
+// let number = 10;
+// let str = "sdf";
+// let arr = [10,20,56];
+
+// let obj = {name : "sdfjhj",age:45};
+// console.log(typeof obj);
+// console.log(typeof arr);
+
+
+// console.log(typeof null);
+// console.log(typeof undefined);
+// console.log(typeof Symbol);
+// console.log(typeof function);
+
+
+// let sym = Symbol('x');
+// console.log(typeof sym); // "symbol"
+

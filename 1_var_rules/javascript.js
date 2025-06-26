@@ -153,10 +153,10 @@ Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ 
 //     let y = 20;
 //     var x = 20;
 //     y = 56;
-//     console.log(x); 
-//     console.log(y); 
+//     console.log(x);
+//     console.log(y);
 //   }
-//   console.log(x); 
+//   console.log(x);
 //   // console.log(y); // Error: y is not defined (let is block-scoped)
 // }
 
@@ -164,8 +164,17 @@ Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ 
 
 // console.log("out of function" + x);
 
+// console.log(5 + "5");
+// console.log(true + 1);
 
-console.log(5 + "5");
-console.log(true + 1);
+// let a = [10, 20, 30, 40, 50];
+
+// console.log(
+//   a.map((ele) => {
+//     console.log(ele > 18);
+//   })
+// );
+
+// console.log(mappedFun);
 
 
