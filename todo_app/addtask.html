@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Simple To do app</h1>
+
+    <input type="text" id="taskInput" placeholder="Add task here..." />
+    <button onclick="addTask()" id="addButton">Add</button>
+
+    <ul class="taskList"></ul>
+
+    <script>
+      let inputtext = document.getElementById("taskInput");
+      console.log(inputtext);
+
+      //   let tasks = JSON.stringify(localStorage.getItem("tasks")) || [];
+      //     console.log(tasks);
+
+      //   function saveTasks() {
+      //     localStorage.setItem("tasks", JSON.stringify(tasks));
+      //   }
+
+      //   function addTask() {
+      //     let inputtext = document.getElementById("taskInput");
+      //     console.log(inputtext);
+
+      //     let text = inputtext.value.trim();
+
+      //     if (!text) return;
+
+      //     tasks.push(text);
+      //     inputtext("");
+      //     saveTasks();
+      //     alert("added");
+      //   }
+    </script>
+  </body>
+</html>

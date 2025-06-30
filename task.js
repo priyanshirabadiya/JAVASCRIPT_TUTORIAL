@@ -165,7 +165,6 @@
 // string === object  // => false
 // console.log(ar1 == ar2);
 
-
 // let arr = [1, 2, 3];
 // let obj = { num: 1, name: "sdf" };
 
@@ -174,4 +173,7 @@
 // string = Object = false;
 
 // console.log(arr == obj);
+
+
+
 
