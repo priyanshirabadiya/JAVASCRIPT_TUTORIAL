@@ -82,7 +82,7 @@ comments */
 
 {
   // var _nameone = 40 + '20' - '5';
-  // var _nametwo= '5';
+  // var _nametwo= '5'; 
   // console.log(_nameone);
   // console.log(typeof(_nameone));
   // var one = 20
